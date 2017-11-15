@@ -1,0 +1,56 @@
+/*! Place your custom styles here */
+
+section.space--sm, footer.space--sm {
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.highlight, a{
+    color:#33cc99;
+}
+
+.bg--primary-2{
+    background:#66cc99;
+}
+
+.label:not([class*='bg--']){
+    background:#003c41;
+    
+}
+
+.boxed.boxed--lg {
+    padding: 3.4em;
+}
+
+.menu-fullscreen .modal-content .modal-close-cross{
+    right: 3.3em;
+    top: 0.2em;
+    font-size: 35px;
+    
+}
+
+.bar.pos-fixed:not([class*='bg-']) {
+    background: rgba(255, 255, 255, 0.89);
+}
+
+.flickity-prev-next-button {
+    opacity: .5;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    font-size: 1.5em;
+    margin-top: -36px;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+.back-to-top{
+   /* right:8vw;*/
+}
+/*
+.bar{
+padding: 2em 0;
+position: absolute;
+left: 50%;
+}
+*/
