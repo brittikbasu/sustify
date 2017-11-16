@@ -47,6 +47,11 @@ section.space--sm, footer.space--sm {
 .back-to-top{
    /* right:8vw;*/
 }
+hr.short {
+    width: 2.78571429em;
+    border-color: #66cc99;
+    margin: 0 auto;
+}
 /*
 .bar{
 padding: 2em 0;
