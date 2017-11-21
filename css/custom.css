@@ -25,14 +25,36 @@ section.space--sm, footer.space--sm {
 
 .menu-fullscreen .modal-content .modal-close-cross{
     right: 3.3em;
-   // top: 0.2em;
+    top: 0.2em;
     font-size: 35px;
     
 }
+@media (max-width:416px){
+    .menu-fullscreen .modal-content .modal-close-cross{
+        right: 42%;
+        top: 80%;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 15px;
+        
+    }
+
+    .bar .logo{
+        margin-left:8%;
+        margin-top: 2%;
+    }
+
+}
+
+
 
 .bar.pos-fixed:not([class*='bg-']) {
     background: rgba(255, 255, 255, 0.89);
 }
+
+.bar .logo{
+    margin-left:4%;
+    }
 
 .flickity-prev-next-button {
     opacity: .5;
@@ -45,6 +67,10 @@ section.space--sm, footer.space--sm {
     margin-right: -24px;
 }
 
+.menu-fullscreen:before {
+    background:rgba(25, 60, 65, 0.9);
+    
+}
 
 #contact .icon{
     font-size: 2em;
