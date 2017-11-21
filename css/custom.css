@@ -25,7 +25,7 @@ section.space--sm, footer.space--sm {
 
 .menu-fullscreen .modal-content .modal-close-cross{
     right: 3.3em;
-    top: 0.2em;
+   // top: 0.2em;
     font-size: 35px;
     
 }
@@ -44,13 +44,15 @@ section.space--sm, footer.space--sm {
     margin-left: -24px;
     margin-right: -24px;
 }
-.back-to-top{
-   /* right:8vw;*/
+
+
+#contact .icon{
+    font-size: 2em;
+    
 }
-hr.short {
-    width: 2.78571429em;
-    border-color: #66cc99;
-    margin: 0 auto;
+
+
+
 }
 /*
 .bar{
