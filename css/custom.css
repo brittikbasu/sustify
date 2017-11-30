@@ -71,7 +71,18 @@ section.space--sm, footer.space--sm {
     background:rgba(25, 60, 65, 0.9);
     
 }
-
+.back-button{
+    height:50px;
+    width:90px;
+    position: fixed;
+    top:0;
+    left:0;
+    margin-top:2vh;
+}
+.back-button p{
+    vertical-align:super;
+    display:inline-block;
+}
 #contact .icon{
     font-size: 2em;
     
@@ -87,6 +98,9 @@ section.space--sm, footer.space--sm {
     height:15px;
     width:90%;
     margin:0 auto;
+}
+.bar{
+    min-height: 9vh;
 }
 /*
 .bar{
