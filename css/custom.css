@@ -62,7 +62,7 @@ section.space--sm, footer.space--sm {
     width: 5vw;
     height: 5vw;
     font-size: 1.5em;
-    margin-top: -36px;
+    margin-top: 0vh;
     margin-left: -24px;
     margin-right: -24px;
 }
@@ -77,8 +77,16 @@ section.space--sm, footer.space--sm {
     
 }
 
+.material-icons{
+    font-size: 15px;
+}
 
 
+.slider[data-paging="true"]:not(section) .flickity-page-dots {
+    top: -4vh;
+    height:15px;
+    width:90%;
+    margin:0 auto;
 }
 /*
 .bar{
