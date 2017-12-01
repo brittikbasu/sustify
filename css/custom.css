@@ -105,6 +105,10 @@ section.space--sm, footer.space--sm {
 .bar{
     min-height: 9vh;
 }
+
+.team .margin-right{
+    margin-right:5px
+}
 /*
 .bar{
 padding: 2em 0;
