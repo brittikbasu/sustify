@@ -12,10 +12,8 @@
     <!-- x -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" 
-    type="image/png" 
-    href="img/sustify-icon.png">
-    
+    <link rel="icon" type="image/png" href="img/sustify-icon.png">
+
     <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
@@ -37,11 +35,70 @@
 
     <div class="nav-container">
         <div>
+            <nav class="bar bar-toggle bar--sm" data-scroll-class='115vh:pos-fixed'>
+                   <!-- <nav class="bar bar--sm bar-toggle bar-2" data-scroll-class='100vh:pos-fixed'>-->
+                            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/logo-dark.png">
+                                    <img class="logo logo-light" alt="logo" src="img/logo-light.png"> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-11 col-sm-10 col-xs-9">
+                            <div class="bar__module">
+                                <div class="modal-instance pull-right">
+                                    <a class="modal-trigger menu-toggle" href="#">
+                                        <i class="stack-interface stack-menu"></i>
+                                    </a>
+                                    <div class="modal-container menu-fullscreen">
+                                        <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em;">
+                                            <div class="pos-vertical-center pos-asbolute text-center">
+
+                                                <ul class="menu-vertical">
+                                                    <li class="h2">
+                                                        <a href="#">Home</a>
+                                                    </li>
+                                                    <li class="h2">
+                                                        <a href="#about" target="_self" class="inner-link">About</a>
+                                                    </li>
+                                                    <li class="h2">
+                                                        <a href="#implementation" target="_self" class="inner-link">Implementation</a>
+                                                    </li>
+                                                    <li class="h2">
+                                                        <a href="#benefits" target="_self" class="inner-link">Benefits</a>
+                                                    </li>
+                                                    <li class="h2">
+                                                        <a href="#team" target="_self" class="inner-link">Team</a>
+                                                    </li>
+                                                    <li class="h2">
+                                                        <a href="#contact" target="_self" class="inner-link">Contact</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--
+    <div class="nav-container">
+        <div>
 
             <nav class="bar bar--sm bar-toggle bar-2" data-scroll-class='100vh:pos-fixed'>
                 <div class="container">
                     <div class="row">
-                        <!--<div class="col-md-1 col-sm-2 col-xs-10 col-l-8  text-center">-->
                         <div class="col-md-11 col-sm-10 col-xs-10">
                             <div class="bar__module text-center">
                                 <a href="index.html">
@@ -49,7 +106,6 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- <div class="col-md-11 col-sm-10 col-xs-2">-->
                         <div class="col-md-1 col-sm-2 col-xs-2">
 
                             <div class="bar__module">
@@ -90,7 +146,6 @@
 
                             </div>
                         </div>
-                        <!--end bar module-->
                     </div>
                 </div>
 
@@ -115,10 +170,11 @@
             </nav>
         </div>
     </div>
-    <div class="main-container">
+-->
+    <div class="main-container" style="margin-top:2vh">
         <a id="home" class="in-page-link"></a>
 
-        <section class="switchable space--sm bg--secondary">
+        <section class="switchable space--sm bg--secondary full-height">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-sm-5 col-xs-12 hidden-sm hidden-md hidden-lg" style="margin-top: -15%;">
@@ -150,14 +206,14 @@
             <div class="background-image-holder">
                 <img alt="background" src="img/hands-up.jpg"> </div>
         </section>
-        <a id="" class="in-page-link" data-scroll-id="we-help-learn"></a>
+        <!--<a id="" class="in-page-link"></a>-->
         <section class="switchable feature-large bg--primary space--sm" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-5">
                         <div class="switchable__text">
                             <h2>We train different
-                                <br>&nbsp; We help learn
+                                <br>  We help learn
                                 <br>
                             </h2>
                             <p class="lead">At Sustify, we live sustainably, promote sustainability and do business to provide something
@@ -212,7 +268,7 @@
                 <div class="row">
                     <div class="col-sm-10 col-md-8">
                         <h2>How Sustify works</h2>
-                        <p class="lead">From online to on-site, Sustify takes care of it all.</p>
+                        <p class="lead">Online and on-site, Sustify takes care of it all.</p>
                     </div>
                 </div>
             </div>
@@ -235,8 +291,9 @@
                                 <div class="feature feature-3 boxed boxed--lg boxed--border">
                                     <span class="h1 h1--large">2.</span>
                                     <h4>On-site Introduction</h4>
-                                    <p> The local program manager introduces and implements courses in the factories by providing Sustify
-                                        tablets.</p>
+                                    <p> The local program manager introduces and implements courses in the factories by providing
+                                        Sustify tablets.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -344,7 +401,8 @@
                                         <p> Sustify ensures increased quality in manufacturing factories in Asia and decreases
                                             risks of non-compliance with social and environmental issues. It helps with putting
                                             the United Nations' Sustainability Development Goal 12 – responsible production
-                                            and consumption - into practice and makes sustainable development measurable. </p>
+                                            and consumption - into practice and makes sustainable development measurable.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
@@ -364,7 +422,7 @@
                                     <div class="feature feature-6">
                                         <i class="icon icon--lg icon-Open-Book color--primary"></i>
                                         <h5>Courses &amp; Capacity Building</h5>
-                                        <p> Training content is developed in collaboration with industry experts, NGOs and the
+                                        <p> Training content is developed in collaboration with industry experts and the
                                             workers themselves. A tested combination of spacing and repetition helps creating
                                             a learning experience with a real impact on behavior. Customized content can
                                             be developed in collaboration with brands as desired.</p>
@@ -513,7 +571,7 @@
         </section>
     -->
 
-
+<div class="full-height">
         <section class="text-center space--xxs" data-scroll-id="team" id="team">
             <div class="container">
                 <div class="row">
@@ -558,7 +616,8 @@
                                                         <i class="icon icon--md icon-Like"></i>
                                                         <h4>Likes</h4>
                                                         <p> Rivers & forests, Asian culture, Tango Argentino, Value oriented
-                                                            people</p>
+                                                            people
+                                                        </p>
 
                                                     </div>
                                                 </div>
@@ -589,31 +648,33 @@
                                                 </div>
                                                 <div class="col-sm-6">
 
-                                                        
+
 
                                                     <div class="feature feature-1 boxed boxed--md boxed--border">
                                                         <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                                         <h4>Connect</h4>
-                                                        <i class="material-icons icon--xs margin-right">email</i> sonja.westphal@sustify.de<br>
-                                                        <i class="socicon socicon-viber icon icon--xs margin-right"></i> +49 170 3601180<br>
-                                                        
+                                                        <i class="material-icons icon--xs margin-right">email</i> sonja.westphal@sustify.de
+                                                        <br>
+                                                        <i class="socicon socicon-viber icon icon--xs margin-right"></i> +49 170 3601180
+                                                        <br>
+
                                                         <ul class="social-list list-inline list--hover text-center">
                                                             <li>
-                                                                <a href="skype:S.C.Westphal_1?call" target="_blank">
+                                                                <a href="skype:S.C.Westphal?call" target="_blank">
                                                                     <i class="socicon socicon-skype icon icon--xs"></i>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                    <a href="https://www.linkedin.com/in/sonja-westphal-583b6938" target="_blank">
-                                                                        <i class="socicon socicon-linkedin icon icon--xs"></i>
-                                                                    </a>
-                                                                </li>
+                                                                <a href="https://www.linkedin.com/in/sonja-westphal-583b6938" target="_blank">
+                                                                    <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                                                </a>
+                                                            </li>
                                                             <li>
                                                                 <a href="#" target="_blank">
                                                                     <i class="socicon socicon-twitter icon icon--xs"></i>
                                                                 </a>
                                                             </li>
-                                                    
+
                                                         </ul>
 
                                                     </div>
@@ -634,9 +695,9 @@
                                                 <img alt="Image" src="img/alexandra.jpg" style="max-width: 60%;">
                                                 <h4>Alexandra Barlow</h4>
                                                 <span style="color: #33cc99;">UI Designer</span>
-                                                <p style="margin-top:1vh">UI designer specializing in crafting harmonious colour palettes
-                                                    and pixel perfect designs. Never settles and strives for the best. Is
-                                                    always iterating to find solutions that are even better than the best.</p>
+                                                <p style="margin-top:1vh">UI designer specializing in crafting harmonious colour palettes and pixel
+                                                    perfect designs. Never settles and strives for the best. Is always iterating
+                                                    to find solutions that are even better than the best.</p>
                                             </div>
                                         </div>
 
@@ -677,32 +738,34 @@
                                                 </div>
                                                 <div class="col-sm-6">
 
-                                                        <div class="feature feature-1 boxed boxed--md boxed--border">
-                                                                <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
-                                                                <h4>Connect</h4>
-                                                                <i class="material-icons icon--xs margin-right">email</i>alexandra.barlow@sustify.de<br>
-                                                                <i class="socicon socicon-viber icon icon--xs margin-right"></i> +35 387 634 2685<br>
-                                                                
-                                                                <ul class="social-list list-inline list--hover text-center">
-                                                                    <li>
-                                                                        <a href="skype:S.C.Westphal_1?call" target="_blank">
-                                                                            <i class="socicon socicon-skype icon icon--xs"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                            <a href="https://www.linkedin.com/in/alexandra-barlow-0ab058129/" target="_blank">
-                                                                                <i class="socicon socicon-linkedin icon icon--xs"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    <li>
-                                                                        <a href="#" target="_blank">
-                                                                            <i class="socicon socicon-twitter icon icon--xs"></i>
-                                                                        </a>
-                                                                    </li>
-                                                            
-                                                                </ul>
-        
-                                                            </div>
+                                                    <div class="feature feature-1 boxed boxed--md boxed--border">
+                                                        <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
+                                                        <h4>Connect</h4>
+                                                        <i class="material-icons icon--xs margin-right">email</i>alexandra.barlow@sustify.de
+                                                        <br>
+                                                        <i class="socicon socicon-viber icon icon--xs margin-right"></i> +35 387 634 2685
+                                                        <br>
+
+                                                        <ul class="social-list list-inline list--hover text-center">
+                                                            <li>
+                                                                <a href="skype:S.C.Westphal?call" target="_blank">
+                                                                    <i class="socicon socicon-skype icon icon--xs"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.linkedin.com/in/alexandra-barlow-0ab058129/" target="_blank">
+                                                                    <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" target="_blank">
+                                                                    <i class="socicon socicon-twitter icon icon--xs"></i>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -729,7 +792,10 @@
                                                 <img alt="Image" src="img/lucia-circle.jpg" style="max-width: 60%;">
                                                 <h4>Lucia Della Putta-Dallara</h4>
                                                 <span style="color: #33cc99;">Subject Matter Expert</span>
-                                                <p style="margin-top:1vh"> An accomplished textile engineer with an entrepreneurial heart. Has international experience across textile, automotive and aeronautical industries. Is the brains behind Sustify’s courses.</p>
+                                                <p style="margin-top:1vh"> An accomplished industrial technologies and textile engineer with an entrepreneurial
+                                                    heart. Has international experience across textile, automotive and aeronautical
+                                                    industries.
+                                                </p>
                                             </div>
                                         </div>
 
@@ -771,34 +837,36 @@
                                                 </div>
                                                 <div class="col-sm-6">
 
-                                                        <div class="feature feature-1 boxed boxed--md boxed--border">
-                                                                <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
-                                                                <h4>Connect</h4>
-                                                                <i class="material-icons icon--xs margin-right">email</i>lucia.dellaputta@sustify.de<br>
-                                                                <i class="socicon socicon-viber icon icon--xs margin-right"></i>+33 679 429798<br>
-                                                                <br>
-                                                                
-                                                                <ul class="social-list list-inline list--hover text-center">
-                                                                    <li>
-                                                                        <a href="skype:luciadp67_1?call" target="_blank">
-                                                                            <i class="socicon socicon-skype icon icon--xs"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    
-                                                                    <li>
-                                                                            <a href=" https://www.linkedin.com/in/lucia-della-putta-599a3212/" target="_blank">
-                                                                                <i class="socicon socicon-linkedin icon icon--xs"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    <li>
-                                                                        <a href="https://twitter.com/LuciaDellaPutta" target="_blank">
-                                                                            <i class="socicon socicon-twitter icon icon--xs"></i>
-                                                                        </a>
-                                                                        
-                                                                    </li>
-                                                                </ul>
-        
-                                                            </div>
+                                                    <div class="feature feature-1 boxed boxed--md boxed--border">
+                                                        <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
+                                                        <h4>Connect</h4>
+                                                        <i class="material-icons icon--xs margin-right">email</i>lucia.dellaputta@sustify.de
+                                                        <br>
+                                                        <i class="socicon socicon-viber icon icon--xs margin-right"></i>+33 679 429798
+                                                        <br>
+                                                        <br>
+
+                                                        <ul class="social-list list-inline list--hover text-center">
+                                                            <li>
+                                                                <a href="skype:luciadp67?call" target="_blank">
+                                                                    <i class="socicon socicon-skype icon icon--xs"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href=" https://www.linkedin.com/in/lucia-della-putta-599a3212/" target="_blank">
+                                                                    <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://twitter.com/LuciaDellaPutta" target="_blank">
+                                                                    <i class="socicon socicon-twitter icon icon--xs"></i>
+                                                                </a>
+
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -826,7 +894,9 @@
                                                 <img alt="Image" src="img/padmaja.jpg" style="max-width: 60%;">
                                                 <h4>Padmaja Pai</h4>
                                                 <span style="color: #33cc99;">Local Program Manager</span>
-                                                <p style="margin-top:1vh"> A chemical engineer by training ;a trainer by profession. Always travelling to visit factories around the Indian subcontinent to train workers. She’s a go-getter and sees life full of opportunities.</p>
+                                                <p style="margin-top:1vh"> A chemical engineer by training ;a trainer by profession. Always travelling
+                                                    to visit factories around the Indian subcontinent to train workers. She’s
+                                                    a go-getter and sees life full of opportunities.</p>
                                             </div>
                                         </div>
 
@@ -838,8 +908,9 @@
                                                     <div class="feature feature-1 boxed boxed--md boxed--border">
                                                         <i class="icon icon--md icon-Like"></i>
                                                         <h4>Likes</h4>
-                                                        <p> Cooking and eating spicy food, Indian hospitality, Unconventional approaches
-                                                            </p>
+                                                        <p> Cooking and eating spicy food, Indian hospitality, Unconventional
+                                                            approaches
+                                                        </p>
 
                                                     </div>
                                                 </div>
@@ -850,7 +921,7 @@
                                                         <p> Hypocrisy
 
                                                         </p>
-<br>
+                                                        <br>
                                                     </div>
                                                 </div>
                                             </div>
@@ -861,41 +932,44 @@
                                                     <div class="feature feature-1 boxed boxed--md boxed--border">
                                                         <i class="icon icon--md icon-Suitcase"></i>
                                                         <h4>Experience</h4>
-                                                        <p> Social compliance management systems, CSR, trainings in labour intensive industries, sustainable project management
-                                                                
+                                                        <p> Social compliance management systems, CSR, trainings in labour intensive
+                                                            industries, sustainable project management
+
                                                         </p>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
 
-                                                        <div class="feature feature-1 boxed boxed--md boxed--border">
-                                                                <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
-                                                                <h4>Connect</h4>
-                                                                <i class="material-icons icon--xs margin-right">email</i>paipadmaja@yahoo.com<br>
-                                                                <i class="socicon socicon-viber icon icon--xs margin-right"></i>+91 984 5214794<br>
-                                                                
-                                                                <ul class="social-list list-inline list--hover text-center">
-                                                                    <li>
-                                                                        <a href="skype:Padmaja19_1?call" target="_blank">
-                                                                            <i class="socicon socicon-skype icon icon--xs"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    
-                                                                    <li>
-                                                                            <a href="https://www.linkedin.com/in/padmaja-pai-72402420" target="_blank">
-                                                                                <i class="socicon socicon-linkedin icon icon--xs"></i>
-                                                                            </a>
-                                                                        </li>
-                                                                    <li>
-                                                                        <a href="#" target="_blank">
-                                                                            <i class="socicon socicon-twitter icon icon--xs"></i>
-                                                                        </a>
-                                                                        
-                                                                    </li>
-                                                                </ul>
-        
-                                                            </div>
+                                                    <div class="feature feature-1 boxed boxed--md boxed--border">
+                                                        <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
+                                                        <h4>Connect</h4>
+                                                        <i class="material-icons icon--xs margin-right">email</i>paipadmaja@yahoo.com
+                                                        <br>
+                                                        <i class="socicon socicon-viber icon icon--xs margin-right"></i>+91 984 5214794
+                                                        <br>
+
+                                                        <ul class="social-list list-inline list--hover text-center">
+                                                            <li>
+                                                                <a href="skype:Padmaja19?call" target="_blank">
+                                                                    <i class="socicon socicon-skype icon icon--xs"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="https://www.linkedin.com/in/padmaja-pai-72402420" target="_blank">
+                                                                    <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" target="_blank">
+                                                                    <i class="socicon socicon-twitter icon icon--xs"></i>
+                                                                </a>
+
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -921,7 +995,7 @@
             </div>
         </section>
 
-
+</div>
 
         <section class="imagebg space--md parallax" data-overlay="2">
             <div class="background-image-holder">
@@ -1210,7 +1284,6 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/flickity.min.js"></script>
-
     <script src="js/parallax.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>

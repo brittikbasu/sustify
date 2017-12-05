@@ -1,63 +1,66 @@
 /*! Place your custom styles here */
+
 a {
     text-decoration: none !important;
 }
 
-section.space--sm, footer.space--sm {
-
+section.space--sm,
+footer.space--sm {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.highlight, a{
-    color:#33cc99;
+.highlight,
+a {
+    color: #33cc99;
 }
 
-.bg--primary-2{
-    background:#66cc99;
+.bg--primary-2 {
+    background: #66cc99;
 }
 
-.label:not([class*='bg--']){
-    background:#003c41;
-    
+.label:not([class*='bg--']) {
+    background: #003c41;
 }
 
 .boxed.boxed--lg {
     padding: 3.4em;
 }
 
-.menu-fullscreen .modal-content .modal-close-cross{
+@media (min-width:1024px) {
+    .full-height {
+        height: 90.3vh;
+    }
+}
+
+.menu-fullscreen .modal-content .modal-close-cross {
     right: 3.3em;
     top: 0.2em;
     font-size: 35px;
-    
 }
-@media (max-width:416px){
-    .menu-fullscreen .modal-content .modal-close-cross{
+
+@media (max-width:416px) {
+    .menu-fullscreen .modal-content .modal-close-cross {
         right: 42%;
         top: 80%;
         font-size: 30px;
         text-align: center;
         padding-top: 15px;
-        
     }
-
-    .bar .logo{
+    /* .bar .logo{
         margin-left:8%;
-        margin-top: 2%;
     }
-
+    */
 }
 
 
 
-.bar.pos-fixed:not([class*='bg-']) {
-    background: rgba(255, 255, 255, 0.89);
-}
-
-.bar .logo{
+/*.bar .logo{
     margin-left:4%;
+            margin-top: 2%;
+
     }
+    */
 
 .flickity-prev-next-button {
     opacity: .5;
@@ -71,44 +74,49 @@ section.space--sm, footer.space--sm {
 }
 
 .menu-fullscreen:before {
-    background:rgba(25, 60, 65, 0.9);
-    
-}
-.back-button{
-    height:50px;
-    width:90px;
-    position: fixed;
-    top:0;
-    left:0;
-    margin-top:2vh;
-}
-.back-button p{
-    vertical-align:super;
-    display:inline-block;
-}
-#contact .icon{
-    font-size: 2em;
-    
+    background: rgba(25, 60, 65, 0.9);
 }
 
-.material-icons{
+.back-button {
+    height: 50px;
+    width: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 2vh;
+}
+
+.back-button p {
+    vertical-align: super;
+    display: inline-block;
+}
+
+#contact .icon {
+    font-size: 2em;
+}
+
+.material-icons {
     font-size: 15px;
 }
 
-
 .slider[data-paging="true"]:not(section) .flickity-page-dots {
     top: -4vh;
-    height:15px;
-    width:90%;
-    margin:0 auto;
-}
-.bar{
-    min-height: 9vh;
+    height: 15px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.team .margin-right{
-    margin-right:5px
+
+/*.bar{
+    min-height: 9vh;
 }
+*/
+
+.team .margin-right {
+    margin-right: 5px
+}
+
+
 /*
 .bar{
 padding: 2em 0;
