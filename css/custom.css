@@ -58,6 +58,7 @@ a {
 
 .bg--primary .boxed:not(.imagebg) p {
     margin-top: -9px;
+    color: rgb(89, 128, 132);
 }
 
 .feature-2 .feature__body {
