@@ -54,6 +54,24 @@ a {
 }
 
 
+/* intelligent alogorithm #about */
+
+.bg--primary .boxed:not(.imagebg) p {
+    margin-top: -9px;
+}
+
+.feature-2 .feature__body {
+    margin-top: -5px;
+}
+
+.bar.pos-fixed:not([class*='bg-']) {
+    background: rgba(255, 255, 255, 0.89);
+}
+.bg--primary .boxed:not(.imagebg) {
+    margin-top: 6%;
+}
+
+
 
 /*.bar .logo{
     margin-left:4%;
