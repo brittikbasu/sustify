@@ -54,6 +54,27 @@ a {
 }
 
 
+/* realtime progress tracking white box height matching with sustificates and sustiscore */
+
+@media (min-width:768px) and (max-width:1201px) {
+    .space {
+        height: 138px;
+    }
+}
+
+@media (min-width:1025px) and (max-width: 1199px) {
+    .space {
+        height: 157px;
+    }
+}
+
+@media (min-width:1200px) {
+    .space {
+        height: 17px;
+    }
+}
+
+
 /* intelligent alogorithm #about */
 
 .bg--primary .boxed:not(.imagebg) p {
@@ -68,10 +89,10 @@ a {
 .bar.pos-fixed:not([class*='bg-']) {
     background: rgba(255, 255, 255, 0.89);
 }
+
 .bg--primary .boxed:not(.imagebg) {
     margin-top: 6%;
 }
-
 
 
 /*.bar .logo{
