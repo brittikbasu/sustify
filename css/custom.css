@@ -55,12 +55,19 @@ a {
 
 
 /* realtime progress tracking white box height matching with sustificates and sustiscore */
-
+@media (min-width:768px){
+    .sonja-2{
+        height:269px;
+        width:100%;
+    }
+}    
 @media (min-width:768px) and (max-width:1201px) {
     .space {
         height: 138px;
     }
+
 }
+ 
 
 @media (min-width:1025px) and (max-width: 1199px) {
     .space {
