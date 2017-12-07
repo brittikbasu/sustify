@@ -1,5 +1,4 @@
 /*! Place your custom styles here */
-
 a {
     text-decoration: none !important;
 }
@@ -47,14 +46,22 @@ a {
         text-align: center;
         padding-top: 15px;
     }
-    /* .bar .logo{
-        margin-left:8%;
-    }
-    */
+  
 }
 
 
-/* realtime progress tracking white box height matching with sustificates and sustiscore */
+/* contact phone number email... */
+.feature-2 p:last-child {
+   /* display: inline-block;*/
+    vertical-align: top;
+}
+
+.feature-2 i {
+    width: 18%;
+    float: none;
+}
+/* x */
+
 @media (min-width:768px){
     .sonja-2{
         height:269px;
@@ -82,7 +89,6 @@ a {
 }
 
 
-/* intelligent alogorithm #about */
 
 .bg--primary .boxed:not(.imagebg) p {
     margin-top: -9px;
@@ -102,12 +108,7 @@ a {
 }
 
 
-/*.bar .logo{
-    margin-left:4%;
-            margin-top: 2%;
 
-    }
-    */
 
 .flickity-prev-next-button {
     opacity: .5;
@@ -154,20 +155,11 @@ a {
 }
 
 
-/*.bar{
-    min-height: 9vh;
-}
-*/
+
 
 .team .margin-right {
     margin-right: 5px
 }
 
 
-/*
-.bar{
-padding: 2em 0;
-position: absolute;
-left: 50%;
-}
-*/
+
