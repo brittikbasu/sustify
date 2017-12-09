@@ -7,10 +7,32 @@ a {
     }
 }
 
+
+.container{
+    @media (min-width: 992px){
+        width: 990px;
+}
+}
+
+
+/* section top padding for ipad frame */
+section.space--sm, footer.space--sm {
+    padding-top: 1.95238095em;
+}
+
+
 section.space--sm,
 footer.space--sm {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+/* menu positioning on sonja's laptop */
+
+@media (max-height: 600px) and (min-width: 768px) {
+.pos-vertical-center {
+    top: 20vh;
+}
 }
 
 .bg--primary-2 {
@@ -173,6 +195,3 @@ footer.space--sm {
 .team .margin-right {
     margin-right: 5px
 }
-
-
-
