@@ -1,0 +1,178 @@
+/*! Place your custom styles here */
+a {
+    text-decoration: none !important;
+    .highlight{
+        color: #33cc99;
+        
+    }
+}
+
+section.space--sm,
+footer.space--sm {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bg--primary-2 {
+    background: #66cc99;
+}
+
+.bg--primary .boxed:not(.imagebg) p {
+    margin-top: -9px;
+    color: rgb(89, 128, 132);
+}
+
+
+
+.label:not([class*='bg--']) {
+    background: #003c41;
+}
+
+.boxed.boxed--lg {
+    padding: 3.4em;
+}
+
+
+
+.flickity-prev-next-button {
+    @media (max-width: 990px){
+    display: block;
+    }
+}
+
+
+.menu-fullscreen .modal-content .modal-close-cross {
+    right: 3.3em;
+    top: 0.2em;
+    font-size: 35px;
+
+
+    @media (max-width:416px) {
+            right: 42%;
+            top: 80%;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+}
+
+.menu-fullscreen:before {
+    background: rgba(25, 60, 65, 0.9);
+}
+
+
+
+
+
+/* contact phone number email... */
+.feature-2{
+    p:last-child {
+        /* display: inline-block;*/
+         vertical-align: top;
+     }
+     i {
+        width: 18%;
+        float: none;
+    }
+
+} 
+
+
+    .sonja-2{
+        @media (min-width:768px){
+            
+        height:269px;
+        width:100%;
+    }
+}    
+
+ 
+.space{
+    @media (min-width:1025px) and (max-width: 1199px) {
+        height: 157px;
+        
+    }      
+    @media (min-width:1200px) {
+        height: 17px;
+        
+    }
+    @media (min-width:768px) and (max-width:1201px) {
+            height: 138px;
+        }
+
+}
+
+
+
+
+
+
+.feature-2 .feature__body {
+    margin-top: -5px;
+}
+
+.bar.pos-fixed:not([class*='bg-']) {
+    background: rgba(255, 255, 255, 0.89);
+}
+
+.bg--primary .boxed:not(.imagebg) {
+    margin-top: 6%;
+}
+
+
+
+
+.flickity-prev-next-button {
+    opacity: .5;
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    font-size: 1.5em;
+    margin-top: 0vh;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+
+
+.back-button {
+    height: 50px;
+    width: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 2vh;
+
+    p {
+        vertical-align: super;
+        display: inline-block;
+    }
+
+}
+
+
+#contact .icon {
+    font-size: 2em;
+}
+
+.material-icons {
+    font-size: 15px;
+}
+
+.slider[data-paging="true"]:not(section) .flickity-page-dots {
+    top: -4vh;
+    height: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+.team .margin-right {
+    margin-right: 5px
+}
+
+
+
