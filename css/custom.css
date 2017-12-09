@@ -123,4 +123,27 @@ footer.space--sm {
 .team .margin-right {
   margin-right: 5px; }
 
+.curved {
+  width: 100vw;
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #fafafa;
+  margin-top: -240px; }
+
+.curved:after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 300px;
+  width: 120%;
+  /* border: 5px solid transparent; */
+  transform: translate(-50%, 50%);
+  box-shadow: 0px 0px 0px 200px #fafafa;
+  border-radius: 50%;
+  z-index: -1; }
+
 /*# sourceMappingURL=custom.css.map */
