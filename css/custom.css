@@ -81,6 +81,8 @@ footer.space--sm {
 
 .bar.pos-fixed:not([class*='bg-']) {
   background: rgba(255, 255, 255, 0.89); }
+.bar.bar--sm {
+  padding: 1.15em 0; }
 
 .bg--primary .boxed:not(.imagebg) {
   margin-top: 6%; }
