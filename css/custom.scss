@@ -203,11 +203,12 @@ footer.space--sm {
     margin-right: 5px
 }
 
-
-
+.menu-toggle{
+    background: #fafafa;    
+}
 .curved {
     width: 100vw;
-    height: 210px;
+    height: 240px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -228,4 +229,14 @@ footer.space--sm {
     border-radius: 50%;
     z-index: -1;
   }
-  
+
+  [data-overlay] *:not(.container):not(.background-image-holder) {
+    z-index: 1;
+    padding-top: 5vh;
+}
+section.space--xxs, footer.space--xxs {
+    padding-top: 1.85714286em;
+    padding-bottom: 1.85714286em;
+}
+
+
