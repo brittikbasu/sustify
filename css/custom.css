@@ -140,7 +140,7 @@ footer.space--sm {
   display: inline-block; }
 
 .fadeInUpBig {
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-fill-mode: both;
   animation-name: fadeInUpBig; }
 
@@ -160,7 +160,7 @@ footer.space--sm {
   to {
     transform: scale3d(1, 1, 1); } }
 .rubberBand {
-  animation-duration: 1.5s;
+  animation-duration: 1.4s;
   animation-fill-mode: both;
   animation-name: rubberBand; }
 
@@ -207,5 +207,17 @@ footer.space--sm {
 section.space--xxs, footer.space--xxs {
   padding-top: 1.85714286em;
   padding-bottom: 1.85714286em; }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+.fadeInDown {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown; }
 
 /*# sourceMappingURL=custom.css.map */
