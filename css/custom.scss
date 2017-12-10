@@ -206,6 +206,72 @@ footer.space--sm {
 .menu-toggle{
     background: #fafafa;    
 }
+
+@keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .disappear{
+      display: none;
+  }
+  .appear{
+      display:inline-block;
+  }
+ 
+  .fadeInUpBig {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: fadeInUpBig;
+  }
+
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .rubberBand {
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+    animation-name: rubberBand;
+  }
+
+  .cloud{
+  margin-top: -12vh; width: 120px;
+  z-index: 5;
+  }
 .curved {
     width: 100vw;
     height: 240px;

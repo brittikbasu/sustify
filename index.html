@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="col-md-11 col-sm-10 col-xs-9">
-                            <div class="">
+                            <div class="bar__module">
                                 <div class="modal-instance pull-right">
                                     <a class="modal-trigger menu-toggle" href="#">
                                         <i class="stack-interface stack-menu"></i>
@@ -93,7 +93,7 @@
 
     <div class="main-container">
 
-        <section class="switchable space--xxs bg--secondary">
+        <section class="switchable space--xxs bg--secondary" style="z-index:1">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 col-sm-5 col-xs-12 hidden-sm hidden-md hidden-lg" style="margin-top: -15%;">
@@ -122,10 +122,10 @@
         </section>
         
         
-        <section class="imagebg parallax space--lg" data-overlay="2">
+        <section class="imagebg parallax space--lg" data-overlay="2" style="z-index:5">
                 <div class="curved"> 
-                    <a class="inner-link" href="#about" target="_self">
-                        <img src="img/know.png" style="margin-top: -7vh; width: 120px;">
+                    <a id="cloudup" class="inner-link invisible" href="#about" target="_self">
+                        <img src="img/know.png" class="cloud">
                     </a>
                 </div>
                 
@@ -908,6 +908,7 @@
     <script src="js/parallax.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
