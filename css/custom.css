@@ -34,10 +34,13 @@ footer.space--sm {
 .boxed.boxed--lg {
   padding: 3.4em; }
 
-@media (max-width: 990px) {
-  .flickity-prev-next-button {
-    display: block; } }
-
+/*
+.flickity-prev-next-button {
+    @media (max-width: 990px){
+    display: block;
+    }
+}
+*/
 .menu-fullscreen .modal-content .modal-close-cross {
   right: 3.3em;
   top: 0.2em;
@@ -87,16 +90,6 @@ footer.space--sm {
 .bg--primary .boxed:not(.imagebg) {
   margin-top: 6%; }
 
-.flickity-prev-next-button {
-  opacity: .5;
-  border-radius: 50%;
-  width: 5vw;
-  height: 5vw;
-  font-size: 1.5em;
-  margin-top: 0vh;
-  margin-left: -24px;
-  margin-right: -24px; }
-
 .back-button {
   height: 50px;
   width: 90px;
@@ -114,12 +107,42 @@ footer.space--sm {
 .material-icons {
   font-size: 15px; }
 
+/* 
+================
+slider styles
+================ 
+*/
 .slider[data-paging="true"]:not(section) .flickity-page-dots {
   top: -4vh;
   height: 15px;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 10px; }
 
+@media (max-width: 767px) {
+  .flickity-viewport {
+    min-height: 1180px; }
+
+  .slider .slides li .feature:not(.feature-9) {
+    margin-bottom: 1vh; } }
+.slider .slides li .feature:not(.feature-9) {
+  margin-bottom: 1.9vh; }
+
+.flickity-prev-next-button {
+  opacity: .5;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  font-size: 1.5em;
+  margin-top: 0vh;
+  margin-left: -24px;
+  margin-right: -24px; }
+
+/* 
+================
+x slider styles x
+================ 
+*/
 .team .margin-right {
   margin-right: 5px; }
 
