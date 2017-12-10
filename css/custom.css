@@ -170,7 +170,7 @@ footer.space--sm {
 
 .curved {
   width: 100vw;
-  height: 240px;
+  height: 275px;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -193,7 +193,7 @@ footer.space--sm {
 
 [data-overlay] *:not(.container):not(.background-image-holder) {
   z-index: 1;
-  padding-top: 5vh; }
+  padding-top: 6vh; }
 
 section.space--xxs, footer.space--xxs {
   padding-top: 1.85714286em;
