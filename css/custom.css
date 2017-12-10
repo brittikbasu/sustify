@@ -170,12 +170,15 @@ footer.space--sm {
 
 .curved {
   width: 100vw;
-  height: 275px;
+  height: 257px;
   position: relative;
   overflow: hidden;
   text-align: center;
   color: #fafafa;
   margin-top: -240px; }
+  @media screen and (min-height: 645px) {
+    .curved {
+      height: 275px; } }
 
 .curved:after {
   content: '';
