@@ -5,9 +5,9 @@
         console.log("animation 0 completed");
             }, 600);
 
-    setTimeout(function(){ 
+   /* setTimeout(function(){ 
 document.getElementById("cloudup").className = "inner-link appear fadeInUpBig";
 console.log("animation 1 completed");
     }, 1300);
-
+*/
   })();
