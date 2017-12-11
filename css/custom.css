@@ -217,6 +217,9 @@ x slider styles x
   @media screen and (min-height: 854px) {
     .curved {
       height: 26.1vh; } }
+  @media screen and (max-width: 450px) {
+    .curved {
+      display: none; } }
 
 .curved:after {
   content: '';
@@ -251,5 +254,9 @@ section.space--xxs, footer.space--xxs {
   animation-duration: 1.5s;
   animation-fill-mode: both;
   animation-name: fadeInDown; }
+
+@media screen and (max-width: 450px) {
+  section.space--xxs, footer.space--xxs {
+    padding-top: 3.85714286em; } }
 
 /*# sourceMappingURL=custom.css.map */
