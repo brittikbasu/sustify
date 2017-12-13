@@ -1,3 +1,8 @@
+@font-face{
+	font-family: "Noto Serif";
+	src: url("../fonts/noto-serif/NotoSerif-Regular.ttf");
+}
+
 body{
   font-family: 'Noto Serif','Lato','Verdana','Helvetica', sans-serif;
 }
