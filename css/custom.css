@@ -281,4 +281,8 @@ body {
    border-color: red;
    */ }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  .digital-solution {
+    display: block; } }
+
 /*# sourceMappingURL=custom.css.map */
