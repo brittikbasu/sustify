@@ -14,12 +14,11 @@ a {
 }
 }
 
-
-/* section top padding for ipad frame */
-section.space--sm, footer.space--sm {
-    padding-top: 1.95238095em;
+.logo-top{
+    @media (max-width:420px) {
+        margin-top: 1.15vh;
+    }
 }
-
 
 section.space--sm,
 footer.space--sm {
@@ -39,10 +38,15 @@ footer.space--sm {
     background: #66cc99;
 }
 
-.bg--primary .boxed:not(.imagebg) p {
-    margin-top: -9px;
-    color: rgb(89, 128, 132);
-}
+.bg--primary .boxed:not(.imagebg){
+    margin-top: 8.5%;
+    p{
+        margin-top: -9px;
+        color: rgb(89, 128, 132);
+        line-height: 1.3em;
+        
+    }
+} 
 
 
 
@@ -145,9 +149,6 @@ footer.space--sm {
 }
 
 
-.bg--primary .boxed:not(.imagebg) {
-    margin-top: 6%;
-}
 
 
 
@@ -297,6 +298,25 @@ x slider styles x
     animation-name: rubberBand;
   }
 
+  .white-box{
+      @media (max-width:420px){
+        text-align: center;
+        
+        p{
+          line-height:1.24em;
+      }
+      .feature-2 p:first-of-type {
+          margin-top: -1em;
+      }
+      h5{
+          line-height: 3em;
+      }
+    }
+    .col-sm-6{
+        margin-bottom: 5vh;
+    }
+  }
+
   .cloud{
   margin-top: -3vh; 
   width: 120px;
@@ -382,5 +402,10 @@ section.space--xxs, footer.space--xxs {
     section.space--xxs, footer.space--xxs {
         padding-top: 3.85714286em;
     }
+}
+
+.lead{
+    color:rgba(89, 128, 132, 0.65);
+    
 }
   
