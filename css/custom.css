@@ -135,8 +135,8 @@ slider styles
   height: 5vw;
   font-size: 1.5em;
   margin-top: 0vh;
-  margin-left: -24px;
-  margin-right: -24px; }
+  margin-left: -1vw;
+  margin-right: -1vw; }
 
 /* 
 ================
@@ -272,5 +272,13 @@ section.space--xxs, footer.space--xxs {
     padding-top: 3.85714286em; } }
 .lead {
   color: rgba(89, 128, 132, 0.65); }
+
+body {
+  color: rgba(89, 128, 132, 0.65); }
+
+.border {
+  /* border: 1px solid;
+   border-color: red;
+   */ }
 
 /*# sourceMappingURL=custom.css.map */
