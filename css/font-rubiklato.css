@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
 	font-family: 'noto_serifregular';
 	src: url('../fonts/notoserif_regular_macromanNotoSerif-Regular-webfont.eot');
@@ -13,14 +12,6 @@
 }
 
 
-
-=======
-@font-face{
-	font-family: "Noto Serif";
-	src: url("../fonts/noto-serif/NotoSerif-Regular.ttf");
-}
-
->>>>>>> 05e7550ee7e7a65f4cc5b90eaf17966c7723034a
 body{
   font-family: 'noto_serifregular, Noto Serif','Lato','Verdana','Helvetica', sans-serif;
 }
