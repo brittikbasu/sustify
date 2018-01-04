@@ -1,4 +1,16 @@
 /*! Place your custom styles here */
+$primary:#33cc99;
+$primary-2:#66cc99;
+$primary-dark: rgb(89, 128, 132);
+$text:  rgb(154, 179, 181);
+;
+$primary-light:rgba(102, 204, 153, 0.32941176470588235);
+$secondary: #003c41;
+
+$secondary-light: rgba(0, 60, 65, 0.70);
+
+
+
 @font-face{
     font-family: "Noto Serif";
     src: url("../fonts/noto-serif/NotoSerif-Regular.ttf");
@@ -6,7 +18,7 @@
 a {
     text-decoration: none !important;
     .highlight{
-        color: #33cc99;
+        color: $primary;
         
     }
 }
@@ -39,14 +51,14 @@ footer.space--sm {
 }
 
 .bg--primary-2 {
-    background: #66cc99;
+    background: $primary-dark;
 }
 
 .bg--primary .boxed:not(.imagebg){
     margin-top: 8.5%;
     p{
         margin-top: -9px;
-        color: rgb(89, 128, 132);
+        color: $primary-dark;
         line-height: 1.3em;
         
     }
@@ -204,7 +216,7 @@ margin-bottom:10px;
 
 
     .flickity-viewport{
-        min-height:1180px;
+        min-height:774px;
     }
     .slider .slides li .feature:not(.feature-9){
         margin-bottom: 1vh;
@@ -410,7 +422,7 @@ section.space--xxs, footer.space--xxs {
 }
 
 .lead{
-    color:rgba(89, 128, 132, 0.65);
+    color:$text;
     
 }
 body{
@@ -428,4 +440,134 @@ body{
 .digital-solution{
 display: block;
 }
+}
+
+
+/* 
+================
+Mobile team styles
+================ 
+*/
+.team{
+    
+    @media (max-width:767px) {
+        .flickity-viewport {
+            min-height: 775px;
+        }
+        .slider .slides li .feature:not(.feature-9) {
+            margin-bottom: 1vh;
+        }
+    }
+
+.team-member {
+    padding:0;
+    width:80vw;
+    margin: 0 auto;
+    .tab-button {
+        display: inline-block;
+    }
+    @media (max-width: 767px) {
+        section,
+        footer,
+        section.section--even {
+            padding: 0;
+        }
+    }
+    .tabs {
+        display: inline-block;
+        border: 0;
+        margin-bottom: 0;
+        li {
+            padding: 0.92857143em 1.25em;
+        }
+        
+    }
+    @media (max-width: 767px){
+     .boxed {
+        padding: 0;
+    }
+} 
+
+.tabs-container[data-content-align="left"] .tabs-content {
+    text-align: left;
+    padding: 29px;
+
+}
+.tabs li.active .tab__title span {
+    color: $secondary-light;
+}
+
+@media (max-width: 767px){
+    .tabs li:not(:last-child), .tabs li:last-child{
+  border-bottom: 1px solid $primary-light;
+}
+}
+
+
+.icon {
+    line-height: 0.5em;
+    font-size: 1.7em;
+    margin-top:13px;
+}
+
+
+a{
+    color:$text;
+    font-weight: 400;
+    cursor: grab;
+}
+
+
+
+
+} }
+
+//team
+
+
+
+@media (max-width: 990px){
+    .flickity-prev-next-button {
+    display: block;
+    opacity: .5;
+    height: 40px;
+    width: 40px;
+    margin-top: -8.6vh;
+    border-radius: 10%;
+}
+}
+
+
+.back-to-top{
+    @media (max-width:420px){
+    position: absolute;
+    padding: 11px;
+    background: $primary-dark;
+    border: none;
+}
+}
+
+
+
+@media (max-width: 990px)
+{
+.bar.pos-fixed {
+    position: fixed;
+    top: 0;
+    animation: fadeInDown 0.3s ease-out forwards;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+}
+
+.bar--absolute, .pos-fixed {
+    z-index: 99;
+    width: 100%;
+    height:78px;
+}
+}
+
+
+
+.feature i + h5 {
+    margin-top: 0.2em;
 }

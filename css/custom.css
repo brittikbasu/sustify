@@ -25,7 +25,7 @@ footer.space--sm {
   .pos-vertical-center {
     top: 20vh; } }
 .bg--primary-2 {
-  background: #66cc99; }
+  background: #598084; }
 
 .bg--primary .boxed:not(.imagebg) {
   margin-top: 8.5%; }
@@ -125,7 +125,7 @@ slider styles
 
 @media (max-width: 767px) {
   .flickity-viewport {
-    min-height: 1180px; }
+    min-height: 774px; }
 
   .slider .slides li .feature:not(.feature-9) {
     margin-bottom: 1vh; } }
@@ -275,7 +275,7 @@ section.space--xxs, footer.space--xxs {
   section.space--xxs, footer.space--xxs {
     padding-top: 3.85714286em; } }
 .lead {
-  color: rgba(89, 128, 132, 0.65); }
+  color: #9ab3b5; }
 
 body {
   color: rgba(89, 128, 132, 0.65); }
@@ -288,5 +288,81 @@ body {
 @media (min-width: 992px) and (max-width: 1024px) {
   .digital-solution {
     display: block; } }
+/* 
+================
+Mobile team styles
+================ 
+*/
+@media (max-width: 767px) {
+  .team .flickity-viewport {
+    min-height: 775px; }
+  .team .slider .slides li .feature:not(.feature-9) {
+    margin-bottom: 1vh; } }
+.team .team-member {
+  padding: 0;
+  width: 80vw;
+  margin: 0 auto; }
+  .team .team-member .tab-button {
+    display: inline-block; }
+  @media (max-width: 767px) {
+    .team .team-member section,
+    .team .team-member footer,
+    .team .team-member section.section--even {
+      padding: 0; } }
+  .team .team-member .tabs {
+    display: inline-block;
+    border: 0;
+    margin-bottom: 0; }
+    .team .team-member .tabs li {
+      padding: 0.92857143em 1.25em; }
+  @media (max-width: 767px) {
+    .team .team-member .boxed {
+      padding: 0; } }
+  .team .team-member .tabs-container[data-content-align="left"] .tabs-content {
+    text-align: left;
+    padding: 29px; }
+  .team .team-member .tabs li.active .tab__title span {
+    color: rgba(0, 60, 65, 0.7); }
+  @media (max-width: 767px) {
+    .team .team-member .tabs li:not(:last-child), .team .team-member .tabs li:last-child {
+      border-bottom: 1px solid rgba(102, 204, 153, 0.3294117647); } }
+  .team .team-member .icon {
+    line-height: 0.5em;
+    font-size: 1.7em;
+    margin-top: 13px; }
+  .team .team-member a {
+    color: #9ab3b5;
+    font-weight: 400;
+    cursor: grab; }
+
+@media (max-width: 990px) {
+  .flickity-prev-next-button {
+    display: block;
+    opacity: .5;
+    height: 40px;
+    width: 40px;
+    margin-top: -8.6vh;
+    border-radius: 10%; } }
+@media (max-width: 420px) {
+  .back-to-top {
+    position: absolute;
+    padding: 11px;
+    background: #598084;
+    border: none; } }
+
+@media (max-width: 990px) {
+  .bar.pos-fixed {
+    position: fixed;
+    top: 0;
+    animation: fadeInDown 0.3s ease-out forwards;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04); }
+
+  .bar--absolute, .pos-fixed {
+    z-index: 99;
+    width: 100%;
+    height: 78px; } }
+.feature i + h5 {
+  margin-top: 0.2em; }
 
 /*# sourceMappingURL=custom.css.map */
