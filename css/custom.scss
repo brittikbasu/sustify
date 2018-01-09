@@ -597,3 +597,14 @@ Mobile team styles
             height: 10px;
         }
     }
+
+    .menu-toggle{
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    .menu-toggle i {
+        font-size: 2em;
+        
+        color: $text;
+    }
