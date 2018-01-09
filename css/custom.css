@@ -28,13 +28,13 @@ footer.space--sm {
   .pos-vertical-center {
     top: 20vh; } }
 .bg--primary-2 {
-  background: #598084; }
+  background: #6e9ba3; }
 
 .bg--primary .boxed:not(.imagebg) {
   margin-top: 8.5%; }
   .bg--primary .boxed:not(.imagebg) p {
     margin-top: -9px;
-    color: #598084;
+    color: #6e9ba3;
     line-height: 1.3em; }
 
 .label:not([class*='bg--']) {
@@ -280,7 +280,7 @@ footer.space--xxs {
   footer.space--xxs {
     padding-top: 3.85714286em; } }
 .lead {
-  color: #9ab3b5; }
+  color: #648787; }
 
 body {
   color: rgba(89, 128, 132, 0.65); }
@@ -332,7 +332,7 @@ Mobile team styles
     font-size: 1.7em;
     margin-top: 13px; }
   .team .team-member a {
-    color: #9ab3b5;
+    color: #648787;
     font-weight: 400;
     cursor: grab; }
 
@@ -350,7 +350,7 @@ Mobile team styles
   .back-to-top {
     position: absolute;
     padding: 11px;
-    background: #598084;
+    background: #6e9ba3;
     border: none; } }
 
 @media (max-width: 990px) {
