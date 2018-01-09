@@ -40,9 +40,6 @@ footer.space--sm {
 .label:not([class*='bg--']) {
   background: #003c41; }
 
-.boxed.boxed--lg {
-  padding: 3.4em; }
-
 /*
 .flickity-prev-next-button {
     @media (max-width: 990px){
