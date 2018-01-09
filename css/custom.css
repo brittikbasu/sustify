@@ -258,7 +258,8 @@ x slider styles x
   z-index: 1;
   padding-top: 2vh; }
 
-section.space--xxs, footer.space--xxs {
+section.space--xxs,
+footer.space--xxs {
   padding-top: 1.85714286em;
   padding-bottom: 1.85714286em; }
 
@@ -275,7 +276,8 @@ section.space--xxs, footer.space--xxs {
   animation-name: fadeInDown; }
 
 @media screen and (max-width: 450px) {
-  section.space--xxs, footer.space--xxs {
+  section.space--xxs,
+  footer.space--xxs {
     padding-top: 3.85714286em; } }
 .lead {
   color: #9ab3b5; }
@@ -322,7 +324,8 @@ Mobile team styles
   .team .team-member .tabs li.active .tab__title span {
     color: rgba(0, 60, 65, 0.7); }
   @media (max-width: 767px) {
-    .team .team-member .tabs li:not(:last-child), .team .team-member .tabs li:last-child {
+    .team .team-member .tabs li:not(:last-child),
+    .team .team-member .tabs li:last-child {
       border-bottom: 1px solid rgba(102, 204, 153, 0.3294117647); } }
   .team .team-member .icon {
     line-height: 0.5em;
@@ -358,7 +361,8 @@ Mobile team styles
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04); }
 
-  .bar--absolute, .pos-fixed {
+  .bar--absolute,
+  .pos-fixed {
     z-index: 99;
     width: 100%;
     height: 78px; } }
@@ -369,15 +373,18 @@ Mobile team styles
   section.space--xxs {
     padding-top: 2.7em; }
 
-  section.space--xs, footer.space--xs {
+  section.space--xs,
+  footer.space--xs {
     padding-top: 2em;
     padding-bottom: 0; }
 
-  section.space--xxs, footer.space--xxs {
+  section.space--xxs,
+  footer.space--xxs {
     padding-top: 1.85714286em;
     padding-bottom: 0em; }
 
-  section.space--xxs, footer.space--xxs {
+  section.space--xxs,
+  footer.space--xxs {
     padding-bottom: 0; }
 
   .course-library {
@@ -403,9 +410,19 @@ Mobile team styles
     margin-bottom: 1.5em; }
 
   .touch h2 {
-    margin-top: -0.9em; } }
+    margin-top: -0.9em; }
+
+  .course-library {
+    padding: 0; }
+
+  .brands-love {
+    padding: 0; }
+
+  .team {
+    padding: 0; } }
 @media (min-width: 451px) {
-  section.space--md, footer.space--md {
+  section.space--md,
+  footer.space--md {
     padding-top: 4em;
     padding-bottom: 4em; }
 
@@ -413,7 +430,8 @@ Mobile team styles
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: -50px; }
-    .course-library section.space--xs, .course-library footer.space--xs {
+    .course-library section.space--xs,
+    .course-library footer.space--xs {
       padding-bottom: 0; }
 
   .brands-love {
@@ -421,6 +439,10 @@ Mobile team styles
     margin-bottom: -70px; }
 
   .team {
-    padding-top: 2em; } }
+    padding-top: 2em; }
+
+  .break {
+    width: 100%;
+    height: 10px; } }
 
 /*# sourceMappingURL=custom.css.map */
