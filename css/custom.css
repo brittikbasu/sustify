@@ -419,10 +419,10 @@ Mobile team styles
     padding: 0; }
 
   .team {
-    padding: 0; }
+    padding: 0; } }
+.text-block .icon + h4 {
+  margin-bottom: -0.11em; }
 
-  .text-block .icon + h4 {
-    margin-bottom: -0.11em; } }
 @media (min-width: 451px) {
   section.space--md,
   footer.space--md {
