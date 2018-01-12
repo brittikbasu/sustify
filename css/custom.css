@@ -40,6 +40,18 @@ footer.space--sm {
 .label:not([class*='bg--']) {
   background: #003c41; }
 
+.label {
+  margin-right: -30px;
+  margin-top: -30px; }
+  @media (max-width: 450px) {
+    .label {
+      border-radius: 2px;
+      margin-top: -27px;
+      margin-right: -28px; } }
+
+.career section.text-center div[class*='col-']:first-child:last-child {
+  padding-top: 1vh; }
+
 /*
 .flickity-prev-next-button {
     @media (max-width: 990px){
