@@ -4,7 +4,7 @@ $primary:#33cc99;
 $primary-2:#66cc99;
 $primary-dark: #6e9ba3;
 $text : #648787;
-;
+$light-mint:#ccebdd;
 $primary-light:rgba(102, 204, 153, 0.32941176470588235);
 $secondary: #003c41;
 $secondary-light: rgba(0, 60, 65, 0.70);
@@ -21,7 +21,7 @@ a {
 }
 
 .bg--secondary {
-    background: #ccebdd;
+    background: #fafafb;
 }
 
 .container {
@@ -214,7 +214,7 @@ x slider styles x
 }
 
 .menu-toggle {
-    background: #ccebdd;
+    background: #fafafb;
 }
 
 @keyframes fadeInUpBig {
