@@ -417,6 +417,8 @@ Mobile team styles
   .train {
     margin-top: -2em;
     margin-bottom: 1.5em; }
+    .train .local-support {
+      margin-top: -1em; }
 
   .touch h2 {
     margin-top: -0.9em; }
