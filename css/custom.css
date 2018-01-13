@@ -466,4 +466,13 @@ Mobile team styles
   font-size: 2em;
   color: #648787; }
 
+.likes-container .feature {
+  height: 230px; }
+
+.exp-container .feature {
+  height: 275px; }
+
+.phone-icon {
+  display: block; }
+
 /*# sourceMappingURL=custom.css.map */

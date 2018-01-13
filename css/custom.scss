@@ -586,6 +586,7 @@ Mobile team styles
 }
 
     @media (min-width:451px) {
+      
         section.space--md,
         footer.space--md {
             padding-top: 4em;
@@ -627,3 +628,23 @@ Mobile team styles
         
         color: $text;
     }
+
+    .likes-container{
+      
+
+        .feature{
+height:230px;       
+
+}
+            }
+
+            .exp-container{
+                .feature{
+                  
+                height:275px;
+                }
+            }
+
+            .phone-icon{
+                display:block;
+            }
