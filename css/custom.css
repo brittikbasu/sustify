@@ -104,7 +104,12 @@ footer.space--sm {
   background: rgba(255, 255, 255, 0.89); }
 .bar.bar--sm {
   padding: 1.15em 0; }
+.bar .logo {
+  max-height: 3.4em; }
 
+@media (min-width: 990px) {
+  .bar-toggle .col-md-1 .logo {
+    top: 0; } }
 .back-button {
   height: 50px;
   width: 90px;

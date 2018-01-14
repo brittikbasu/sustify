@@ -155,8 +155,16 @@ footer.space--sm {
     &.bar--sm {
         padding: 1.15em 0;
     }
-}
 
+    .logo{
+        max-height:3.4em;
+    }
+}
+@media (min-width: 990px){
+.bar-toggle .col-md-1 .logo{
+    top:0;
+}
+}
 .back-button {
     height: 50px;
     width: 90px;
@@ -477,6 +485,7 @@ Mobile team styles
 
 //team
 @media (max-width: 990px) {
+   
     .flickity-prev-next-button {
         display: block;
         opacity: .5;
