@@ -367,7 +367,7 @@ Mobile team styles
     background: #6e9ba3;
     border: none; } }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .bar.pos-fixed {
     position: fixed;
     top: 0;
@@ -379,7 +379,22 @@ Mobile team styles
   .pos-fixed {
     z-index: 99;
     width: 100%;
-    height: 78px; } }
+    height: 78px; }
+
+  #ldp.feature-3 {
+    height: 470px; } }
+@media (min-width: 992px) {
+  #ldp.feature-3 {
+    height: 488px; } }
+@media (min-width: 993px) and (max-width: 1024px) {
+  #ldp.feature-3 {
+    height: 447px; }
+
+  #brt.feature-3 {
+    height: 427px; } }
+#brt.feature-3 {
+  height: 509px; }
+
 @media (max-width: 991px) {
   #brt.feature-1 {
     height: 226px; } }
