@@ -18,6 +18,7 @@
     <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/theme-greensea.css" rel="stylesheet" type="text/css" media="all" />
@@ -28,6 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700%7CRubik:300,400,500" rel="stylesheet" type="text/css">
     <link href="css/font-rubiklato.css" rel="stylesheet" type="text/css">
 
+
 </head>
 
 <body data-smooth-scroll-offset="77" id="top">
@@ -36,7 +38,7 @@
     <div class="nav-container border">
         <div class="header-hide">
             <nav class="bar bar-toggle bar--sm" data-scroll-class='90vh:pos-fixed'>
-                <!-- <nav class="bar bar--sm bar-toggle bar-2" data-scroll-class='100vh:pos-fixed'>-->
+
 
                 <div class="container">
                     <div class="row logo-container">
@@ -51,25 +53,22 @@
                             <div class="bar__module">
                                 <div class="modal-instance pull-right">
                                     <a class="modal-trigger menu-toggle" href="#">
-                                        <!--<i class="stack-interface stack-menu"></i>-->
-                                        <img src="img/hamburger.svg" alt"menu button" / style="margin-top:28%">
+                                       
+                                        <img src="img/hamburger.svg" alt="menu button" style="margin-top:28%">
                                     </a>
                                     <div class="modal-container menu-fullscreen">
-                                        <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em;">
+                                        <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em; background: none">
                                             <div class="pos-vertical-center pos-asbolute text-center">
 
                                                 <ul class="menu-vertical">
                                                     <li class="h2">
                                                         <a href="#">Home</a>
+                                                    </li>                                                    
+                                                    <li class="h2">
+                                                        <a href="#whySustify" target="_self" class="inner-link">Why Sustify</a>
                                                     </li>
                                                     <li class="h2">
-                                                        <a href="#about" target="_self" class="inner-link">About</a>
-                                                    </li>
-                                                    <li class="h2">
-                                                        <a href="#implementation" target="_self" class="inner-link">Implementation</a>
-                                                    </li>
-                                                    <li class="h2">
-                                                        <a href="#benefits" target="_self" class="inner-link">Benefits</a>
+                                                        <a href="#sustifyProduct" target="_self" class="inner-link">Product</a>
                                                     </li>
                                                     <li class="h2">
                                                         <a href="#team" target="_self" class="inner-link">Team</a>
@@ -104,12 +103,12 @@
 
 
                     <div class="col-md-6 col-sm-7">
-                        <div class="mt--2">
+                        <div class="mt--2"> <!--<div class="mt--2">-->
                             <h1>Make your sustainability programs measurable with Sustify</h1>
                             <p class="lead"> Sustify is a digital training platform that brands use to increase sustainability in daily factory
                                 life.&nbsp;
                             </p>
-                            <!--<a class="hidden-sm hidden-lg hidden-xlg hidden-md btn btn--primary type--uppercase inner-link" href="#about" target="_self">-->
+                            
                             <a class="btn btn--primary type--uppercase inner-link" href="#about" target="_self">
 
                                 <span class="btn__text">Know more</span>
@@ -118,8 +117,8 @@
                     </div>
 
 
-                    <div class="col-md-6 col-sm-5 col-xs-12 hidden-xs" style="top:2.9em">
-                        <img id="ipad" class="disappear" alt="Image" src="img/device-2.png">
+                    <div class="col-md-6 col-sm-5 col-xs-12 hidden-xs" style="top:1.9em">
+                        <img id="ipad" class="appear" alt="Image" src="img/device-2.png">
                     </div>
 
                 </div>
@@ -137,195 +136,201 @@
                 <img alt="background" src="img/touch-1.jpg"> </div>
         </section>
 
-        <section class="switchable feature-large bg--primary space--xxs border" id="about">
-            <div class="container">
-                <div class="row train">
-                    <div class="col-sm-6 col-md-5">
-                        <div class="switchable__text">
-                            <h2>We train different
-                                <br> We help learn
-                                <br>
-                            </h2>
-                            <p class="lead">At Sustify, we live sustainably, promote sustainability and do business to provide something
-                                useful to society. We're digital because it's the best way to teach and track how well something
-                                is being learnt. </p>
-                            <p class="lead"> Everyone learns different things at a different pace. Sustify was built keeping this in mind.
-                                Our smart algorithm ensures that learners go through the course at their own pace and smart
-                                reviews are customized for each individual.&nbsp;</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="boxed boxed--lg boxed--border white-box">
-                            <div class="feature feature-2">
-                                <i class="icon color--primary icon-Brain-2"></i>
-                                <div class="feature__body">
-                                    <h5>Intelligent Algorithm</h5>
-                                    <p>Automatically adapts pattern and spacing of learning&nbsp;</p>
-                                </div>
-                            </div>
-                            <div class="feature feature-2">
-                                <i class="icon color--primary icon-Happy"></i>
-                                <div class="feature__body">
-                                    <h5>Fun &amp; Interactive</h5>
-                                    <p>A different approach that keeps learners engaged</p>
-                                </div>
-                            </div>
-                            <div class="feature feature-2">
-                                <i class="icon color--primary icon-Globe"></i>
-                                <div class="feature__body">
-                                    <h5>Language Versions</h5>
-                                    <p> Available in the local languages spoken in the factories.</p>
-                                </div>
-                            </div>
-                            <div class="feature feature-2">
-                                <i class="icon color--primary icon-Handshake"></i>
-                                <div class="feature__body">
-                                    <h5 class="local-support">Local Support</h5>
-                                    <p>Smooth running of the program ensured</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="imagebg parallax space--lg border hidden-xxs hidden-xs" data-overlay="2">
-            <div class="background-image-holder">
-                <img alt="background" src="img/tea_plantation_srilanka.jpg"> </div>
-        </section>
-
-        <section class="imagebg space--lg border hidden-md hidden-sm hidden-lg hidden-xlg" data-overlay="2">
-            <div class="background-image-holder">
-                <img alt="background" src="img/tea_plantation_srilanka.jpg"> </div>
-        </section>
-
-
-
-        <section class="text-center space--xxs bg--secondary border" id="implementation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-10 col-md-8">
-                        <h2 style="margin-bottom: 0.25em;">How Sustify works</h2>
-                        <p class="lead" style="font-size:1.2714286em">Online and on-site, Sustify takes care of it all.</p>
-                        <div class="break"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="text-center bg--secondary border">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-10 col-md-8 col-md-offset-2">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="feature feature-3 boxed boxed--lg boxed--border">
-                                    <span class="h1 h1--large">1</span>
-                                    <h4>Course Selection</h4>
-                                    <p> Brands select courses from Sustify's course library or we design custom courses.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="feature feature-3 boxed boxed--lg boxed--border">
-                                    <span class="h1 h1--large">2</span>
-                                    <h4>On-site Introduction</h4>
-                                    <p> The local program manager introduces and implements courses in the factories by providing
-                                        Sustify tablets.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="feature feature-3 boxed boxed--lg boxed--border">
-                                    <span class="h1 h1--large">3</span>
-                                    <h4>Real-time Progress Tracking</h4>
-                                    <p>Brands can track how progress is being made at any stage of the program and have a detailed
-                                        impact analysis on their dashboard.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="feature feature-3 boxed boxed--lg boxed--border">
-                                    <span class="h1 h1--large">4</span>
-                                    <h4>Certificates and SustiScore</h4>
-                                    <p> Learners are awarded certificates of completion and the
-                                        factory is getting a sustainability rating in form of a score.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="imagebg parallax space--lg border hidden-xxs hidden-xs" data-overlay="2">
-            <div class="background-image-holder">
-                <img alt="background" src="img/safe.jpg"> </div>
-        </section>
-
-        <section class="imagebg space--lg border hidden-md hidden-sm hidden-lg hidden-xlg" data-overlay="2">
-            <div class="background-image-holder">
-                <img alt="background" src="img/safe.jpg"> </div>
-        </section>
-
-        <section class="course-library">
+        <section class="course-library" id="whySustify">
             <section class="text-center space--xs bg--primary border">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-10 col-md-8">
-                            <h2>Sustainability course library</h2>
-                            <p class="lead">Brands can choose from our expert-crafted courses that are designed to increase awareness and
-                                compliance in supplying factories.
-                                <br>
-                                <br>We offer courses in the following categories:
+                            <h2>We train different, we help learn</h2>
+                            <p class="lead">At Sustify, we live sustainably, promote sustainability and do business to 
+                                provide something useful to society. We are digital because it’s a great way to teach and track how well something is being learnt.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-
-            <section class="text-center space--xs bg--primary border">
+            <!-- Why Sustify -->
+            <section class="text-center space--xs bg--primary border " >
                 <div class="container">
-                    <div class="row white-box">
-                        <div class="col-sm-6 col-md-3">
-                            <div class="text-block">
-                                <i class="icon color--dark icon-Myspace icon--lg"></i>
-                                <h4>Social</h4>
-                                <p>Empowering people</p>
+
+                    <div class="row white-box why-sustify-key-points">
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="why-sustify-point">
+                                <div class="why-sustify-point-image">
+                                    <img src="img/ic_sustify_measurable.png" alt="Icon for why sustify because it's measurable"/>
+                                </div>
+                                <h3>Measurable</h3>
+                                <p>On a KPI-Dashboard relevant results are analysed, 
+                                    so that learning improvement is shown.</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="text-block">
-                                <i class="icon color--dark icon-Environmental-3 icon--lg"></i>
-                                <h4>Environment</h4>
-                                <p> Caring about the planet</p>
-                            </div>
+
+                        <div class="col-md-4 col-sm-6">
+                                <div class="why-sustify-point">
+                                    <div class="why-sustify-point-image">
+                                        <img src="img/ic_sustify_personalized.png" alt="Icon for why sustify because it's personalised"/>
+                                    </div>
+                                    <h3>Personalized</h3>
+                                    <p>Content adapts accordingly to individual learning progress, 
+                                        based on an intelligent algorithm respecting learning 
+                                        methodology of spacing and repitition.</p>
+                                </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="text-block">
-                                <i class="icon color--dark icon-Statistic icon--lg"></i>
-                                <h4>Profitability</h4>
-                                <p> Increasing &nbsp;productivity</p>
-                            </div>
+
+                        <div class="col-md-4 col-sm-6">
+                                <div class="why-sustify-point">
+                                    <div class="why-sustify-point-image">
+                                        <img src="img/ic_sustify_inclusive.png" alt="Icon for why sustify because it's inclusive"/>
+                                    </div>
+                                    <h3>Inclusive</h3>
+                                    <p>Multi-language functionality and audio function 
+                                        make sure, that a high number of workers can be 
+                                        reached and educated.</p>
+                                </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="text-block">
-                                <i class="icon color--dark icon-Speach-Bubbles icon--xlg" style="font-size:6.85em; margin-top:-0.065em"></i>
-                                <h4 style="margin-top: 0.1em;">Communication</h4>
-                                <p> Improving dialogue
-                                    <br>
-                                    <br>
-                                    <br>
-                                </p>
+
+                        <div class="col-md-4 col-sm-6">
+                                <div class="why-sustify-point">
+                                    <div class="why-sustify-point-image">
+                                        <img src="img/ic_sustify_interactive.png" alt="Icon for why sustify because it's interactive"/>
+                                    </div>
+                                    <h3>Interactive</h3>
+                                    <p>Different game formats ensure, that learning 
+                                        is done in different ways, requiring different 
+                                        types of interaction, which increases retention.</p>
+                                </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                                <div class="why-sustify-point">
+                                    <div class="why-sustify-point-image">
+                                        <img src="img/ic_sustify_customizable.png" alt="Icon for why sustify because it's customizable"/>
+                                    </div>
+                                    <h3>Customizable</h3>
+                                    <p>Due to the Content Management System, content can easily be
+                                        adapted to special requirements.</p>
+                                </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                                <div class="why-sustify-point">
+                                    <div class="why-sustify-point-image">
+                                        <img src="img/ic_sustify_microlearning.png" alt="Icon for why sustify because it's microlearning"/>
+                                    </div>
+                                    <h3>Micro-learning</h3>
+                                    <p>Content provided in small bites, which is relevant to day-to-day 
+                                        factory life. Therefore we do not use the concept of levels but 
+                                        concentrated content broken down on key issues.</p>
+                                </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr class="white-hr">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="container-fluid">
+                                    <div class="row sustify-beneficiaries">
+
+                                            <div class="col-sm-12 col-md-12 title-section">
+                                                    <h2 class="dark-text text-center">We believe in collaboration</h2>
+                                                    <p class="lead">We believe that increasing sustainability in the supply chain is key to 
+                                                        benefitting all stakeholders – people, business, and our planet
+                                                    </p>
+                                            </div>
+                
+                                        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                                            <div class="beneficiaries-container">
+                
+                                                <svg class="circle-border hide-xs">
+                                                    <circle cx="50%" cy="50%" r="160px"></circle>
+                                                </svg>
+                
+                                                <div class="sustify-beneficiary beneficiary-retail-brand active">
+                                                    <div class="beneficiary-icon">
+                                                        <img class="beneficiary-icon-normal" src="img/sustify_brands.png" alt="sustify is beneficial to brands"/>
+                                                        <img class="beneficiary-icon-active" src="img/sustify_brands_active.png" alt="sustify is beneficial to brands"/>
+                                                    </div>
+                                                    <h3>Retail Brands</h3>
+                                                    <div class="beneficiary-details hidden-md-sm-only">                                        
+                                                        <ul class="beneficiary-details-points">
+                                                            <li>Measurable results</li>
+                                                            <li>Content can be customized to fit needs</li>
+                                                            <li>Proof for working towards the SDG's</li>
+                                                            <li>Key performance indicators can be included in sustainability reporting</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="sustify-beneficiary beneficiary-factory-management">
+                                                    <div class="beneficiary-icon">
+                                                        <img class="beneficiary-icon-normal" src="img/sustify_factory.png" alt="sustify is beneficial to brands"/>
+                                                        <img class="beneficiary-icon-active" src="img/sustify_factory_active.png" alt="sustify is beneficial to brands"/>
+                                                    </div>
+                                                    <h3>Factory Management</h3>
+                                                    <div class="beneficiary-details hidden-md-sm-only">                                        
+                                                        <ul class="beneficiary-details-points">
+                                                            <li>Increased compliance with social and environmental standards</li>
+                                                            <li>Entry to European market</li>
+                                                            <li>Employee engagement</li>
+                                                        </ul>                                                        
+                                                    </div>
+                                                </div>
+                
+                                                <div class="sustify-beneficiary beneficiary-factory-employees">
+                                                    <div class="beneficiary-icon">
+                                                        <img class="beneficiary-icon-normal" src="img/sustify_workers.png" alt="sustify is beneficial to brands"/>
+                                                        <img class="beneficiary-icon-active" src="img/sustify_workers_active.png" alt="sustify is beneficial to brands"/>
+                                                    </div>
+                                                    <h3>Factory Employees</h3>
+                                                    <div class="beneficiary-details hidden-md-sm-only">                                        
+                                                        <ul class="beneficiary-details-points">
+                                                            <li>Increased knowledge and awareness</li>
+                                                            <li>Certificate to proof training</li>
+                                                            <li>Motivation through empowerment</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <!--beneficiaries details for tablet displays (992px-650px) -->
+                                                <div class="beneficiary-details display-sm">
+
+                                                    <ul class="beneficiary-details-points beneficiary-retail-brand active">
+                                                        <li>Measurable results</li>
+                                                        <li>Content can be customized to fit needs</li>
+                                                        <li>Proof for working towards the SDG's</li>
+                                                        <li>Key performance indicators can be included in sustainability reporting</li>
+                                                    </ul>
+
+                                                    <ul class="beneficiary-details-points beneficiary-factory-management">
+                                                        <li>Increased compliance with social and environmental standards</li>
+                                                        <li>Entry to European market</li>
+                                                        <li>Employee engagement</li>
+                                                    </ul>  
+
+                                                    <ul class="beneficiary-details-points beneficiary-factory-employees">
+                                                        <li>Increased knowledge and awareness</li>
+                                                        <li>Certificate to prove training</li>
+                                                        <li>Motivation through empowerment</li>
+                                                    </ul>
+
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                
+                                    </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <br>
             </section>
@@ -344,66 +349,798 @@
                 <img alt="background" src="img/red-yarn-og.jpg"> </div>
         </section>
 
+        <section class="sustify-product-section bg--secondary"  id="sustifyProduct">
 
-        <section class="brands-love">
-
-            <section class="switchable space--xxs border" id="benefits">
+            <section class="text-center space--xxs border" id="benefits">
 
                 <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-12 col-sm-12">
-                            <h2>Why brands love Sustify ?</h2>
-                            <p class="lead">
-                                <span class="digital-solution">Sustify helps brands to introduce, complement or freshen up sustainability programs in supplying
-                                    factories with a</span>
-                                <span> digital solution, so that learning is ensured in a systematic and effective way.</span>
-                            </p>
-                            <br>
-                            <div class="feature-large__group">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="feature feature-6">
-                                            <i class="icon icon--lg icon-Check-2 color--primary"></i>
-                                            <h5>Quality &amp; Risks</h5>
-                                            <p> Sustify ensures increased quality in manufacturing factories in Asia and decreases
-                                                risks of non-compliance with social and environmental regulations. It helps
-                                                with putting the United Nations' Sustainability Development Goal 12 – responsible
-                                                production and consumption - into practice and makes sustainable development
-                                                measurable.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="feature feature-6">
-                                            <i class="icon icon--lg icon-Ruler color--primary"></i>
-                                            <h5>Transparency & Measurability</h5>
-                                            <p> Brands have direct and real-time access to learning progress without the need
-                                                of agents or on-site presence. There are different analysis tools available,
-                                                so throughout the program and after completion of the courses there is full
-                                                transparency about training effect. Data generated on a factory level gives
-                                                deep insights about the level of acquired knowledge and understanding in
-                                                the field of sustainability and communications.</p>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-sm-4">
-                                        <div class="feature feature-6">
-                                            <i class="icon icon--lg icon-Open-Book color--primary"></i>
-                                            <h5>Courses &amp; Capacity Building</h5>
-                                            <p> Training content is developed in collaboration with industry experts and the
-                                                workers themselves. A tested combination of spacing and repetition helps
-                                                creating a learning experience with a real impact on behavior. Customized
-                                                content can be developed in collaboration with brands as desired.</p>
-                                        </div>
-                                    </div>
+                    <div class="row how-sustify-works-section">
+                        <div class="col-sm-12 col-md-12">
+                            <h2>How Sustify works</h2>                            
+                        </div>
+                        <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_tablets-included.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">
+                                    <h4>Pre-installed on tablets</h3>                                                                       
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-        </section>
+                        <div class="col-md-4 col-sm-5">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_personal-login.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">                                    
+                                    <h4>Login</h3>                                                                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_personalised.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">
+                                    <h4>Personalised</h3>                                                                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-5">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_gamified.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">
+                                    <h4>Gamified</h3>                                                                       
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_duration.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">
+                                    <h4>6-12 weeks duration</h3>                                                                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-5">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_local-support.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">
+                                    <h4>Local support</h3>                                                                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_kpi-dashboard.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">
+                                    <h4>KPI dashboard</h3>                                                                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-5">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_certificates.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">
+                                    <h4>Certificates for workers</h3>                                                                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-3-5">
+                            <div class="sustify-working-factor-container">
+                                <div class="sustify-working-factor-image">
+                                    <img src="img/sustify_sustiscore.png" alt="Sustify is gamified">
+                                </div>
+                                <div class="sustify-working-factor-title">
+                                    <h4>SustiScores for factories</h3>                                                                       
+                                </div>
+                            </div>
+                        </div> 
 
+                    </div>
+
+                    <hr class="green-hr">
+
+                    <div class="row course-library-section">
+
+                        <div class="col-sm-12 col-md-12">
+                            <h2>Sustainability Course Library</h2>
+                            <p class="lead">You can choose from our courses that are designed to 
+                                increase awareness  and compliance in supplying factories.</p>
+                        </div>
+
+                        <div class="col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-1 pad-right-control display-upto-xs">
+                            <div class="container-fluid course-library-viewer-container">
+                                <div class="row course-library-list-section">
+
+                                    <div class="col-sm-6">
+                                        <div class="course-item-title-container active" target="#sustifyCourse1">
+                                            <h3>Building &#38; fire safety</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="course-item-title-container" target="#sustifyCourse2">
+                                            <h3>Rights &#38; responsibilities</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="course-item-title-container" target="#sustifyCourse3">
+                                            <h3>Overtime &#38; compensation</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="course-item-title-container" target="#sustifyCourse4">
+                                            <h3>Health &#38; hygiene</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="course-item-title-container" target="#sustifyCourse5">
+                                            <h3>Environmental fundamentals &#38; Awareness</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="course-item-title-container" target="#sustifyCourse6">
+                                            <h3>Chemical, water &#38; energy</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="course-item-title-container" target="#sustifyCourse7">
+                                            <h3>Productivity &#38; lean management</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="course-item-title-container" target="#sustifyCourse8">
+                                            <h3>Communication &#38; problem solving</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 pad-left-control display-upto-xs">
+                            <div class="course-library-detail-viewer" id="couseLibraryDetailViewer">
+
+                                <div class="course-detail-item" id="sustifyCourse1">
+                                    <div class="course-icon">
+                                        <img src="img/sustify-course_building-fire-safety.png" alt="Sustify offers course Building and Firesafety"/>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3>Building &#38; fire safety</h3>
+                                    </div>
+                                    <div class="course-detail-contents">
+                                        <ul class="course-detail-content-list">
+                                            <li>
+                                                Understanding the key  issues in building safety and fire safety
+                                            </li>
+                                            <li>
+                                                Understanding the own role and responsibility in building and fire safety
+                                            </li>
+                                            <li>
+                                                Understanding types of risks, such as chemical, physical, 
+                                                biological, psychological, ergonomic and accidental
+                                            </li>
+                                            <li>
+                                                Understanding the different ways of dealing with hazards
+                                            </li>
+                                            <li>
+                                                Recognizing the own role in decreasing potential for accidents
+                                            </li>
+                                        </ul>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="course-detail-item" id="sustifyCourse2">
+                                    <div class="course-icon">
+                                        <img src="img/sustify-course_rights-responsibilities.png" alt="Sustify offers course Rights and respnsibilities"/>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3>Rights &#38; responsibilities</h3>
+                                    </div>
+                                    <div class="course-detail-contents">
+
+                                        <ul class="course-detail-content-list">
+                                            <li>
+                                                Understanding basic rights and responsibilities of employers and employees
+                                            </li>
+                                            <li>
+                                                Understanding, why those standards help both the employer and the employee
+                                            </li>
+                                            <li>
+                                                Understanding the meaning, forms and different approaches 
+                                                to preventing and dealing with discrimination
+                                            </li>
+                                            <li>
+                                                Understanding the concept of collective bargaining and freedom of association
+                                            </li>
+                                            <li>
+                                                Apply approaches and methods of peaceful, inclusive and democratic participation
+                                            </li>
+                                            <li>
+                                                Grievance mechanisms
+                                            </li>
+                                        </ul>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="course-detail-item" id="sustifyCourse3">
+                                    <div class="course-icon">
+                                        <img src="img/sustify-course_overtime-compensation.png" alt="Sustify offers course Overtime and compensation"/>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3>Overtime &#38; compensation</h3>
+                                    </div>
+                                    <div class="course-detail-contents">
+
+                                        <ul class="course-detail-content-list">
+                                            <li>
+                                                Recruitment, retrenchment, working hours and compensation mechanisms
+                                            </li>
+                                            <li>
+                                                Understanding living wages, paychecks and underlying laws
+                                            </li>
+                                            <li>
+                                                Understanding the concept of basic finance management, 
+                                                calculating basic household incomes and expenses
+                                            </li>
+                                            <li>
+                                                Time management and planning
+                                            </li>
+                                        </ul>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="course-detail-item" id="sustifyCourse4">
+                                    <div class="course-icon">
+                                        <img src="img/sustify-course_health-hygiene.png" alt="Sustify offers course Health and hygiene"/>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3>Health &#38; hygiene</h3>
+                                    </div>
+                                    <div class="course-detail-contents">
+
+                                        <ul class="course-detail-content-list">
+                                            <li>
+                                                PPE and the reasoning behind 
+                                            </li>
+                                            <li>
+                                                Ergonomics of the workplace
+                                            </li>
+                                            <li>
+                                                Right behavior in dealing with chemicals
+                                            </li>
+                                            <li>
+                                                Basic facts about hygiene and its implication in the daily life
+                                            </li>
+                                            <li>
+                                                Increasing health awareness 
+                                            </li>
+                                        </ul>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="course-detail-item" id="sustifyCourse5">
+                                    <div class="course-icon">
+                                        <img src="img/sustify-course_environmental-fundamentals-awareness.png" alt="Sustify offers course Environmental fundamentals and awareness"/>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3>Environmental fundamentals &#38; awareness</h3>
+                                    </div>
+                                    <div class="course-detail-contents">
+
+                                        <ul class="course-detail-content-list">
+                                            <li>
+                                                Understanding the basic concept of an ecosystem and climate change
+                                            </li>
+                                            <li>
+                                                Understanding interactions between own behavior and the environment
+                                            </li>
+                                            <li>
+                                                Applying the knowledge to daily factory routine
+                                            </li>
+                                            <li>
+                                                Learning Problem solving capabilities for varying work related ecological issues
+                                            </li>
+                                        </ul>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="course-detail-item" id="sustifyCourse6">
+                                    <div class="course-icon">
+                                        <img src="img/sustify-course_chemical-water-energy.png" alt="Sustify offers course chemical water and energy"/>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3>Chemical, water &#38; energy</h3>
+                                    </div>
+                                    <div class="course-detail-contents">
+
+                                        <ul class="course-detail-content-list">
+                                            <li>
+                                                Understanding chemical use
+                                            </li>
+                                            <li>
+                                                Right behavior with chemicals
+                                            </li>
+                                            <li>
+                                                Means to reduce water consumption
+                                            </li>
+                                            <li>
+                                                Means to reduce consumption of chemicals
+                                            </li>
+                                            <li>
+                                                Means to increase energy efficiency
+                                            </li>
+                                        </ul>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="course-detail-item" id="sustifyCourse7">
+                                    <div class="course-icon">
+                                        <img src="img/sustify-course_productivity-lean-management.png" alt="Sustify offers course Productivity and lean management"/>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3>Productivity &#38; lean management</h3>
+                                    </div>
+                                    <div class="course-detail-contents">
+
+                                        <ul class="course-detail-content-list">
+                                            <li>
+                                                Understanding the meaning of productivity for a factory and on a personal level
+                                            </li>
+                                            <li>
+                                                Learn about purposes and benefits of using the 5S tools and get familiar with it
+                                            </li>
+                                            <li>
+                                                Understand how to apply 5S in the working environment
+                                            </li>
+                                            <li>
+                                                Get familiar with Added Value and Non Added Value definitions
+                                            </li>
+                                            <li>
+                                                Learn the basics of Value Stream Mapping and how Value stream mapping can improve productivity
+                                            </li>
+                                            <li>
+                                                Learn how to identify, avoid,  and remove waste and how this affects profits and customer satisfaction
+                                            </li>
+                                            <li>
+                                                Learn about the Total productive maintenance (TPM) concepts and their implementation
+                                            </li>
+                                            <li>
+                                                Understand the practical implementation of TPM tools and their effects
+                                            </li>
+                                        </ul>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="course-detail-item" id="sustifyCourse8">
+                                    <div class="course-icon">
+                                        <img src="img/sustify-course_commmunication_problem-solving.png" alt="Sustify offers course Communication and problem solving"/>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3>Communication &#38; problem solving</h3>
+                                    </div>
+                                    <div class="course-detail-contents">
+
+                                        <ul class="course-detail-content-list">
+                                            <li>
+                                                Understanding basic communication principles
+                                            </li>
+                                            <li>
+                                                Understanding the importance of listening
+                                            </li>
+                                            <li>
+                                                Understanding and applying constructive feedback
+                                            </li>
+                                            <li>
+                                                Understanding the need for and value of grievance 
+                                                mechanisms and using them effectively
+                                            </li>
+                                            <li>
+                                                Learn how to defuse emotionally charged situations 
+                                                and prevent conflicts
+                                            </li>
+                                            <li>
+                                                Understanding concept and different forms of negotiation
+                                            </li>
+                                            <li>
+                                                Apply tools for effective negotiation
+                                            </li>
+                                        </ul>
+                                                    
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 hidden-upto-xs">
+                            
+                                <div class="panel-group course-lirary-accordion" id="accordion">
+                                    
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                        <div class="course-item-title-container-mob active collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse1">
+                                            <h3>Building &#38; fire safety</h3>
+                                        </div>
+                                        </div>
+                                        <div id="sustifyAccordionCourse1" class="panel-collapse collapse in">
+                                            <div class="course-detail-item-mob">
+                                                    <div class="course-icon">
+                                                        <img src="img/sustify-course_building-fire-safety.png" alt="Sustify offers course Building and Firesafety"/>
+                                                    </div>
+                                                    <div class="course-title">
+                                                        <h3>Building &#38; fire safety</h3>
+                                                    </div>
+                                                    <div class="course-detail-contents">
+                                                        <ul class="course-detail-content-list">
+                                                            <li>
+                                                                Understanding the key  issues in building safety and fire safety
+                                                            </li>
+                                                            <li>
+                                                                Understanding the own role and responsibility in building and fire safety
+                                                            </li>
+                                                            <li>
+                                                                Understanding types of risks, such as chemical, physical, 
+                                                                biological, psychological, ergonomic and accidental
+                                                            </li>
+                                                            <li>
+                                                                Understanding the different ways of dealing with hazards
+                                                            </li>
+                                                            <li>
+                                                                Recognizing the own role in decreasing potential for accidents
+                                                            </li>
+                                                        </ul>
+                                                                    
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                        <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse2">
+                                                <h3>Rights &#38; responsibilities</h3>
+                                        </div>
+                                        </div>
+                                        <div id="sustifyAccordionCourse2" class="panel-collapse collapse">
+                                            <div class="course-detail-item-mob">
+                                                    <div class="course-icon">
+                                                        <img src="img/sustify-course_rights-responsibilities.png" alt="Sustify offers course Rights and respnsibilities"/>
+                                                    </div>
+                                                    <div class="course-title">
+                                                        <h3>Rights &#38; responsibilities</h3>
+                                                    </div>
+                                                    <div class="course-detail-contents">
+                                                        
+                                                            <ul class="course-detail-content-list">
+                                                                <li>
+                                                                    Understanding basic rights and responsibilities of employers and employees
+                                                                </li>
+                                                                <li>
+                                                                    Understanding, why those standards help both the employer and the employee
+                                                                </li>
+                                                                <li>
+                                                                    Understanding the meaning, forms and different approaches 
+                                                                    to preventing and dealing with discrimination
+                                                                </li>
+                                                                <li>
+                                                                    Understanding the concept of collective bargaining and freedom of association
+                                                                </li>
+                                                                <li>
+                                                                    Apply approaches and methods of peaceful, inclusive and democratic participation
+                                                                </li>
+                                                                <li>
+                                                                    Grievance mechanisms
+                                                                </li>
+                                                            </ul>
+                                                                    
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                        <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse3">
+                                                <h3>Overtime &#38; compensation</h3>
+                                        </div>
+                                        </div>
+                                        <div id="sustifyAccordionCourse3" class="panel-collapse collapse">
+                                            <div class="course-detail-item-mob">
+                                                    <div class="course-icon">
+                                                        <img src="img/sustify-course_overtime-compensation.png" alt="Sustify offers course Overtime and compensation"/>
+                                                    </div>
+                                                    <div class="course-title">
+                                                            <h3>Overtime &#38; compensation</h3>
+                                                    </div>
+                                                    <div class="course-detail-contents">
+                                                        
+                                                            <ul class="course-detail-content-list">
+                                                                <li>
+                                                                    Recruitment, retrenchment, working hours and compensation mechanisms
+                                                                </li>
+                                                                <li>
+                                                                    Understanding living wages, paychecks and underlying laws
+                                                                </li>
+                                                                <li>
+                                                                    Understanding the concept of basic finance management, 
+                                                                    calculating basic household incomes and expenses
+                                                                </li>
+                                                                <li>
+                                                                    Time management and planning
+                                                                </li>
+                                                            </ul>
+                                                                    
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                        <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse4">
+                                                <h3>Health &#38; hygiene</h3>
+                                        </div>
+                                        </div>
+                                        <div id="sustifyAccordionCourse4" class="panel-collapse collapse">
+                                            <div class="course-detail-item-mob">
+                                                    <div class="course-icon">
+                                                        <img src="img/sustify-course_health-hygiene.png" alt="Sustify offers course Health and hygiene"/>
+                                                    </div>
+                                                    <div class="course-title">
+                                                            <h3>Health &#38; hygiene</h3>
+                                                    </div>
+                                                    <div class="course-detail-contents">
+                                                        
+                                                            <ul class="course-detail-content-list">
+                                                                <li>
+                                                                    PPE and the reasoning behind 
+                                                                </li>
+                                                                <li>
+                                                                    Ergonomics of the workplace
+                                                                </li>
+                                                                <li>
+                                                                    Right behavior in dealing with chemicals
+                                                                </li>
+                                                                <li>
+                                                                    Basic facts about hygiene and its implication in the daily life
+                                                                </li>
+                                                                <li>
+                                                                    Increasing health awareness 
+                                                                </li>
+                                                            </ul>
+                                                                    
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                        <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse5">
+                                                <h3>Environmental fundamentals &#38; awareness</h3>
+                                        </div>
+                                        </div>
+                                        <div id="sustifyAccordionCourse5" class="panel-collapse collapse">
+                                            <div class="course-detail-item-mob">
+                                                    <div class="course-icon">
+                                                        <img src="img/sustify-course_environmental-fundamentals-awareness.png" alt="Sustify offers course Environmental fundamentals and awareness"/>
+                                                    </div>
+                                                    <div class="course-title">
+                                                            <h3>Environmental fundamentals &#38; awareness</h3>
+                                                    </div>
+                                                    <div class="course-detail-contents">
+                                                        
+                                                            <ul class="course-detail-content-list">
+                                                                <li>
+                                                                    Understanding the basic concept of an ecosystem and climate change
+                                                                </li>
+                                                                <li>
+                                                                    Understanding interactions between own behavior and the environment
+                                                                </li>
+                                                                <li>
+                                                                    Applying the knowledge to daily factory routine
+                                                                </li>
+                                                                <li>
+                                                                    Learning Problem solving capabilities for varying work related ecological issues
+                                                                </li>
+                                                            </ul>
+                                                                    
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                        <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse6">
+                                                <h3>Chemical, water &#38; energy</h3>
+                                        </div>
+                                        </div>
+                                        <div id="sustifyAccordionCourse6" class="panel-collapse collapse">
+                                            <div class="course-detail-item-mob">
+                                                    <div class="course-icon">
+                                                        <img src="img/sustify-course_chemical-water-energy.png" alt="Sustify offers course chemical water and energy"/>
+                                                    </div>
+                                                    <div class="course-title">
+                                                            <h3>Chemical, water &#38; energy</h3>
+                                                    </div>
+                                                    <div class="course-detail-contents">
+                                                        
+                                                            <ul class="course-detail-content-list">
+                                                                <li>
+                                                                    Understanding chemical use
+                                                                </li>
+                                                                <li>
+                                                                    Right behavior with chemicals
+                                                                </li>
+                                                                <li>
+                                                                    Means to reduce water consumption
+                                                                </li>
+                                                                <li>
+                                                                    Means to reduce consumption of chemicals
+                                                                </li>
+                                                                <li>
+                                                                    Means to increase energy efficiency
+                                                                </li>
+                                                            </ul>
+                                                                    
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                        <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse7">
+                                                <h3>Productivity &#38; lean management</h3>
+                                        </div>
+                                        </div>
+                                        <div id="sustifyAccordionCourse7" class="panel-collapse collapse">
+                                            <div class="course-detail-item-mob">
+                                                    <div class="course-icon">
+                                                        <img src="img/sustify-course_productivity-lean-management.png" alt="Sustify offers course Productivity and lean management"/>
+                                                    </div>
+                                                    <div class="course-title">
+                                                            <h3>Productivity &#38; lean management</h3>
+                                                    </div>
+                                                    <div class="course-detail-contents">
+                                                        
+                                                            <ul class="course-detail-content-list">
+                                                                <li>
+                                                                    Understanding the meaning of productivity for a factory and on a personal level
+                                                                </li>
+                                                                <li>
+                                                                    Learn about purposes and benefits of using the 5S tools and get familiar with it
+                                                                </li>
+                                                                <li>
+                                                                    Understand how to apply 5S in the working environment
+                                                                </li>
+                                                                <li>
+                                                                    Get familiar with Added Value and Non Added Value definitions
+                                                                </li>
+                                                                <li>
+                                                                    Learn the basics of Value Stream Mapping and how Value stream mapping can improve productivity
+                                                                </li>
+                                                                <li>
+                                                                    Learn how to identify, avoid,  and remove waste and how this affects profits and customer satisfaction
+                                                                </li>
+                                                                <li>
+                                                                    Learn about the Total productive maintenance (TPM) concepts and their implementation
+                                                                </li>
+                                                                <li>
+                                                                    Understand the practical implementation of TPM tools and their effects
+                                                                </li>
+                                                            </ul>
+                                                                    
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                        <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse8">
+                                                <h3>Communication &#38; problem solving</h3>
+                                        </div>
+                                        </div>
+                                        <div id="sustifyAccordionCourse8" class="panel-collapse collapse">
+                                            <div class="course-detail-item-mob">
+                                                    <div class="course-icon">
+                                                        <img src="img/sustify-course_commmunication_problem-solving.png" alt="Sustify offers course Communication and problem solving"/>
+                                                    </div>
+                                                    <div class="course-title">
+                                                            <h3>Communication &#38; problem solving</h3>
+                                                    </div>
+                                                    <div class="course-detail-contents">
+                                                        
+                                                            <ul class="course-detail-content-list">
+                                                                <li>
+                                                                    Understanding basic communication principles
+                                                                </li>
+                                                                <li>
+                                                                    Understanding the importance of listening
+                                                                </li>
+                                                                <li>
+                                                                    Understanding and applying constructive feedback
+                                                                </li>
+                                                                <li>
+                                                                    Understanding the need for and value of grievance 
+                                                                    mechanisms and using them effectively
+                                                                </li>
+                                                                <li>
+                                                                    Learn how to defuse emotionally charged situations 
+                                                                    and prevent conflicts
+                                                                </li>
+                                                                <li>
+                                                                    Understanding concept and different forms of negotiation
+                                                                </li>
+                                                                <li>
+                                                                    Apply tools for effective negotiation
+                                                                </li>
+                                                            </ul>
+                                                                    
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                    <hr class="green-hr">
+
+                    <div class="row get-demo-section">
+                        <div class="col-sm-12 col-md-12">
+                            <h2>Contact us</h2>
+                            <!-- <p class="lead">Get an impression of how our course "Fire & building safety" looks like.</p> -->
+                        </div>
+                        <!-- <div class="demo-video-button-div col-xs-12">
+                            <a class="btn btn--primary type--uppercase inner-link demo-video-button" href="#about" target="_self">
+                                <span class="btn__text">Watch demo video</span>
+                            </a>
+                        </div> -->
+                        <div class="col-sm-12 col-md-12">
+                            <p class="lead">If you want more detailed information, please contact us at 
+                                <a class="sustify-link" href="mailto:info@sustify.de">info@sustify.de</a>.</p>
+                        </div>
+                    </div>
+               
+
+                </div>
+
+            </section>
+
+        </section>
 
 
 
@@ -420,8 +1157,8 @@
 
 
 
-        <section class="team bg--secondary">
-            <section class="text-center space--xxs border" data-scroll-id="team" id="team">
+        <section class="team bg--secondary" data-scroll-id="team" id="team">
+            <section class="text-center space--xxs border">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-10 col-md-8">
@@ -482,7 +1219,7 @@
                                                             <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                                             <h4>Connect</h4>
                                                            sonja.westphal@sustify.de
-                                                         
+                                                           <br><br>
 
                                                             <ul class="social-list list-inline list--hover text-center">
                                                                 <li><br>
@@ -495,12 +1232,6 @@
                                                                         <i class="socicon socicon-linkedin icon icon--xs"></i>
                                                                     </a>
                                                                 </li>
-                                                                <!-- <li>
-                                                                    <a href="#" target="_blank">
-                                                                        <i class="socicon socicon-twitter icon icon--xs"></i>
-                                                                    </a>
-                                                                </li>
-                                                            -->
 
                                                             </ul>
                                                         </div>
@@ -539,48 +1270,41 @@
                                 </li>
 
 
-
-
-
-                                <li>
-
+                                <li >
                                     <div class="container text-center">
                                         <div class="row">
 
                                             <div class="col-sm-4">
-                                                <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height:473px">
+                                                <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height:516px">
                                                     <img alt="Image" src="img/sreejith.jpg" style="max-width: 60%;">
-                                                    <h4>Sreejith V S</h4>
+                                                    <h4>Seejith V S</h4>
                                                     <span style="color: #33cc99;">CTO</span>
-                                                    <p style="margin-top:1vh">A tech-savvy entrepreneur & engineer who has experience
-                                                        in leading, managing & developing in software agencies.</p>
+                                                    <p style="margin-top:1vh"> A tech-savvy entrepreneur and engineer who has experience
+                                                        in leading, managing and developing in software agencies.</p>
                                                 </div>
                                             </div>
-
                                             <div class="col-sm-8">
-                                                
 
-                                                <div class="row likes-container">
+                                                <div class="row exp-container">
                                                     <div class="col-sm-6">
                                                         <div class="feature feature-1 boxed boxed--md boxed--border">
                                                             <i class="icon icon--md icon-Suitcase"></i>
                                                             <h4>Experience</h4>
-                                                            <p> Experience in managing people & projects. Managed 
+                                                            <p> A visionary with experience in managing people and projects. Managed 
                                                                 several high-tech projects for organisations and entrepreneurs across the globe.
                                                             </p>
-                                                            <br>
-
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6">
-
                                                         <div class="feature feature-1 boxed boxed--md boxed--border">
                                                             <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                                             <h4>Connect</h4>
-                                                            sreejithvs333@gmail.com
-                                                            <br/><br/>
+                                                            sreejithvs333@outlook.com
+                                                            <br>
+                                                            <br>
+                                                            
                                                             <ul class="social-list list-inline list--hover text-center">
-                                                                <li>
+                                                                <li><br>
                                                                     <a href="skype:sreejithvs333?call" target="_blank">
                                                                         <i class="socicon socicon-skype icon icon--xs"></i>
                                                                     </a>
@@ -595,55 +1319,43 @@
                                                                         <i class="socicon socicon-twitter icon icon--xs"></i>
                                                                     </a>
                                                                 </li>
-
                                                             </ul>
-
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-                                                <div class="row likes-container">
-
-                                                    <div class="col-sm-6">
-
-                                                        <div class="feature feature-1 boxed boxed--md boxed--border">
-                                                            <i class="icon icon--md icon-Like"></i>
-                                                            <h4>Likes</h4>
-                                                            <p> Linux, new organisational models (e.g. Frederic Laloux, spiral dynamics),
-                                                                singing, fitness
-                                                            </p>
-
+                                                <div class="likes-container">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="feature feature-1 boxed boxed--md boxed--border">
+                                                                <i class="icon icon--md icon-Like"></i>
+                                                                <h4>Likes</h4>
+                                                                <p> Linux, new organisational models (e.g. Frederic Laloux, spiral dynamics),
+                                                                    singing, fitness
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="feature feature-1 boxed boxed--md boxed--border">
-                                                            <i class="icon icon--md icon-Unlike"></i>
-                                                            <h4>Dislikes</h4>
-                                                            <p> hierarchies by default, unstable Wi-Fi, waste in nature
-                                                            </p>
-
+                                                        <div class="col-sm-6">
+                                                            <div class="feature feature-1 boxed boxed--md boxed--border">
+                                                                <i class="icon icon--md icon-Unlike"></i>
+                                                                <h4>Dislikes</h4>
+                                                                <p> hierarchies by default, unstable Wi-Fi, waste in nature
+                                                                </p>
+                                                                <br>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
-
 
 
                                             </div>
 
 
-
                                         </div>
-
-
                                     </div>
+
                                 </li>
 
-
-
                                 <li>
-
 
                                     <div class="container text-center">
                                         <div class="row">
@@ -679,8 +1391,7 @@
                                                             <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                                             <h4>Connect</h4>
                                                         nilesh.sakpal@sustify.de
-                                                      
-                                                        
+                                                        <br><br>
 
                                                             <ul class="social-list list-inline list--hover text-center">
                                                                 <li><br>
@@ -775,7 +1486,9 @@
                                                             <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                                             <h4>Connect</h4>
                                              lucia.dellaputta@sustify.de
-                                                          <br/><br/>
+                                                            <br>
+                                                            <br><br>
+                                                            
                                                             <ul class="social-list list-inline list--hover text-center">
                                                                 <li>
                                                                     <a href="skype:luciadp67?call" target="_blank">
@@ -835,7 +1548,7 @@
                                                 <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height:516px">
                                                     <img alt="Image" src="img/padmaja.jpg" style="max-width: 60%;">
                                                     <h4>Padmaja Pai</h4>
-                                                    <span style="color: #33cc99;">Local Program Manager</span>
+                                                    <span style="color: #33cc99;">Advisory Board Member</span>
                                                     <p style="margin-top:1vh"> A chemical engineer by training; a trainer by profession. Always travelling
                                                         to visit factories around the Indian subcontinent to train workers.
                                                         She’s a go-getter and sees life full of opportunities.</p>
@@ -858,7 +1571,9 @@
                                                             <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                                             <h4>Connect</h4>
                                                     paipadmaja@yahoo.com
-                                                         
+                                                            <br>
+                                                            <br>
+                                                            
                                                             <ul class="social-list list-inline list--hover text-center">
                                                                 <li><br>
                                                                     <a href="skype:Padmaja19?call" target="_blank">
@@ -910,6 +1625,9 @@
                                     </div>
 
                                 </li>
+
+
+
                             </ul>
 
 
@@ -977,8 +1695,7 @@
                                                                     <div class="tab__title">
                                                                         <span class="h5">Connect</span>
                                                                     </div>
-                                                                    <div class="tab__content text-center">
-                                                                      
+                                                                    <div class="tab__content text-center">                                                                       
                                                                         <div class="col-sm-4">
                                                                             <div class="feature feature-3 boxed">
                                                                                 <a href="mailto:sonja.westphal@sustify.de">
@@ -1015,102 +1732,101 @@
                                 </li>
 
 
+
                                 <li>
-                                    <div class="container text-center">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <div class="feature feature-3 boxed boxed--xlg boxed--border team-member">
-                                                    <img alt="Image" src="img/sreejith-fill.jpg">
-                                                    <h4>Seejith V S</h4>
-                                                    <span style="color: #33cc99;">CTO</span>
-                                                    <div class="team-member">
-                                                        <div class="tabs-container text-center" data-content-align="left">
-                                                            <ul class="tabs">
-                                                                <li class="active tab-button">
-                                                                    <div class="tab__title">
-                                                                        <span class="h5">About</span>
-                                                                    </div>
-                                                                    <div class="tab__content text-center">
-                                                                        <p>A tech-savvy entrepreneur & engineer who has experience
-                                                                            in leading, managing & developing in software agencies.</p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="tab-button">
-                                                                    <div class="tab__title">
-                                                                        <span class="h5">Exp</span>
-                                                                    </div>
-                                                                    <div class="tab__content">
-                                                                        <section class=" ">
-                                                                            <div class="container text-center">
-                                                                                <div class="row">
-                                                                                    <p style="margin-top:1vh">Experience in managing people & projects. Managed 
-                                                                                            several high-tech projects for organisations and entrepreneurs across the globe.
-                                                                                    </p>
+                                        <div class="container text-center">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="feature feature-3 boxed boxed--xlg boxed--border team-member">
+                                                        <img alt="Image" src="img/sreejith-fill.jpg">
+                                                        <h4>Seejith V S</h4>
+                                                        <span style="color: #33cc99;">CTO</span>
+                                                        <div class="team-member">
+                                                            <div class="tabs-container text-center" data-content-align="left">
+                                                                <ul class="tabs">
+                                                                    <li class="active tab-button">
+                                                                        <div class="tab__title">
+                                                                            <span class="h5">About</span>
+                                                                        </div>
+                                                                        <div class="tab__content text-center">
+                                                                            <p>  A tech-savvy entrepreneur and engineer who has experience
+                                                                                    in leading, managing and developing in software agencies.</p>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="tab-button">
+                                                                        <div class="tab__title">
+                                                                            <span class="h5">Exp</span>
+                                                                        </div>
+                                                                        <div class="tab__content">
+                                                                            <section class=" ">
+                                                                                <div class="container text-center">
+                                                                                    <div class="row">
+                                                                                        <p style="margin-top:1vh"> A visionary with experience in managing people and projects. Managed 
+                                                                                                several high-tech projects for organisations and entrepreneurs across the globe.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="tab-button">
+                                                                        <div class="tab__title">
+                                                                            <span class="h5">Likes</span>
+                                                                        </div>
+                                                                        <div class="tab__content text-center">
+                                                                            <section class=" ">
+                                                                                <div class="container">
+                                                                                    <div class="row">
+                                                                                        <i class="icon icon--md icon-Like"></i>
+    
+                                                                                        <p style="margin-top:1vh">  Linux, new organisational models (e.g. Frederic Laloux, spiral dynamics), 
+                                                                                                singing, fitness</p>
+                                                                                        <i class="icon icon--md icon-Unlike"></i>
+                                                                                        <p> hierarchies by default, unstable Wi-Fi, waste in nature</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="tab-button">
+                                                                        <div class="tab__title">
+                                                                            <span class="h5">Connect</span>
+                                                                        </div>
+                                                                        <div class="tab__content text-center">
+                                                                            
+                                                                            <div class="col-sm-4">
+                                                                                <div class="feature feature-3 boxed">
+                                                                                    <a href="mailto:sreejithvs333@outlook.com">
+                                                                                        <i class="icon color--primary icon-Mail"></i>
+                                                                                        <p>sreejithvs333@outlook.com</p>
+                                                                                    </a>
                                                                                 </div>
                                                                             </div>
-                                                                        </section>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="tab-button">
-                                                                    <div class="tab__title">
-                                                                        <span class="h5">Likes</span>
-                                                                    </div>
-                                                                    <div class="tab__content text-center">
-                                                                        <section class=" ">
-                                                                            <div class="container">
-                                                                                <div class="row">
-                                                                                    <i class="icon icon--md icon-Like"></i>
-
-                                                                                    <p style="margin-top:1vh">Linux, new organisational models (e.g. Frederic Laloux, spiral dynamics), 
-                                                                                        singing, fitness</p>
-                                                                                    <i class="icon icon--md icon-Unlike"></i>
-                                                                                    <p>hierarchies by default, unstable Wi-Fi, waste in nature</p>
-                                                                                </div>
+                                                                            <div class="col-sm-4">
+                                                                                <a href="skype:sreejithvs333?call" target="_blank">
+                                                                                    <div class="feature feature-3 boxed">
+                                                                                        <i class="icon color--primary icon-Skype"></i>
+                                                                                        <p>Sreejith V S</p>
+                                                                                    </div>
+                                                                                </a>
                                                                             </div>
-                                                                        </section>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="tab-button">
-                                                                    <div class="tab__title">
-                                                                        <span class="h5">Connect</span>
-                                                                    </div>
-                                                                    <div class="tab__content text-center">
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="feature feature-3 boxed">
-                                                                                <a href="mailto:alexandra.barlow@sustify.de">
-                                                                                    <i class="icon color--primary icon-Mail"></i>
-                                                                                    <p>sreejithvs333@gmail.com</p>
+                                                                            <div class="col-sm-4">
+                                                                                <a href="https://goo.gl/kcBH6B">
+                                                                                    <div class="feature feature-3 boxed">
+                                                                                        <i class="icon color--primary icon-Linkedin"></i>
+                                                                                        <p>https://goo.gl/kcBH6B</p>
+                                                                                    </div>
                                                                                 </a>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-sm-4">
-                                                                            <a href="skype:sreejithvs333?call" target="_blank">
-                                                                                <div class="feature feature-3 boxed">
-                                                                                    <i class="icon color--primary icon-Skype"></i>
-                                                                                    <p>sreejithvs333</p>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <a href="https://goo.gl/kcBH6B">
-                                                                                <div class="feature feature-3 boxed">
-                                                                                    <i class="icon color--primary icon-Linkedin"></i>
-                                                                                    <p>https://goo.gl/kcBH6B</p>
-                                                                                </div>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-
+                                    </li>
 
                                 <li>
                                     <div class="container text-center">
@@ -1168,7 +1884,7 @@
                                                                         <span class="h5">Connect</span>
                                                                     </div>
                                                                     <div class="tab__content text-center">
-                                                                    
+
                                                                         <div class="col-sm-4">
                                                                             <div class="feature feature-3 boxed">
                                                                                 <a href="mailto:nilesh.sakpal@sustify.de">
@@ -1268,8 +1984,7 @@
                                                                     <div class="tab__title">
                                                                         <span class="h5">Connect</span>
                                                                     </div>
-                                                                    <div class="tab__content text-center">
-                                                                       
+                                                                    <div class="tab__content text-center">                                                                       
                                                                         <div class="col-sm-4">
                                                                             <div class="feature feature-3 boxed">
                                                                                 <a href="mailto:lucia.dellaputta@sustify.de">
@@ -1314,7 +2029,7 @@
                                                 <div class="feature feature-3 boxed boxed--xlg boxed--border team-member">
                                                     <img alt="Image" src="img/padmaja-fill.jpg">
                                                     <h4>Padmaja Pai</h4>
-                                                    <span style="color: #33cc99;">Advisory board</span>
+                                                    <span style="color: #33cc99;">Advisory Board Member</span>
                                                     <div class="team-member">
                                                         <div class="tabs-container text-center" data-content-align="left">
                                                             <ul class="tabs">
@@ -1369,7 +2084,6 @@
                                                                         <span class="h5">Connect</span>
                                                                     </div>
                                                                     <div class="tab__content text-center">
-                                                                     
                                                                         <div class="col-sm-4">
                                                                             <div class="feature feature-3 boxed">
                                                                                 <a href="mailto:padmaja.pai@sustify.de">
@@ -1504,12 +2218,121 @@
         <i class="stack-interface stack-up-open-big hidden-xs hidden-xxs"></i>
     </a>
 
+
+
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/flickity.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/custom.js"></script>
+
+    <!-- script for beneficiaries section hover-->
+    <script>
+        // $(window).resize(function(){
+            // do functionality on screens greater than 992px
+            if (window.matchMedia('(min-width: 992px)').matches)
+            {
+                //setting the identifier class to a variable
+                var selectedBeneficiary = '.sustify-beneficiary';                
+                //function for displaying content only when clicked
+                $(selectedBeneficiary).on('click', function() {  
+                    // if ($(this).hasClass('active')){
+                    //     $(this).removeClass('active');
+                    // } else {
+                        $(selectedBeneficiary).removeClass('active');         
+                        $(this).toggleClass('active');
+                    // }           
+                });        
+                //function for displaying content on hover and clearing the 
+                //displayed one if any was previously displayed
+                $(selectedBeneficiary).hover(function(){
+                    $(selectedBeneficiary).removeClass('active');
+                    $(this).toggleClass('active');
+                });        
+            }
+            // do functionality on screens between than 991px and 650px
+            else if ( window.matchMedia('(min-width: 650px)').matches && window.matchMedia('(max-width: 991px)').matches )
+            {
+                $(document).ready(function(){
+                    
+                    $('.sustify-beneficiary.beneficiary-retail-brand').addClass('active');
+                    
+                    $('.beneficiary-retail-brand').on('click', function() {  
+                    
+                        $('.sustify-beneficiary').removeClass('active');   
+                        $('.beneficiary-details-points').removeClass('active');   
+                        $(this).toggleClass('active');
+                        $('.beneficiary-details-points.beneficiary-retail-brand').toggleClass('active');
+                            
+                    }); 
+                    
+                    $('.beneficiary-factory-management').on('click', function() {  
+                    
+                        $('.sustify-beneficiary').removeClass('active');   
+                        $('.beneficiary-details-points').removeClass('active');   
+                        $(this).toggleClass('active');
+                        $('.beneficiary-details-points.beneficiary-factory-management').toggleClass('active');
+                            
+                    });
+
+                    $('.beneficiary-factory-employees').on('click', function() {  
+                    
+                        $('.sustify-beneficiary').removeClass('active');   
+                        $('.beneficiary-details-points').removeClass('active');   
+                        $(this).toggleClass('active');
+                        $('.beneficiary-details-points.beneficiary-factory-employees').toggleClass('active');
+                            
+                    });
+
+                });
+            }
+
+        // });                
+    </script>
+
+    <!-- script for course library desktop view -->
+    <script>
+        
+        // $(window).resize(function(){
+            // do functionality on screens greater than 650px
+         
+            $('.course-detail-item').hide();
+            $('#sustifyCourse1').show();
+            // do functionality on screens greater than 650px
+            if (window.matchMedia('(min-width: 650px)').matches)
+            {   
+                
+                $('.course-item-title-container').click(function(){
+                    var courseDetailId = $(this).attr('target');                    
+                    $('.course-item-title-container').removeClass('active');
+                    $(this).toggleClass('active');
+                    $('.course-detail-item').hide();
+                    $(courseDetailId).show();              
+                });
+            }          
+            // do functionality on screens less than 650px
+            else if (window.matchMedia('(max-width: 649px)').matches)
+            {       
+                    $('.course-item-title-container-mob').click(function(){      
+                        $('.course-item-title-container-mob').removeClass('active');
+                        $(this).addClass('active');
+                    });
+                    $('.course-item-title-container').click(function(){        
+                        var courseDetailId = $(this).attr('target');
+                        $('.course-item-title-container').removeClass('active');
+                        $(this).toggleClass('active');
+                        $('.course-detail-item').hide();
+                        $(courseDetailId).show();
+                    });
+            }
+
+        // });
+
+
+    </script>
+   
 
 </body>
 

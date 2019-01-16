@@ -176,8 +176,8 @@ x slider styles x
     transform: translate3d(0, 2000px, 0); }
   to {
     opacity: 1;
-    transform: none; } }
-.disappear {
+    transform: none; } } 
+ .disappear {
   display: none; }
 
 .appear {
@@ -456,6 +456,9 @@ Mobile team styles
   .brands-love {
     padding: 0; }
 
+  .sustify-product-section {
+    padding: 0; }
+
   .team {
     padding: 0; } }
 .text-block .icon + h4 {
@@ -476,6 +479,10 @@ Mobile team styles
       padding-bottom: 0; }
 
   .brands-love {
+    padding-top: 2.5em;
+    margin-bottom: -70px; }
+
+  .sustify-product-section {
     padding-top: 2.5em;
     margin-bottom: -70px; }
 
