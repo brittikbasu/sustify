@@ -9023,8 +9023,8 @@ footer.footer-7 {
 /**! 43. why sustify, Product **/
 
 
-.hidden-md-sm-only{
-  display: block;
+.hidden-md-sm-xs{
+  display: none;
 }
 .display-upto-xs{
   display: block;
@@ -9470,6 +9470,10 @@ svg.circle-border{
 
 /*course library*/
 
+.course-library-section{
+  padding-top: 1.85714286em;
+}
+
 .course-library-section .pad-right-control{
   padding-right: 0px;
 }
@@ -9754,7 +9758,7 @@ border-radius: 5px 0px 0px 5px;
     margin-left: 29.1666666667%;
   }
   
-  .hidden-md-sm-only{
+  .hidden-md-sm-xs{
     display: none;
   }
   .display-lg{
@@ -9880,8 +9884,8 @@ border-radius: 5px 0px 0px 5px;
 }
 
 @media screen and (max-width: 650px){
-  .hidden-md-sm-only{
-    display: block;
+  .hidden-md-sm-xs{
+    display: none;
   }
   .display-upto-xs{
     display: none;
@@ -9941,17 +9945,22 @@ border-radius: 5px 0px 0px 5px;
     height: unset;
     width: unset;
     border: none;
-    padding: 70px 15px 15px 15px;
-    background-color: #FAFAFB;
+    padding: 55px 15px 15px 15px;
+    /* background-color: #FAFAFB; */
+    background-color: #FFFFFF;
     border-radius: 10px;
-    box-shadow: 0 2px 20px 10px #00000010;
+    /* box-shadow: 0 2px 20px 10px #0000000d; */
+    box-shadow: none;
     margin-left: auto;
     margin-right: auto;
     max-width: 380px;
-    margin-top: 70px;
+    margin-top: 80px;
   }
-
-  .sustify-beneficiary.beneficiary-retail-brand.active{
+  .sustify-beneficiary.active{
+    box-shadow: 0 2px 20px 10px #0000001d;
+    background-color: #FAFAFB;
+  }
+  /* .sustify-beneficiary.beneficiary-retail-brand.active{
     box-shadow: none;
     transition: none;
   }
@@ -9963,17 +9972,19 @@ border-radius: 5px 0px 0px 5px;
   }
   .sustify-beneficiary.beneficiary-retail-brand.active .beneficiary-icon-normal{
     display: block;
-  }
+  } */
 
 
 
   .sustify-beneficiary h3{
+    margin-bottom: 0px;
     position: unset;
     transform: none;
     width: unset;
   }
 
   .beneficiary-icon{
+    border-radius: 50%;
     height: 120px;
     width: 120px;
     display: block;
@@ -9996,8 +10007,11 @@ border-radius: 5px 0px 0px 5px;
     width: unset;
   }
   .beneficiary-details-points{
-    display: block;
     max-width: unset;
+  }
+
+  .sustify-beneficiary.active .beneficiary-details-points{
+    display: block !important;
   }
 
   .beneficiary-details-points.beneficiary-retail-brand{
@@ -10031,6 +10045,10 @@ border-radius: 5px 0px 0px 5px;
     max-width: 360px;
     margin: 0px auto 20px;
     display: block;
+  }
+
+  .beneficiary-details-points li::before{
+    top: 1px;
   }
 
 
