@@ -748,3 +748,13 @@ Mobile team styles
 .footer-image {
     padding: 20px;
 }
+
+.reduced-size-image {
+    height: 50px;
+    max-width: 50px;
+}
+
+.reduced-width-image {
+    width: 50px;
+    height: 40px;
+}
