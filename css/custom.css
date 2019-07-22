@@ -755,7 +755,7 @@ Mobile team styles
 }
 
 .reduced-width-image {
-    height: 30px;
+    height: 30px !important;
 }
 
 .extra-bottom-margin {
