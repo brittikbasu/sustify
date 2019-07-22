@@ -744,3 +744,7 @@ Mobile team styles
     display: flex;
     height: 246px !important
 }
+
+.footer-image {
+    padding: 20px;
+}
