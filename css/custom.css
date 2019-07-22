@@ -758,3 +758,7 @@ Mobile team styles
     width: 50px;
     height: 40px;
 }
+
+.extra-bottom-margin {
+    margin-bottom: 15px !important;
+}
