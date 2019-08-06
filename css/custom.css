@@ -206,6 +206,7 @@ slider styles
   .flickity-viewport {
     min-height: 774px;
   }
+
   .slider .slides li .feature:not(.feature-9) {
     margin-bottom: 1vh;
   }
@@ -245,6 +246,7 @@ x slider styles x
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -269,21 +271,27 @@ x slider styles x
   from {
     transform: scale3d(1, 1, 1);
   }
+
   30% {
     transform: scale3d(1.25, 0.75, 1);
   }
+
   40% {
     transform: scale3d(0.75, 1.25, 1);
   }
+
   50% {
     transform: scale3d(1.15, 0.85, 1);
   }
+
   65% {
     transform: scale3d(0.95, 1.05, 1);
   }
+
   75% {
     transform: scale3d(1.05, 0.95, 1);
   }
+
   to {
     transform: scale3d(1, 1, 1);
   }
@@ -299,12 +307,15 @@ x slider styles x
   .white-box {
     text-align: center;
   }
+
   .white-box p {
     line-height: 1.24em;
   }
+
   .white-box .feature-2 p:first-of-type {
     margin-top: -1em;
   }
+
   .white-box h5 {
     line-height: 3em;
   }
@@ -402,6 +413,7 @@ footer.space--xxs {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -415,6 +427,7 @@ footer.space--xxs {
 }
 
 @media screen and (max-width: 450px) {
+
   section.space--xxs,
   footer.space--xxs {
     padding-top: 3.85714286em;
@@ -445,6 +458,7 @@ Mobile team styles
   .team .flickity-viewport {
     min-height: 775px;
   }
+
   .team .slider .slides li .feature:not(.feature-9) {
     margin-bottom: 1vh;
   }
@@ -461,6 +475,7 @@ Mobile team styles
 }
 
 @media (max-width: 767px) {
+
   .team .team-member section,
   .team .team-member footer,
   .team .team-member section.section--even {
@@ -494,6 +509,7 @@ Mobile team styles
 }
 
 @media (max-width: 767px) {
+
   .team .team-member .tabs li:not(:last-child),
   .team .team-member .tabs li:last-child {
     border-bottom: 1px solid rgba(102, 204, 153, 0.3294117647);
@@ -542,12 +558,14 @@ Mobile team styles
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
   }
+
   .bar--absolute,
   .pos-fixed {
     z-index: 99;
     width: 100%;
     height: 78px;
   }
+
   #ldp.feature-3 {
     height: 470px;
   }
@@ -563,6 +581,7 @@ Mobile team styles
   #ldp.feature-3 {
     height: 447px;
   }
+
   #brt.feature-3 {
     height: 427px;
   }
@@ -584,7 +603,7 @@ Mobile team styles
   }
 }
 
-.feature i + h5 {
+.feature i+h5 {
   margin-top: 0.2em;
 }
 
@@ -592,92 +611,115 @@ Mobile team styles
   section.space--xxs {
     padding-top: 2.7em;
   }
+
   section.space--xs,
   footer.space--xs {
     padding-top: 2em;
     padding-bottom: 0;
   }
+
   section.space--xxs,
   footer.space--xxs {
     padding-top: 1.85714286em;
     padding-bottom: 0em;
   }
+
   section.space--xxs,
   footer.space--xxs {
     padding-bottom: 0;
   }
+
   .course-library {
     margin-bottom: -43px;
   }
+
   .team {
     margin-bottom: -3.7em;
   }
+
   .home {
     margin-bottom: -3.3em;
   }
+
   .bar.bar--sm {
     padding: 0.5em 0;
   }
+
   .logo-container {
     margin-top: 0.65em;
   }
+
   section {
     padding-bottom: 2em;
   }
+
   .train {
     margin-top: -2em;
     margin-bottom: 1.5em;
   }
+
   .train .local-support {
     margin-top: -1em;
   }
+
   .touch h2 {
     margin-top: -0.9em;
   }
+
   .course-library {
     padding: 0;
   }
+
   .brands-love {
     padding: 0;
   }
+
   .sustify-product-section {
     padding: 0;
   }
+
   .team {
     padding: 0;
   }
 }
 
-.text-block .icon + h4 {
+.text-block .icon+h4 {
   margin-bottom: -0.11em;
 }
 
 @media (min-width: 451px) {
+
   section.space--md,
   footer.space--md {
     padding-top: 4em;
     padding-bottom: 4em;
   }
+
   .course-library {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: -50px;
   }
+
   .course-library section.space--xs,
   .course-library footer.space--xs {
     padding-bottom: 0;
   }
+
   .brands-love {
     padding-top: 2.5em;
     margin-bottom: -70px;
   }
+
   .sustify-product-section {
     padding-top: 2.5em;
     margin-bottom: -70px;
   }
+
   .team {
     padding-top: 2em;
   }
+
   .break {
     width: 100%;
     height: 10px;
@@ -758,4 +800,8 @@ Mobile team styles
   width: 189px;
   margin-left: 25px;
   margin-top: -20px;
+}
+
+.footer-5 img:last-child {
+  margin-bottom: 10px;
 }
