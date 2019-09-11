@@ -678,8 +678,16 @@ footer.space--md {
   line-height: 1.2em;
 }
 
+footer.space--xs {
+  padding-top: 1.11428571em;
+}
+
 .footer-5 .footer-image {
   margin-top: 1px;
+  width: 190px;
+}
+.footer-5 .send {
+  margin-top: 10px;
 }
 .footer-5 p {
   margin-top: 30px;
