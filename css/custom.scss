@@ -1,4 +1,4 @@
-    /*! Place your custom styles here */
+    /*! Global styles */
 
     $primary:#33cc99;
     $primary-2:#66cc99;
@@ -31,6 +31,14 @@
             width: 990px;
         }
     }
+
+    .extra-bottom-margin {
+        margin-bottom: 15px !important;
+    }
+
+    /*xxx Global styles xxx*/
+
+
 
     .logo-top {
         @media (max-width: 420px) {
@@ -742,6 +750,8 @@ Mobile team styles
         }
     }
 
+
+
     .menu-toggle {
         background: transparent;
         box-shadow: none;
@@ -777,12 +787,12 @@ Mobile team styles
         }
     }
 
-
+    /*
     footer.space--xs {
         padding-top: 1.11428571em;
     }
 
-
+*/
     .footer-5 {
 
 
@@ -810,8 +820,4 @@ Mobile team styles
         .loning {
             margin-top: -19px;
         }
-    }
-
-    .hideme {
-        display: none;
     }
