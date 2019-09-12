@@ -24,6 +24,10 @@ a .highlight {
   margin-bottom: 15px !important;
 }
 
+.fixing-width {
+  max-width: 100% !important;
+}
+
 /*xxx Global styles xxx*/
 @media (max-width: 420px) {
   .logo-top {
@@ -683,12 +687,10 @@ footer.space--md {
   line-height: 1.2em;
 }
 
-/*
-    footer.space--xs {
-        padding-top: 1.11428571em;
-    }
+footer.space--xs {
+  padding-top: 1em !important;
+}
 
-*/
 .footer-5 .footer-image {
   margin-top: 1px;
   width: 190px;
