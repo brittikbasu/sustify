@@ -1,4 +1,4 @@
-/*! Place your custom styles here */
+/*! Global styles */
 @font-face {
   font-family: "Noto Serif";
   src: url("../fonts/noto-serif/NotoSerif-Regular.ttf");
@@ -20,6 +20,15 @@ a .highlight {
   }
 }
 
+.extra-bottom-margin {
+  margin-bottom: 15px !important;
+}
+
+.fixing-width {
+  max-width: 100% !important;
+}
+
+/*xxx Global styles xxx*/
 @media (max-width: 420px) {
   .logo-top {
     margin-top: 1.15vh;
@@ -679,7 +688,7 @@ footer.space--md {
 }
 
 footer.space--xs {
-  padding-top: 1.11428571em;
+  padding-top: 1em !important;
 }
 
 .footer-5 .footer-image {
@@ -700,10 +709,6 @@ footer.space--xs {
 }
 .footer-5 .loning {
   margin-top: -19px;
-}
-
-.hideme {
-  display: none;
 }
 
 /*# sourceMappingURL=custom.css.map */
