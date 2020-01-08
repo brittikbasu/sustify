@@ -19,7 +19,11 @@ var delina = () => {
     document.querySelector(".delina-desktop").style.display = "none";
   }
 
-  if (window.innerWidth < 768 && window.scrollY >= 745) {
+  if (
+    window.innerWidth < 768 &&
+    window.scrollY >= 745 &&
+    window.scrollY <= 9569
+  ) {
     document.querySelector(".delina-mobile").style.display = "inline";
   } else {
     document.querySelector(".delina-mobile").style.display = "none";
