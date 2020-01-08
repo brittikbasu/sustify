@@ -13,10 +13,16 @@
 //   })();
 
 var delina = () => {
-  if (window.scrollY > 923) {
+  if (window.innerWidth >= 768 && window.scrollY > 923) {
     document.querySelector(".delina-desktop").style.display = "inline";
   } else {
     document.querySelector(".delina-desktop").style.display = "none";
+  }
+
+  if (window.innerWidth < 768 && window.scrollY >= 745) {
+    document.querySelector(".delina-mobile").style.display = "inline";
+  } else {
+    document.querySelector(".delina-mobile").style.display = "none";
   }
 };
 
