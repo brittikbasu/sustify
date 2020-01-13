@@ -12,6 +12,7 @@
 // */
 //   })();
 
+/* delina logo appears after scroll 
 var delina = () => {
   if (window.innerWidth >= 768 && window.scrollY > 923) {
     document.querySelector(".delina-desktop").style.display = "inline";
@@ -32,3 +33,19 @@ var delina = () => {
 
 window.addEventListener("scroll", delina);
 window.onload(delina);
+*/
+
+//window.addEventListener("scroll", delina);
+window.onload = () => {
+  if (window.innerWidth >= 768) {
+    document.querySelector(".delina-desktop").style.display = "inline";
+  } else {
+    document.querySelector(".delina-desktop").style.display = "none";
+  }
+
+  if (window.innerWidth < 768) {
+    document.querySelector(".delina-mobile").style.display = "inline";
+  } else {
+    document.querySelector(".delina-mobile").style.display = "none";
+  }
+};
