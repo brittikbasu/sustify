@@ -823,10 +823,17 @@ footer.space--xs {
     position: sticky;
     position: fixed;
     z-index: 100;
-    height: 13vw;
+    height: 20vw;
     margin-right: 1.2vh;
     right: 0;
     bottom: 0;
+    margin-bottom: -12.1vh;
+  }
+
+  .delina-desktop:hover {
+    margin-bottom: 0;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
   }
   .back-to-top {
     float: left;
