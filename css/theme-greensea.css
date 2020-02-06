@@ -4574,7 +4574,7 @@ h2 + .btn,
 }
 /*! -- Stack Images -- */
 img:last-child {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 img.flag {
   max-height: 1.85714286em;
