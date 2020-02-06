@@ -852,8 +852,9 @@ footer.space--xs {
   display: none;
   position: fixed;
   z-index: 100;
-  bottom: 0;
+  bottom: 0 !important;
   margin-bottom: 0;
   margin-left: -1px;
   min-width: 101vw;
+  margin-bottom: 0 !important;
 }
