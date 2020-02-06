@@ -829,12 +829,13 @@ footer.space--xs {
     bottom: 0;
     margin-bottom: -12.1vh;
   }
-
+  /*
   .delina-desktop:hover {
     margin-bottom: 0;
     animation-name: fadeInUp;
     animation-duration: 2s;
   }
+  */
   .back-to-top {
     float: left;
     left: 0;
