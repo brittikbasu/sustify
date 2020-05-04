@@ -27,67 +27,129 @@
 
         }
     </style>
-</head>
 
-<body data-smooth-scroll-offset="77" id="top">
 
-    <div class="nav-container bg--secondary">
-        <div class="header-hide">
-            <nav class="bar bar-toggle bar--sm" data-scroll-class='90vh:pos-fixed'>
-                <!-- <nav class="bar bar--sm bar-toggle bar-2" data-scroll-class='100vh:pos-fixed'>-->
+    
+  <script>
+    let de = false;
+    function setLang() {
+      if (localStorage.getItem('deutsch') === "true") {
+        de = true;
+              document.querySelector('.de').style.color = "#69ce9b";
+      }
+      else {
+        de = false;
+                      document.querySelector('.en').style.color = "#69ce9b";
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 col-xs-3">
-                            <div class="bar__module">
-                                <a href="index.html">
-                                    <img class="logo logo-dark" alt="logo" src="img/sustify_logo_with slogan_rgb.png">
-                                    <img class="logo logo-light" alt="logo" src="img/sustify_logo_with slogan_rgb.png"> </a>
-                            </div>
-                        </div>
-                        <div class="col-md-11 col-sm-10 col-xs-9">
-                            <div class="bar__module">
-                                <div class="modal-instance pull-right">
-                                    <a class="modal-trigger menu-toggle" href="#">
-                                        <i class="stack-interface stack-menu"></i>
-                                    </a>
-                                    <div class="modal-container menu-fullscreen">
-                                        <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em;">
-                                            <div class="pos-vertical-center pos-asbolute text-center">
+      }
+      return {
+        de: de,
+        toggleDE() {
+          this.de = true;
+          document.querySelector('.de').style.color = "#69ce9b";
+          document.querySelector('.en').style.color = "#638686";
+          localStorage.clear();
+          localStorage.setItem('deutsch', 'true');
 
-                                                <ul class="menu-vertical">
-                                                    <li class="h3">
-                                                        <a href="index.html#">Home</a>
-                                                    </li>
-                                                    <li class="h3">
-                                                        <a href="index.html#about" target="_self" class="inner-link">About</a>
-                                                    </li>
-                                                    <li class="h3">
-                                                        <a href="index.html#implementation" target="_self" class="inner-link">Implementation</a>
-                                                    </li>
-                                                    <li class="h3">
-                                                        <a href="index.html#benefits" target="_self" class="inner-link">Benefits</a>
-                                                    </li>
-                                                    <li class="h3">
-                                                        <a href="index.html#team" target="_self" class="inner-link">Team</a>
-                                                    </li>
-                                                    <li class="h3">
-                                                        <a href="index.html#contact" target="_self" class="inner-link">Contact</a>
-                                                    </li>
 
-                                                </ul>
-                                            </div>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        },
+        toggleEN() {
+          this.de = false;
+          document.querySelector('.en').style.color = "#69ce9b";
+          document.querySelector('.de').style.color = "#638686";
+          localStorage.clear();
+          localStorage.setItem('deutsch', 'false');
+
+
+
+        }
+      }
+
+      console.log('fn setlang executed');
+    }
+
+  </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    </head>
+    <body data-smooth-scroll-offset="77" id="top" x-data="setLang()">
+    
+            <div class="nav-container border">
+    <div class="header-hide">
+      <nav class="bar bar-toggle bar--sm" data-scroll-class="90vh:pos-fixed">
+        <div class="container">
+          <div class="row logo-container">
+            <div class="col-md-1 col-sm-2 col-xs-3 logo-top">
+              <div class="bar__module">
+                <a href="index.html">
+                  <img class="logo logo-dark" alt="logo" src="img/sustify_logo_with%20slogan_rgb.png" />
+                  <img class="logo logo-light" alt="logo" src="img/sustify_logo_with%20slogan_rgb.png" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-11 col-sm-10 col-xs-9">
+              <div class="bar__module pull-right">
+                <div class="modal-instance">
+                  <span class="lang">
+                    <button @click="toggleDE()" style="padding:10px; border:none">
+                      <strong class="de">DEUTSCH</strong>
+                    </button>
+                    <button @click="toggleEN()" style="padding:10px; border:none">
+                      <strong class="en">ENGLISH</strong>
+                    </button>
+                  </span>
+                  <a class="modal-trigger menu-toggle" href="#">
+                    <img src="img/hamburger.svg" alt="menu button" style="margin-top: 20%;" />
+                  </a>
+                  <div class="modal-container menu-fullscreen">
+                    <div class="modal-content" data-width="100%" data-height="100%"
+                      style="padding-bottom: 6em; background: none;">
+                      <div class="pos-vertical-center pos-asbolute text-center">
+                        <ul class="menu-vertical">
+                          <li class="h2">
+                            <a href="./index.html#"><span x-show="!de">Home</span>
+                              <span x-show="de">___</span></a>
+                          </li>
+                          <li class="h2">
+                            <a href="./index.html#whySustify" target="_self" class="inner-link"><span x-show="!de">Why
+                                Sustify</span>
+                              <span x-show="de">___</span></a>
+                          </li>
+                          <li class="h2">
+                            <a href="./index.html#sustifyProduct" target="_self" class="inner-link"><span
+                                x-show="!de">Product</span>
+                              <span x-show="de">___</span></a>
+                          </li>
+                          <li class="h2">
+                            <a href="./index.html#sustifyCourseLibrary" target="_self" class="inner-link">
+                              <span x-show="!de">Course library</span>
+                              <span x-show="de">___</span></a>
+                          </li>
+                          <li class="h2">
+                            <a href="./index.html#team" target="_self" class="inner-link"><span x-show="!de">Team</span>
+                              <span x-show="de">___</span></a>
+                          </li>
+                          <li class="h2">
+                            <a href="./index.html#contact" target="_self" class="inner-link"><span x-show="!de">Contact</span>
+                              <span x-show="de">___</span></a>
+                          </li>
+                          <li class="h2">
+                            <a href="jobs.html" target="_self"><span x-show="!de">Jobs</span>
+                              <span x-show="de">___</span></a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </nav>
+              </div>
+            </div>
+          </div>
         </div>
+      </nav>
     </div>
+  </div>
 
 
 
@@ -96,6 +158,7 @@
 
 
 
+                    <span x-show="!de"> 
 
 
     <section class="space--xs bg--secondary" style="padding-bottom:1em; padding-top:1em;">
@@ -174,6 +237,7 @@
         </div>
     </section>
 
+</span>
 
 
 
@@ -182,67 +246,159 @@
 
 
 
+<!--======================== Please translate the content below to Deutsch ===============================--> 
+
+                    <span x-show="de"> 
 
 
-    <footer class="text-center space--xs footer-5 bg--dark">
-            <div class="container">
+    <section class="space--xs bg--secondary" style="padding-bottom:1em; padding-top:1em;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-md-8">
+                    <h3 style="margin-left:0;">DEUTSCH: Legal Disclosure</h3>
+                    <p>Information in accordance with section 5 TMG
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p class="lead">Sustify has
-                            partnered with</p>
-                        <div class="row">
-                            <div class="col-sm-12" style="margin-top:-21px">
-                                <a href="http://www.stepsol.com/">
-                                    <img class="footer-image"
-                                        alt="Step Logo: STEP is our local partner for consulting and implementation of the program"
-                                        src=" img/step footer.png"> </a>
-                                <a href="https://www.loening-berlin.de">
-                                    <img class="footer-image loning" src="img/löning footer.png" alt="Löning Logo: Löning Human Rights and Responsible Business is a
-                                        consultancy and think-tank specialised in human-rights work."> </a>
-                            </div>
-                        </div>
-                    </div>
+    <section class="switchable bg--secondary">
+        <div class="container">
+            <div class="row">
 
-                    <div class="col-sm-4">
-                        <p class="lead">Sustify is a member of</p>
-                        <div class="row">
-                            <div class="col-sm-12" style="margin-top:5px">
-                                <a href="https://www.maxtex.eu">
-                                    <img class="footer-image" src="img/MaxTex.png"> </a>
-                                <a href="https://www.send-ev.de/">
-                                    <img class="send footer-image" alt="Image" class=""
-                                        src="img/180406_Mitglied_Weiss.png">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <p class="lead">Sustify supports</p>
-                        <div class="row">
-                            <div class="col-sm-12" style="margin-top:5px">
+                <div class="col-sm-12 col-md-12">
+                    <h4>Accountability for Content</h4>
+                    <p>Sustify GmbH
+                        <br>Zellestr. 14
+                        <br>10247 Berlin</p>
+                         <p class="">contact At sustify.de</p>
+ <p>Phone: +49 170 3601180</p>
+                     <p>Amtsgericht Charlottenburg</p>
+                        <p class="">
+                            HRB 194689 B</p>
+                        <p class="">USt.IdNr.: DE317740081</p>
 
-                                <a href="https://www.atmosfair.de">
-                                    <img class="footer-image atmosfair" alt="Image" class=""
-                                        src="img/atmosfair_logo_de.png" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                        <p>Authorized managing director: Sonja Westphal</p>
+ <p class="">The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents'
+                        accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible
+                        for our own content on these web pages. In this context, please note that we are accordingly not
+                        obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances
+                        pointing to illegal activity. Our obligations to remove or block the use of information under generally
+                        applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).</p>
+       
+
+
+                   <!-- <h4>VAT number</h4>
+                    <p class="">DE303738366</p>
+                    <p class="">(VAT identification number in accordance with section 27A of the German VAT act)&nbsp;</p>                   
+-->
+
+                    <h4>Accountability for links</h4>
+                    <p class="">Responsibility for the content of external links (to web pages of third parties) lies solely with the
+                        operators of the linked pages. No violations were evident to us at the time of linking. Should any
+                        legal infringement become known to us, we will remove the respective link immediately.</p>
+
+
+                    <h4>Copyright</h4>
+                    <p class="">Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law
+                        (§ 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject
+                        to copyright protection on our web pages requires the prior consent of the respective owner of the
+                        rights. Individual reproductions of a work are allowed only for private use, so must not serve either
+                        directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable
+                        (§ 106 of the copyright law).</p>
+
+                    <h4>Photographs used</h4>
+                    <p class="">Unsplash : photo-1490677739661-d3395897c0a7
+                        <br> Shutterstock : 128049752
+                        <br> Deposit Photos : 69698565</p>
+
+
+
+                <!--    <br>
+                    <i>Quelle: </i>
+                    <a href="https://www.twigg.de/"> twiggs translations </a>&nbsp;
+
+-->
                 </div>
 
-                <div class="row">
-                    <div class="col-sm-12" style="margin-top:15px; margin-bottom: -20px">
-                        <span class="type--fine-print">©
-                            <span class="update-year">2019</span> Sustify GmbH</span>
-                        <a class="type--fine-print" href="privacy.html" target="_self">Privacy</a>
-                        <a class="type--fine-print" href="legal-disclosure.html" target="_self">Legal</a>
-                        <a class="type--fine-print" href="terms-and-conditions.html" target="_self">Terms & Conditions</a>
+            </div>
+        </div>
+    </section>
 
-                    </div>
-                </div>
+</span>
 
-        </footer>
+
+
+
+
+
+
+<footer class="text-center space--xs footer-5 bg--dark">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-4">
+         <p class="lead">
+           <span x-show="!de">Sustify has partnered with</span>
+           <span x-show="de">___</span></p>
+         <div class="row">
+           <div class="col-sm-12" style="margin-top: -21px;">
+             <a href="http://www.stepsol.com/">
+               <img class="footer-image" alt="Step Logo: STEP is our local partner for consulting and implementation of the program" src=" img/step footer.png" />
+             </a>
+             <a href="https://www.loening-berlin.de">
+               <img class="footer-image loning" src="img/löning footer.png" alt="Löning Logo: Löning Human Rights and Responsible Business is a
+                                        consultancy and think-tank specialised in human-rights work." />
+             </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <p class="lead"><span x-show="!de">Sustify is a member of</span>
+           <span x-show="de">___</span>
+         </p>
+         <div class="row">
+           <div class="col-sm-12" style="margin-top: 5px;">
+             <a href="https://www.maxtex.eu">
+               <img class="footer-image" src="img/MaxTex.png" alt="Image MaxTex-logo" />
+             </a>
+             <a href="https://www.send-ev.de/">
+               <img class="send footer-image" alt="Image" src="img/180406_Mitglied_Weiss.png" />
+             </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <p class="lead"><span x-show="!de">Sustify supports</span>
+           <span x-show="de">___</span></p>
+         <div class="row">
+           <div class="col-sm-12" style="margin-top: 5px;">
+             <a href="https://www.atmosfair.de">
+               <img class="footer-image atmosfair" alt="Image" src="img/atmosfair_logo_de.png" />
+             </a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-12" style="margin-top: 15px; margin-bottom: -20px;">
+         <span class="type--fine-print">
+           ©
+           <span class="update-year">2018</span>
+           Sustify GmbH
+         </span>
+         <a class="type--fine-print" href="privacy.html" target="_self"><span x-show="!de">Privacy</span>
+           <span x-show="de">___</span></a>
+         <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span>
+           <span x-show="de">___</span></a>
+         <a class="type--fine-print" href="terms-and-conditions.html" target="_self"><span x-show="!de">Terms
+             &Conditions</span>
+           <span x-show="de">___</span></a>
+       </div>
+     </div>
+   </div>
+ </footer>        
 
     <a class="back-to-top inner-link" href="#top" data-scroll-class="100vh:active">
         <i class="stack-interface stack-up-open-big"></i>
