@@ -859,3 +859,9 @@ footer.space--xs {
   min-width: 101vw;
   margin-bottom: 0 !important;
 }
+
+@media screen and (min-width: 450px) {
+.beneficiary-details{
+  width:355px;
+}
+}
