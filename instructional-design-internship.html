@@ -87,7 +87,7 @@
               <div class="col-md-10 col-sm-9 col-xs-8">
                 <div class="bar__module pull-right">
                   <div class="modal-instance">
-                    <span class="lang">
+                    <span class="lang" style="display:none;">
                       <button @click="toggleDE()" style="padding:10px; border:none">
                         <strong class="de">DEUTSCH</strong>
                       </button>
@@ -96,7 +96,7 @@
                       </button>
                     </span>
                     <a class="modal-trigger menu-toggle" href="#">
-                      <img src="img/hamburger.svg" alt="menu button" style="margin-top: 20%;" />
+                      <img src="img/hamburger.svg" alt="menu button" style="margin-top:15px;" />
                     </a>
                     <div class="modal-container menu-fullscreen">
                       <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em; background: none;">
@@ -280,71 +280,84 @@
 
          
 
-          
-    <footer class="text-center space--xs footer-5 bg--dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <p class="lead">
-              <span x-show="!de">Sustify has partnered with</span>
-              <span x-show="de">___</span></p>
-            <div class="row">
-              <div class="col-sm-12" style="margin-top: -21px;">
-                <a href="http://www.stepsol.com/">
-                  <img class="footer-image" alt="Step Logo: STEP is our local partner for consulting and implementation of the program" src=" img/step footer.png" />
-                </a>
-                <a href="https://www.loening-berlin.de">
-                  <img class="footer-image loning" src="img/löning footer.png" alt="Löning Logo: Löning Human Rights and Responsible Business is a
-                                        consultancy and think-tank specialised in human-rights work." />
-                </a>
+            <footer class="text-center space--xs footer-5 bg--dark">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="lead">
+                      <span x-show="!de">We have partnered with</span>
+                      <span x-show="de">___</span>
+                    </p>
+                    <div class="row">
+                      <div class="col-sm-12" style="margin-top: -21px;">
+                        <a href="http://www.stepsol.com/">
+                          <img class="footer-image" alt="Step Logo: STEP is our local partner for consulting and implementation of the program" src=" img/step footer.png" />
+                        </a>
+                        <br>
+                        <a href="https://www.loening-berlin.de">
+                          <img class="footer-image loning" src="img/löning footer.png" alt="Löning Logo: Löning Human Rights and Responsible Business is a
+                                              consultancy and think-tank specialised in human-rights work." />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <p class="lead">
+                      <span x-show="!de">Proud to be a part of</span>
+                      <span x-show="de">___</span>
+                    </p>
+                    <div class="row">
+                      <div class="col-sm-12" style="margin-top: 2px;">
+                        <a href="https://www.volkswagenag.com/en/news/2020/06/incubator_programme.html#">
+                          <div class="circle-border" style="background: white;
+                          border-radius: 50%;
+                          width: 70px;
+                          height: 70px;
+                          padding-top: 4px;
+                          margin: 0 auto;">
+                          <img class="footer-image" src="img/volkswagen_logo.png" alt="volkswagen logo" style="width: 60px;" />
+                        </div>
+                        <p style="margin-top:7px">Incubator Program</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                  <div class="col-sm-4">
+                    <p class="lead">
+                      <span x-show="!de">We are a member of</span>
+                      <span x-show="de">___</span>
+                    </p>
+                    <div class="row">
+                      <div class="col-sm-12" style="margin-top: 5px;">
+                        <a href="https://www.maxtex.eu">
+                          <img class="footer-image" src="img/MaxTex.png" alt="Image MaxTex-logo" style="margin-top: -4px;"/>
+                        </a>
+                        <br>
+                        <a href="https://www.send-ev.de/">
+                          <img class="send footer-image" alt="Image" src="img/180406_Mitglied_Weiss.png" style="margin-top: 20px;"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="row">
+                  <div class="col-sm-12" style="margin-top: 15px; margin-bottom: -20px;">
+                    <span class="type--fine-print">
+                      ©
+                      <span class="update-year">2018</span>
+                      Sustify GmbH
+                    </span>
+                    <a class="type--fine-print" href="privacy.html" target="_self"><span x-show="!de">Privacy</span>
+                      <span x-show="de">___</span></a>
+                    <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span> <span x-show="de">___</span></a>
+                    <a class="type--fine-print" href="terms-and-conditions.html" target="_self"><span x-show="!de">Terms & conditions</span>
+                      <span x-show="de">___</span></a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <p class="lead"><span x-show="!de">Sustify is a member of</span>
-              <span x-show="de">___</span>
-            </p>
-            <div class="row">
-              <div class="col-sm-12" style="margin-top: 5px;">
-                <a href="https://www.maxtex.eu">
-                  <img class="footer-image" src="img/MaxTex.png" alt="Image MaxTex-logo" />
-                </a>
-                <a href="https://www.send-ev.de/">
-                  <img class="send footer-image" alt="Image" src="img/180406_Mitglied_Weiss.png" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <p class="lead"><span x-show="!de">Sustify supports</span>
-              <span x-show="de">___</span></p>
-            <div class="row">
-              <div class="col-sm-12" style="margin-top: 5px;">
-                <a href="https://www.atmosfair.de">
-                  <img class="footer-image atmosfair" alt="Image" src="img/atmosfair_logo_de.png" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12" style="margin-top: 15px; margin-bottom: -20px;">
-            <span class="type--fine-print">
-              ©
-              <span class="update-year">2018</span>
-              Sustify GmbH
-            </span>
-            <a class="type--fine-print" href="privacy.html" target="_self"><span x-show="!de">Privacy</span>
-              <span x-show="de">___</span></a>
-            <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span>
-              <span x-show="de">___</span></a>
-            <a class="type--fine-print" href="terms-and-conditions.html" target="_self"><span x-show="!de">Terms
-                &Conditions</span>
-              <span x-show="de">___</span></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+            </footer>
     <a class="back-to-top inner-link" href="#top" data-scroll-class="100vh:active">
       <i class="stack-interface stack-up-open-big"></i>
     </a>
