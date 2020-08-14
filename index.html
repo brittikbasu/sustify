@@ -8,9 +8,6 @@
 
     <script>
       let de = true;
-      console.log(`de before is ${de}`);
-      console.log(localStorage.getItem("deutsch"));
-
       function setLang() {
         if (localStorage.getItem("deutsch") === "true") {
           de = true;
@@ -36,8 +33,6 @@
             localStorage.setItem("deutsch", "false");
           },
         };
-
-        console.log("fn setlang executed");
       }
       setLang();
     </script>
@@ -4655,7 +4650,6 @@ ___                                                </li>
       }
 
       // });
-      console.log(`de after is ${de}`);
     </script>
   </body>
 </html>
