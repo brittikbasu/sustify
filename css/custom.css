@@ -865,3 +865,10 @@ footer.space--xs {
   width:355px;
 }
 }
+
+a{
+  color: #66cc99;
+}
+a:hover{
+  color: #19623b !important;
+}
