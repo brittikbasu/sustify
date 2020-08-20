@@ -865,3 +865,34 @@ footer.space--xs {
   width:355px;
 }
 }
+
+a{
+  color: #66cc99;
+}
+a:hover{
+  color: #19623b !important;
+}
+
+
+.course-item-title-container:hover, .course-item-title-container-mob:hover {
+  background-color: rgb(102 204 153 / 0.15);
+  /*transition: background-color .1s;*/
+}
+
+.course-item-title-container:hover h3, .course-item-title-container-mob:hover h3 {
+  color: #053c40;
+  /*transition: color .1s;*/
+}
+
+.course-item-title-container.active, .course-item-title-container-mob.active {
+  background-color: #66CC99;
+}
+
+.course-item-title-container.active:hover h3, .course-item-title-container-mob.active:hover h3 {
+  color: #ffffff;
+  /*transition: color .1s;*/
+}
+
+.whySustifyEN{
+  min-height: 185px;
+}

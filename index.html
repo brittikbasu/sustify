@@ -8,7 +8,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <script>
-      let de = false;
+      let de = true;
 
       function setLang() {
         if (localStorage.getItem("deutsch") === "true") {
@@ -35,9 +35,8 @@
             localStorage.setItem("deutsch", "false");
           },
         };
-
-        console.log("fn setlang executed");
       }
+      setLang();
 
     </script>
 
@@ -121,7 +120,7 @@
               <div class="col-md-10 col-sm-9 col-xs-8">
                 <div class="bar__module pull-right">
                   <div class="modal-instance">
-                    <span class="lang" style="display:none;">
+                    <span class="lang">
                       <button @click="toggleDE()" style="padding: 10px; border: none;">
                         <strong class="de">DEUTSCH</strong>
                       </button>
@@ -130,40 +129,37 @@
                       </button>
                     </span>
                     <a class="modal-trigger menu-toggle" href="#">
-                      <img src="img/hamburger.svg" alt="menu button" style="margin-top:15px" />
+                      <img src="img/hamburger.svg" alt="menu button" style="margin-top: 15px;" />
                     </a>
                     <div class="modal-container menu-fullscreen">
                       <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em; background: none;">
                         <div class="pos-vertical-center pos-asbolute text-center">
                           <ul class="menu-vertical">
                             <li class="h2">
-                              <a href="#"><span x-show="!de">Home</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#">Home </a>
                             </li>
                             <li class="h2">
                               <a href="#whySustify" target="_self" class="inner-link"><span x-show="!de">Why Sustify</span>
-                                <span x-show="de">___</span></a>
+                                <span x-show="de">Warum Sustify </span></a>
                             </li>
                             <li class="h2">
                               <a href="#sustifyProduct" target="_self" class="inner-link"><span x-show="!de">Product</span>
-                                <span x-show="de">___</span></a>
+                                <span x-show="de">Produkt</span></a>
                             </li>
                             <li class="h2">
                               <a href="#sustifyCourseLibrary" target="_self" class="inner-link">
                                 <span x-show="!de">Course library</span>
-                                <span x-show="de">___</span></a>
+                                <span x-show="de">Kurse</span></a>
                             </li>
                             <li class="h2">
-                              <a href="#team" target="_self" class="inner-link"><span x-show="!de">Team</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#team" target="_self" class="inner-link">Team</a>
                             </li>
                             <li class="h2">
                               <a href="#contact" target="_self" class="inner-link"><span x-show="!de">Contact</span>
-                                <span x-show="de">___</span></a>
+                                <span x-show="de">Kontakt</span></a>
                             </li>
                             <li class="h2">
-                              <a href="jobs.html" target="_self"><span x-show="!de">Jobs</span>
-                                <span x-show="de">___</span></a>
+                              <a href="jobs.html" target="_self">Jobs</a>
                             </li>
                           </ul>
                         </div>
@@ -177,6 +173,8 @@
         </nav>
       </div>
     </div>
+
+
     <a href="https://www.learntec.de/de/learntec/die-fachmesse/delina-award/index.html#text_preisverleihung" target="_blank">
       <img src="img/delina-desktop.svg" alt="Sustify is nominated for the Delina Award (Innovationspreis für digitale Bildung)!" class="animated fadeInUp delina-desktop" />
       <img src="img/delina-mobile.svg" alt="Sustify is nominated for the Delina Award (Innovationspreis für digitale Bildung)!" class="animated fadeInUp delina-mobile" />
@@ -192,14 +190,19 @@
               <div class="mt--2">
                 <!--<div class="mt--2">-->
                 <h1 style="font-size: 2.27rem;">
-                  <span x-show="!de">Make your supply chain more sustainable and resilient!</span>
+                  <span x-show="!de">Make your supply chain more sustainable and
+                    resilient!</span>
+                  <span x-show="de">Machen Sie Ihre Lieferkette nachhaltiger und
+                    resilienter!</span>
                 </h1>
                 <p class="lead">
-                  <span x-show="!de">Reach each individual in the factory with gamified online training
-                    to make sure that workers and the environment remain healthy and business can thrive. <br> Make your impact measurable.</span>
-                  <span x-show="de">Steigern Sie die soziale und ökologische Compliance in
-                    Ihrer Lieferkette mit digitalem Micro-Learning und machen
-                    Sie Ihre Schulungen messbar!</span>
+                  <span x-show="!de">Reach each individual in the factory with gamified online
+                    training to make sure that workers and the environment
+                    remain healthy and business can thrive. <br />
+                    Make your impact measurable.</span>
+                  <span x-show="de">Stellen Sie mit E-Learning für FabrikarbeiterInnen sicher,
+                    dass Trainings auch in Zeiten von COVID19 durchgeführt
+                    werden! Machen Sie Impact messbar!</span>
                 </p>
                 <a class="btn btn--primary type--uppercase inner-link" href="#whySustify" target="_self" style="display: none;">
                   <span class="btn__text">
@@ -232,7 +235,7 @@
               <div class="col-sm-10 col-md-10">
                 <h2>
                   <span x-show="!de">Why Sustify</span>
-                  <span x-show="de">Warum Sustify</span>
+                  <span x-show="de">Warum Sustify?</span>
                 </h2>
                 <p class="lead">
                   <span x-show="!de">We believe in a bottom-up approach to ensure compliance
@@ -241,12 +244,13 @@
                     digital because it’s a great way to teach and track how well
                     something is being learnt.</span>
                   <span x-show="de">
-                    Wir glauben an einen Bottom-up-Ansatz, um die Einhaltung
-                    über die Prüfung hinaus sicherzustellen. Wir helfen zu
-                    verstehen, wir sensibilisieren und bereiten die Gründe für
-                    Veränderungen vor. Wir sind digital, weil es eine großartige
-                    Möglichkeit ist, zu lehren und zu verfolgen, wie gut etwas
-                    gelernt wird.</span>
+                    Wir glauben an einen Bottom-up-Ansatz, um Rechtskonformität
+                    auch außerhalb von Auditierungen zu gewährleisten. Wir
+                    wollen, dass auch ArbeiterInnen Sozial- und Umweltschutz
+                    verstehen, wir ermöglichen Lernen und bereiten den Boden für
+                    Veränderung. Wir haben eine digitale Lösung entwickelt, weil
+                    wir viele ArbeiterInnen mit individualisierten Inhalten
+                    erreichen wollen.</span>
                 </p>
               </div>
             </div>
@@ -257,60 +261,73 @@
           <div class="container">
             <div class="row white-box why-sustify-key-points">
               <div class="col-md-4 col-sm-6">
-                <div class="why-sustify-point">
+                <div class="why-sustify-point" :class="{ 'whySustifyEN' : !de }">
                   <div class="why-sustify-point-image">
                     <img src="img/ic_sustify_microlearning.png" alt="Icon for why sustify because it's microlearning" />
                   </div>
 
                   <h3>
                     <span x-show="!de" style="color: #003c41;">Micro-learning</span>
-                    <span x-show="de" style="color: #003c41;">Mikrolernen</span>
+                    <span x-show="de" style="color: #003c41;">Micro-Learning</span>
                   </h3>
                   <p>
                     <span x-show="!de" style="color: #648787;">Content is limited to be relevant to day-to-day factory
                       life, provided in small “bites”. So Micro-learning is a
                       skill based learning and education which deals with
                       relatively small learning units.</span>
-                    <span x-show="de" style="color: #648787;">___</span>
+                    <span x-show="de" style="color: #648787;">
+                      Es unterscheidet sich vom klassischen E-Learning dadurch,
+                      dass ausschließlich alltagsrelevante Inhalte in kleinen
+                      Einheiten vermittelt werden. So kann sich Bewusstsein und
+                      Verhalten dauerhaft verändern.
+                    </span>
                   </p>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="why-sustify-point">
+                <div class="why-sustify-point" :class="{ 'whySustifyEN' : !de }">
                   <div class="why-sustify-point-image">
                     <img src="img/ic_sustify_personalized.png" alt="Icon for why sustify because it's personalised" />
                   </div>
                   <h3>
                     <span x-show="!de" style="color: #003c41;">Personalized</span>
-                    <span x-show="de" style="color: #003c41;">Personalisiert</span>
+                    <span x-show="de" style="color: #003c41;">Personalisierung</span>
                   </h3>
                   <p>
                     <span x-show="!de" style="color: #648787;">Content adapts accordingly to individual learning
                       progress, based on an intelligent algorithm respecting
                       learning methodology of spacing and repetition.</span>
-                    <span x-show="de" style="color: #648787;">___</span>
+                    <span x-show="de" style="color: #648787;">Aufgrund eines speziellen Algorithmus basierend auf dem
+                      didaktischen Prinzip von sog. verteilter Wiederholung
+                      passen sich die Lerninhalte dem individuellen
+                      Lernfortschritt an. So prägt sich der Lernstoff auch
+                      dauerhaft ein.</span>
                   </p>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="why-sustify-point">
+                <div class="why-sustify-point" :class="{ 'whySustifyEN' : !de }">
                   <div class="why-sustify-point-image">
                     <img src="img/ic_sustify_inclusive.png" alt="Icon for why sustify because it's inclusive" />
                   </div>
                   <h3>
                     <span x-show="!de" style="color: #003c41;">Inclusive</span>
-                    <span x-show="de" style="color: #003c41;">Inklusive</span>
+                    <span x-show="de" style="color: #003c41;">Inklusiv</span>
                   </h3>
                   <p>
                     <span x-show="!de" style="color: #648787;">Login with face recognition, multilinguality and audio
                       function make sure, that the entire workforce can be
                       reached and educated.</span>
-                    <span x-show="de" style="color: #648787;">___</span>
+                    <span x-show="de" style="color: #648787;">Wir wollen Alle erreichen, auch AnalphabetInnen und
+                      ArbeiterInnen ohne Smartphones. Bildbasiertes Lernen und
+                      kurze Texte mit Audiofunktion fördern nicht nur
+                      privilegierte sondern alle ArbeiterInnen.
+                    </span>
                   </p>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="why-sustify-point">
+                <div class="why-sustify-point" :class="{ 'whySustifyEN' : !de }">
                   <div class="why-sustify-point-image">
                     <img src="img/ic_sustify_interactive.png" alt="Icon for why sustify because it's interactive" />
                   </div>
@@ -322,12 +339,15 @@
                     <span x-show="!de" style="color: #648787;">Different game formats ensure, that learning is done in
                       different ways, requiring different types of interaction,
                       which increases retention.</span>
-                    <span x-show="de" style="color: #648787;">___</span>
+                    <span x-show="de" style="color: #648787;">Unterschiedliche Spielformate mit Interaktionen auf dem
+                      Tablet stellen sicher, dass Lernen nicht nur passiv und in
+                      textbasierten Quizfragen erfolgt, sondern aktives Denken
+                      und Handeln fördert.</span>
                   </p>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="why-sustify-point">
+                <div class="why-sustify-point" :class="{ 'whySustifyEN' : !de }">
                   <div class="why-sustify-point-image">
                     <img src="img/ic_sustify_customizable.png" alt="Icon for why sustify because it's customizable" />
                   </div>
@@ -336,14 +356,17 @@
                     <span x-show="de" style="color: #003c41;">Anpassbar</span>
                   </h3>
                   <p>
-                    <span x-show="!de" style="color: #648787;">Due to the Content Management System, adaptations can easily
-                      be made according to language and industry requirements.</span>
-                    <span x-show="de" style="color: #648787;">___</span>
+                    <span x-show="!de" style="color: #648787;">Due to the Content Management System, adaptations can
+                      easily be made according to language and industry
+                      requirements.</span>
+                    <span x-show="de" style="color: #648787;">Ein Learning Management System ermöglicht Anpassungen in
+                      Bezug auf sprachliche sowie kultur- und
+                      branchenspezifische Besonderheiten.</span>
                   </p>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="why-sustify-point">
+                <div class="why-sustify-point" :class="{ 'whySustifyEN' : !de }">
                   <div class="why-sustify-point-image">
                     <img src="img/ic_sustify_measurable.png" alt="Icon for why sustify because it's measurable" />
                   </div>
@@ -355,7 +378,10 @@
                     <span x-show="!de" style="color: #648787;">The KPI Dashboard displays demographic data, monitors the
                       attendance of users and analyzes results (anonymized
                       averages).</span>
-                    <span x-show="de" style="color: #648787;">___</span>
+                    <span x-show="de" style="color: #648787;">Ein Auswertungsmodul (KPI-Dashboard) erhebt
+                      demographische Daten und analysiert den Lernfortschritt
+                      anonymisiert und aggregiert, auch als Download für die
+                      Nachhaltigkeitserichterstattung verfügbar.</span>
                   </p>
                 </div>
               </div>
@@ -372,7 +398,8 @@
                     <div class="col-sm-12 col-md-12 title-section">
                       <h2 class="dark-text text-center">
                         <span x-show="!de" style="color: #003c41;">Strong global partnerships and cooperation</span>
-                        <span x-show="de" style="color: #003c41;">___</span>
+                        <span x-show="de" style="color: #003c41;">Kollaboration statt Konkurrenz
+                        </span>
                       </h2>
                       <div class="row fake-row-to-fix-width">
                         <p class="col-sm-1 col-md-1"></p>
@@ -383,7 +410,16 @@
                             benefits the factory management and employees of
                             your supply chain in a way that you can truly
                             measure.</span>
-                          <span x-show="de" style="color: #648787;">___ </span>
+                          <span x-show="de" style="color: #648787;">Der nationale Aktionsplan Wirtschaft und
+                            Menschenrechte
+                            <a href="https://www.auswaertiges-amt.de/de/aussenpolitik/themen/aussenwirtschaft/wirtschaft-und-menschenrechte/nationaler-aktionsplan-wirtschaft-menschenrechte/205208" target="_blank" style="color: #66cc99;">(NAP)</a>
+                            und das geplante Lieferkettengesetz verlangen von
+                            Unternehmen ihre Sorgfaltspflicht bezüglich
+                            Menschenrechten auch innerhalb der Lieferkette
+                            wahrzunehmen. Sustify unterstützt direkt
+                            Kernelemente des NAP. Nachhaltigere Lieferketten
+                            gelingen nur gemeinsam!
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -392,14 +428,14 @@
                         <svg class="circle-border hide-xs">
                           <circle cx="50%" cy="50%" r="160px"></circle>
                         </svg>
-                        <div class="sustify-beneficiary beneficiary-retail-brand active">
+                        <div class="sustify-beneficiary beneficiary-retail-brand">
                           <div class="beneficiary-icon">
                             <img class="beneficiary-icon-normal" src="img/sustify_brands.png" alt="sustify is beneficial to brands" />
                             <img class="beneficiary-icon-active" src="img/sustify_brands_active.png" alt="sustify is beneficial to brands" />
                           </div>
                           <h3>
                             <span x-show="!de" style="color: #003c41;">The brand</span>
-                            <span x-show="de" style="color: #003c41;">___</span>
+                            <span x-show="de" style="color: #003c41;">Unternehmen</span>
                           </h3>
                           <div class="beneficiary-details hidden-md-sm-xs">
                             <ul class="beneficiary-details-points">
@@ -424,16 +460,24 @@
                               </span>
                               <span x-show="de">
                                 <li>
-                                  ___
+                                  Geringeres Risiko durch höhere
+                                  Rechtskonformität (Compliance)
                                 </li>
                                 <li>
-                                  ___
+                                  Transparenz der Trainingszugriffe durch
+                                  Live-Monitoring der Logins
                                 </li>
                                 <li>
-                                  ___
+                                  Initiative in Bezug auf die Kernelemente, u.a.
+                                  „Maßnahmen zur Abwendung potenziell negativer
+                                  Auswirkungen und Überprüfung der Wirksamkeit
+                                  dieser Maßnahmen“ im Rahmen des Nationalen
+                                  Aktionsplans Wirtschaft und Menschenrechte
                                 </li>
                                 <li>
-                                  ___
+                                  Trainingsindikatoren können direkt für die
+                                  Nachhaltigkeitsberichterstattung
+                                  heruntergeladen werden
                                 </li>
                               </span>
                             </ul>
@@ -445,8 +489,8 @@
                             <img class="beneficiary-icon-active" src="img/sustify_factory_active.png" alt="sustify is beneficial to brands" />
                           </div>
                           <h3>
-                            <span x-show="!de" style="color: #003c41;">The factory</span>
-                            <span x-show="de" style="color: #003c41;">___</span>
+                            <span x-show="!de" style="color: #003c41;">The management</span>
+                            <span x-show="de" style="color: #003c41;">Management</span>
                           </h3>
                           <div class="beneficiary-details hidden-md-sm-xs">
                             <ul class="beneficiary-details-points">
@@ -467,15 +511,21 @@
                                 </li>
                               </span>
                               <span x-show="de">
-                                <li>___</li>
                                 <li>
-                                  ___
+                                  Besser ausgebildete und verantwortungsvolle
+                                  Arbeitskräfte
                                 </li>
                                 <li>
-                                  ___
+                                  Nachweis, dass Schulungen durchgeführt wurden
                                 </li>
                                 <li>
-                                  ___
+                                  Höhere Mitarbeiterbindung und damit
+                                  gesteigerte Produktivität
+                                </li>
+                                <li>
+                                  Zugangserleichterung zu europäischen Märkten
+                                  durch beweisbare Initiative für eine
+                                  nachhaltigere Produktion
                                 </li>
                               </span>
                             </ul>
@@ -488,7 +538,7 @@
                           </div>
                           <h3>
                             <span x-show="!de" style="color: #003c41;">The people</span>
-                            <span x-show="de" style="color: #003c41;">___</span>
+                            <span x-show="de" style="color: #003c41;">ArbeiterInnen</span>
                           </h3>
                           <div class="beneficiary-details hidden-md-sm-xs">
                             <ul class="beneficiary-details-points">
@@ -498,9 +548,15 @@
                                 <li>Motivation through empowerment</li>
                               </span>
                               <span x-show="de">
-                                <li>___</li>
-                                <li>___</li>
-                                <li>___</li>
+                                <li>
+                                  Verbessertes Wissen und Bewusstsein über
+                                  Sozial- und Umweltstandards
+                                </li>
+                                <li>
+                                  Mehr Verständnis über Vorgaben führt zu
+                                  erhöhter Motivation
+                                </li>
+                                <li>Zertifikat als Trainingsnachweis</li>
                               </span>
                             </ul>
                           </div>
@@ -557,18 +613,26 @@
               <div class="col-sm-12 col-md-12">
                 <h2>
                   <span x-show="!de">Product</span>
-                  <span x-show="de">___</span>
+                  <span x-show="de">Unser Angebot</span>
                 </h2>
                 <p class="lead extra-bottom-margin">
                   <span x-show="!de">Sustify is a scalable and measurable training solution for
                     capacity building in factories. It can be used to provide
-                    basic knowledge especially when classroom trainings can't be conducted because of
-                    epidemic-related regulations enforcing social distancing,
-                    it can be integrated into existing
-                    programs, or it can be used
-                    to refresh knowledge and awareness at regular
-                    intervals.</span>
-                  <span x-show="de">___</span>
+                    basic knowledge especially when classroom trainings can't be
+                    conducted because of epidemic-related regulations enforcing
+                    social distancing, it can be integrated into existing
+                    programs, or it can be used to refresh knowledge and
+                    awareness at regular intervals.</span>
+                  <span x-show="de">Sustify ist eine mess- und skalierbare digitale
+                    Trainigslösung zur Verbesserung von Compliance in Fabriken.
+                    Die Kurse können eingesetzt werden um Basiswissen zu
+                    vermitteln, in Verbindung mit bestehenden Programmen als
+                    sog. Blended Learning Konzept, oder um vorhandenes Wissen
+                    aufzufrischen um dauerhafte Verhaltensänderungen zu
+                    bewirken. Auch in Zeiten von Covid19 ist es eine
+                    Möglichkeit, Schulungen nicht ganz auszusetzen, sondern sie
+                    online unter verstärkten Hygienemaßnahmen weiterhin
+                    durchzuführen</span>
                 </p>
               </div>
               <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
@@ -579,7 +643,7 @@
                   <div class="sustify-working-factor-title">
                     <h4>
                       <span x-show="!de">On tablets</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Auf Tablets</span>
                     </h4>
                   </div>
                 </div>
@@ -592,38 +656,12 @@
                   <div class="sustify-working-factor-title">
                     <h4>
                       <span x-show="!de">Individual Login</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Individueller Login</span>
                     </h4>
                   </div>
                 </div>
               </div>
-              <!--
 
-                        <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
-                            <div class="sustify-working-factor-container">
-                                <div class="sustify-working-factor-image">
-                                    <img src="img/sustify_personalised.png" alt="Sustify is gamified">
-                                </div>
-                                <div class="sustify-working-factor-title">
-                                    <h4><span x-show="!de">Personalised</span>
-                  <span x-show="de">___</span>
-                  </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-5">
-                            <div class="sustify-working-factor-container">
-                                <div class="sustify-working-factor-image">
-                                    <img src="img/sustify_gamified.png" alt="Sustify is gamified">
-                                </div>
-                                <div class="sustify-working-factor-title">
-                                    <h4><span x-show="!de">Gamified</span>
-                  <span x-show="de">___</span>
-                  </h4>
-                                </div>
-                            </div>
-                        </div>
--->
               <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
                 <div class="sustify-working-factor-container">
                   <div class="sustify-working-factor-image">
@@ -632,25 +670,12 @@
                   <div class="sustify-working-factor-title">
                     <h4>
                       <span x-show="!de">8 weeks duration</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">8-wöchige Kurse</span>
                     </h4>
                   </div>
                 </div>
               </div>
-              <!--
-                        <div class="col-md-4 col-sm-5">
-                            <div class="sustify-working-factor-container">
-                                <div class="sustify-working-factor-image">
-                                    <img src="img/sustify_local-support.png" alt="Sustify is gamified">
-                                </div>
-                                <div class="sustify-working-factor-title">
-                                    <h4><span x-show="!de">Local support</span>
-                  <span x-show="de">___</span>
-                  </h4>
-                                </div>
-                            </div>
-                        </div>
-                        -->
+
               <div class="col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1">
                 <div class="sustify-working-factor-container">
                   <div class="sustify-working-factor-image">
@@ -659,7 +684,7 @@
                   <div class="sustify-working-factor-title">
                     <h4>
                       <span x-show="!de">KPI dashboard</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">KPI Dashboard</span>
                     </h4>
                   </div>
                 </div>
@@ -672,7 +697,7 @@
                   <div class="sustify-working-factor-title">
                     <h4>
                       <span x-show="!de">Certificates for workers</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Zertifikate für User</span>
                     </h4>
                   </div>
                 </div>
@@ -685,7 +710,7 @@
                   <div class="sustify-working-factor-title">
                     <h4>
                       <span x-show="!de">SustiScore for factories</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Score für die Fabrik</span>
                     </h4>
                   </div>
                 </div>
@@ -710,34 +735,27 @@
             <div class="col-sm-12 col-md-12">
               <h2>
                 <span x-show="!de">Course Library</span>
-                <span x-show="de">___</span>
+                <span x-show="de">Kursangebot</span>
               </h2>
               <p class="lead">
                 <span x-show="!de">You can choose from our courses depending on the requirements
                   of the factory and the focus of your sustainability strategy.
                   On request content is adaptable to any country, industry or to
                   specific training needs.</span>
-                <span x-show="de">___</span>
+                <span x-show="de">Sie können wählen, welche Themen für Sie besonders relevant
+                  sind, abhängig von der unternehmensspezifischen
+                  Nachhaltigkeitsstrategie und den höchsten Risiken innerhalb
+                  Ihrer Lieferkette.</span>
               </p>
             </div>
             <div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 pad-right-control display-upto-xs">
               <div class="container-fluid course-library-viewer-container">
                 <div class="row">
-                  <!--
-                                <div class="col-sm-12">
-                                    <div class="course-item-title-container active" target="#sustifyCourse1">
-                                        <h3><span x-show="!de">Building &#38; fire safety</span>
-                  <span x-show="de">___</span>
-                  </h3>
-                                    </div>
-                                </div>
-                                
-                            -->
                   <div class="col-sm-12">
                     <div class="course-item-title-container active" target="#sustifyCourse1">
                       <h3 style="float: left;">
                         <span x-show="!de">Fire safety &#38; hazards</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Gebäude- &#38; Brandschutz</span>
                       </h3>
                       <img class="reduced-size-image reduced-width-image" src="img/sustify-course_building-fire-safety.png" alt="Sustify offers course Firesafety" style="
                           float: right;
@@ -751,7 +769,7 @@
                     <div class="course-item-title-container" target="#sustifyCourse4">
                       <h3>
                         <span x-show="!de">Occupational health &#38; hygiene</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Hygiene &#38; Gesundheitsschutz </span>
                       </h3>
                       <img class="reduced-size-image reduced-width-image" src="img/sustify-course_health-hygiene.png" alt="Sustify offers course Health &#38; hygiene" style="
                           float: right;
@@ -765,13 +783,15 @@
                     <div class="course-item-title-container" target="#sustifyCourse2">
                       <h3>
                         <span x-show="!de">Labour standards &#38; grievances</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Arbeitsstandards & Beschwerdemechanismen
+                        </span>
                       </h3>
-                      <img class="reduced-size-image reduced-width-image" src="img/sustify-course_rights-responsibilities.png" alt="Sustify offers course Labour standards &#38; grievances" style="
+                      <img class="reduced-size-image reduced-width-image" src="img/labor-standard-icon.svg" alt="Sustify offers course Labour standards &#38; grievances" style="
                           float: right;
-                          height: 25px !important;
+                          height: 34px !important;
                           margin-bottom: 2px;
                           margin-left: 9px;
+                          border-radius: 50%;
                         " />
                     </div>
                   </div>
@@ -779,15 +799,17 @@
                     <div class="course-item-title-container" target="#sustifyCourse6">
                       <h3>
                         <span x-show="!de">Energy efficiency &#38; environmental practices</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Energieeffizienz &#38; Umweltpraktiken
+                        </span>
                       </h3>
-                      <img class="reduced-size-image reduced-width-image" src="img/sustify-course_chemical-water-energy.png" alt="Understanding types of risks, such as chemical, physical, biological,
+                      <img class="reduced-size-image reduced-width-image" src="img/energy-efficiency.svg" alt="Understanding types of risks, such as chemical, physical, biological,
                                             psychological,
                                             ergonomic and accidental" style="
                           float: right;
-                          height: 30px !important;
+                          height: 34px !important;
                           margin-bottom: 2px;
                           margin-left: 9px;
+                          border-radius:50%;
                         " />
                     </div>
                   </div>
@@ -795,83 +817,38 @@
                     <div class="course-item-title-container" target="#sustifyCourse7">
                       <h3>
                         <span x-show="!de">Productivity &#38; lean management</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Produktivität &#38; Lean Management</span>
                       </h3>
-                      <img class="reduced-size-image reduced-width-image" src="img/sustify-course_productivity-lean-management.png" alt="Sustify offers course Productivity &#38; lean management" style="
+                      <img class="reduced-size-image reduced-width-image" src="img/productivity-icon.svg" alt="Sustify offers course Productivity &#38; lean management" style="
                           float: right;
-                          height: 30px !important;
+                          height: 34px !important;
                           margin-bottom: 2px;
                           margin-left: 9px;
+                          border-radius: 50%;
                         " />
                     </div>
                   </div>
-                  <!--  ===== hidden until courses are ready =====
-
-                               
-                                <div class="col-sm-6">
-                                    <div class="course-item-title-container" target="#sustifyCourse3">
-                                        <h3><span x-show="!de">Overtime &#38; compensation</span>
-                  <span x-show="de">___</span>
-                  </h3>
-                                    </div>
-                                </div>
-
-                               
-
-                                <div class="col-sm-6">
-                                    <div class="course-item-title-container" target="#sustifyCourse5">
-                                        <h3><span x-show="!de"></span>
-                  <span x-show="de">Environmental fundamentals &#38; awareness</span>
-                  </h3>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <div class="course-item-title-container" target="#sustifyCourse6">
-                                        <h3><span x-show="!de">Chemicals, water &#38; energy</span>
-                  <span x-show="de">___</span>
-                  </h3>
-                                    </div>
-                                </div>
-
-                               
-
-                                <div class="col-sm-6">
-                                    <div class="course-item-title-container" target="#sustifyCourse8">
-                                        <h3><span x-show="!de">Communication &#38; problem solving</span>
-                  <span x-show="de">___</span>
-                  </h3>
-                                    </div>
-                                </div>
-                            -->
                 </div>
               </div>
             </div>
             <div class="col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1 pad-left-control display-upto-xs">
               <div class="course-library-detail-viewer" id="couseLibraryDetailViewer" style="height: 390px; margin-top: 30px;">
                 <div class="course-detail-item" id="sustifyCourse1">
-                  <!--- <div class="course-icon">
-                                    <img class="reduced-size-image reduced-width-image"
-                                        src="img/sustify-course_building-fire-safety.png"
-                                        alt="Sustify offers course Fire safety" />
-                                </div>
-                                                            -->
                   <div class="course-title">
                     <h3>
                       <span x-show="!de">Fire safety &#38; hazards</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Gebäude- &#38; Brandschutz</span>
                     </h3>
                   </div>
                   <div class="course-detail-contents">
                     <span x-show="!de">
-                      <ul class="course-detail-content-list">
+                      <ul class="course-detail-content-list" style="width: 100%;">
                         <li>
-                          Understanding the key issues in
-                          fire safety
+                          Understanding the key issues in fire safety
                         </li>
                         <li>
-                          Understanding the own role and responsibility in
-                          fire safety
+                          Understanding the own role and responsibility in fire
+                          safety
                         </li>
                         <li>
                           Understanding types and implications of risks
@@ -887,21 +864,15 @@
                       </ul>
                     </span>
                     <span x-show="de">
-                      <ul class="course-detail-content-list">
+                      <ul class="course-detail-content-list" style="width: 100%;">
                         <li>
-                          ___
+                          Bedeutung von Gebäude- und Brandschutz
                         </li>
                         <li>
-                          ___
+                          Umgang mit Risiken und Gefahren
                         </li>
                         <li>
-                          ___
-                        </li>
-                        <li>
-                          ___
-                        </li>
-                        <li>
-                          ___
+                          Eigenes Handlungspotential erkennen
                         </li>
                       </ul>
                     </span>
@@ -911,7 +882,8 @@
                   <div class="course-title">
                     <h3>
                       <span x-show="!de">Labour standards &#38; grievances</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Arbeitsstandards & Beschwerdemechanismen
+                      </span>
                     </h3>
                   </div>
                   <div class="course-detail-contents">
@@ -936,16 +908,17 @@
                     </span>
                     <span x-show="de">
                       <ul class="course-detail-content-list">
-                        <li>___</li>
-                        <li>___</li>
+                        <li>Arbeitsrechte und -pflichten</li>
                         <li>
-                          ___
+                          Bedeutung von Beschwerdemechanismen und deren
+                          Möglichkeiten und Grenzen
                         </li>
                         <li>
-                          ___
+                          Diskriminierung verstehen und verhindern
                         </li>
                         <li>
-                          ___
+                          Methoden für integrative, konsens-orientierte und
+                          demokratische Partizipation
                         </li>
                       </ul>
                     </span>
@@ -996,7 +969,7 @@
                   <div class="course-title">
                     <h3>
                       <span x-show="!de">Occupational health &#38; hygiene</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Hygiene &#38; Gesundheitsschutz </span>
                     </h3>
                   </div>
                   <div class="course-detail-contents">
@@ -1011,11 +984,13 @@
                     </span>
                     <span x-show="de">
                       <ul class="course-detail-content-list" style="width: 100%;">
-                        <li>___</li>
-                        <li>___</li>
-                        <li>___</li>
-                        <li>___</li>
-                        <li>___</li>
+                        <li>Bedeutung von persönlicher Schutzausrüstung</li>
+                        <li>
+                          Infektionsschutz zur Vermeidung/Eindämmung von
+                          Pandemien wie COVID19
+                        </li>
+                        <li>Hygiene am Arbeitsplatz</li>
+                        <li>Arbeitsplatzergonomie</li>
                       </ul>
                     </span>
                   </div>
@@ -1065,7 +1040,8 @@
                   <div class="course-title">
                     <h3>
                       <span x-show="!de">Productivity &#38; lean management</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Produktivität &#38; Lean Management
+                      </span>
                     </h3>
                   </div>
                   <div class="course-detail-contents">
@@ -1107,28 +1083,21 @@
                     <span x-show="de">
                       <ul class="course-detail-content-list">
                         <li>
-                          ___
+                          Bedeutung von Produktivität im Fabrikalltag
                         </li>
                         <li>
-                          ___
+                          5S (5A) Methode und deren Anwendung in der
+                          Arbeitsumgebung
                         </li>
                         <li>
-                          ___
+                          Added Value/Non Added Value und Value Stream Mapping
+                          in der Anwendung
                         </li>
                         <li>
-                          ___
+                          Vermeidung von Verschwendung
                         </li>
                         <li>
-                          ___
-                        </li>
-                        <li>
-                          ___
-                        </li>
-                        <li>
-                          ___
-                        </li>
-                        <li>
-                          ___
+                          Total Productive Maintenance (TPM) in der Umsetzung
                         </li>
                       </ul>
                     </span>
@@ -1139,7 +1108,8 @@
                   <div class="course-title">
                     <h3>
                       <span x-show="!de">Energy efficiency &#38; environmental practices</span>
-                      <span x-show="de">___</span>
+                      <span x-show="de">Energieeffizienz &#38; Umweltpraktiken
+                      </span>
                     </h3>
                   </div>
                   <div class="course-detail-contents">
@@ -1155,62 +1125,36 @@
                         </li>
                         <li>Right behavior in dealing with chemicals</li>
                         <li>
-                          Sustainable practices regarding waste, water and energy
+                          Sustainable practices regarding waste, water and
+                          energy
                         </li>
-                        <li>Environmental impact and its implication on climate change</li>
+                        <li>
+                          Environmental impact and its implication on climate
+                          change
+                        </li>
                       </ul>
                     </span>
                     <span x-show="de">
                       <ul class="course-detail-content-list" style="width: 100%;">
                         <li>
-                          ___
+                          Chemikalienmanagement, Wasser- und Energieverbrauch
+                          und deren Umweltwirkung
                         </li>
                         <li>
-                          ___
+                          Auswirkungen auf Produktivität und Arbeitsschutz
                         </li>
-                        <li>___</li>
-                        <li>___</li>
-                        <li>___</li>
+                        <li>
+                          Bewährte Verfahren in Bezug auf Abfall, Wasser und
+                          Energie
+                        </li>
+                        <li>Ökologische Grundlagen und Klimaschutz</li>
                       </ul>
                     </span>
                   </div>
                 </div>
-                <div class="course-detail-item" id="sustifyCourse8">
-                  <div class="course-icon">
-                    <img class="reduced-size-image" src="img/sustify-course_commmunication_problem-solving.png" alt="Sustify offers course Communication and problem solving" />
-                  </div>
-                  <div class="course-title">
-                    <h3>
-                      <span x-show="!de"></span>
-                      <span x-show="de">___</span>
-                      Communication &#38; problem solving
-                    </h3>
-                  </div>
-                  <div class="course-detail-contents">
-                    <ul class="course-detail-content-list">
-                      <span x-show="!de"></span>
-                      <span x-show="de">___</span>
-                      <li>Understanding basic communication principles</li>
-                      <li>Understanding the importance of listening</li>
-                      <li>Understanding and applying constructive feedback</li>
-                      <li>
-                        Understanding the need for and value of grievance
-                        mechanisms and using them effectively
-                      </li>
-                      <li>
-                        Learn how to defuse emotionally charged situations and
-                        prevent conflicts
-                      </li>
-                      <li>
-                        Understanding concept and different forms of negotiation
-                      </li>
-                      <li>Apply tools for effective negotiation</li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
-            <!--^^^^^^^^ not in use^^^^^^^^-->
+
             <div class="col-xs-12 hidden-upto-xs">
               <div class="panel-group course-lirary-accordion" id="accordion">
                 <div class="panel panel-default">
@@ -1218,7 +1162,8 @@
                     <div class="course-item-title-container-mob active collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse1">
                       <h3>
                         <span x-show="!de">Fire safety &#38; hazards</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Gebäude- und Brandschutz
+                        </span>
                       </h3>
                       <img class="reduced-size-image reduced-width-image" src="img/sustify-course_building-fire-safety.png" alt="Sustify offers course Fire/building safety &#38; hazard management" style="
                           float: right;
@@ -1260,19 +1205,13 @@
                         <span x-show="de">
                           <ul class="course-detail-content-list">
                             <li>
-                              ___
+                              Bedeutung von Gebäude- und Brandschutz
                             </li>
                             <li>
-                              ___
+                              Umgang mit Risiken und Gefahren
                             </li>
                             <li>
-                              ___
-                            </li>
-                            <li>
-                              ___
-                            </li>
-                            <li>
-                              ___
+                              Eigenes Handlungspotential erkennen
                             </li>
                           </ul>
                         </span>
@@ -1285,7 +1224,7 @@
                     <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse4">
                       <h3>
                         <span x-show="!de">Occupational health &#38; hygiene</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Hygiene &#38; Gesundheitsschutz </span>
                       </h3>
                       <img class="reduced-size-image reduced-width-image" src="img/sustify-course_health-hygiene.png" alt="Sustify offers course Health &#38; hygiene" style="
                           float: right;
@@ -1312,13 +1251,18 @@
                         </span>
                         <span x-show="de">
                           <ul class="course-detail-content-list">
-                            <li>___</li>
-                            <li>___</li>
-                            <li>___</li>
+                            <li>Bedeutung von persönlicher Schutzausrüstung</li>
                             <li>
-                              ___
+                              Infektionsschutz zur Vermeidung/Eindämmung von
+                              Pandemien wie COVID19
                             </li>
-                            <li>___</li>
+                            <li>
+                              Infektionsschutz zur Vermeidung/Eindämmung von
+                              Pandemien wie COVID19
+                            </li>
+                            <li>
+                              Arbeitsplatzergonomie
+                            </li>
                           </ul>
                         </span>
                       </div>
@@ -1330,13 +1274,15 @@
                     <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse3">
                       <h3>
                         <span x-show="!de">Labour standards &#38; grievances</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Arbeitsstandards & Beschwerdemechanismen
+                        </span>
                       </h3>
-                      <img class="reduced-size-image reduced-width-image" src="img/sustify-course_rights-responsibilities.png" alt="Sustify offers course Labour standards &#38; grievances" style="
+                      <img class="reduced-size-image reduced-width-image" src="img/labor-standard-icon.svg" alt="Sustify offers course Labour standards &#38; grievances" style="
                           float: right;
-                          height: 25px !important;
+                          height: 34px !important;
                           margin-bottom: 2px;
                           margin-left: 9px;
+                          border-radius: 50%;
                         " />
                     </div>
                   </div>
@@ -1364,15 +1310,17 @@
                         </span>
                         <span x-show="de">
                           <ul class="course-detail-content-list">
-                            <li>___</li>
+                            <li>Arbeitsrechte und -pflichten</li>
                             <li>
-                              ___
+                              Bedeutung von Beschwerdemechanismen und deren
+                              Möglichkeiten und Grenzen
                             </li>
                             <li>
-                              ___
+                              Diskriminierung verstehen und verhindern
                             </li>
                             <li>
-                              ___
+                              Methoden für integrative, konsens-orientierte und
+                              demokratische Partizipation
                             </li>
                           </ul>
                         </span>
@@ -1386,13 +1334,15 @@
                     <div class="course-item-title-container-mob collapse collapsed" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse7" aria-expanded="false">
                       <h3>
                         <span x-show="!de">Productivity &amp; lean management</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Produktivität & Lean Management
+                        </span>
                       </h3>
-                      <img class="reduced-size-image reduced-width-image" src="img/sustify-course_productivity-lean-management.png" alt="Sustify offers course Productivity &amp; lean management" style="
+                      <img class="reduced-size-image reduced-width-image" src="img/productivity-icon.svg" alt="Sustify offers course Productivity &amp; lean management" style="
                           float: right;
-                          height: 30px !important;
+                          height: 34px !important;
                           margin-bottom: 2px;
                           margin-left: 9px;
+                          border-radius: 50%;
                         " />
                     </div>
                   </div>
@@ -1439,28 +1389,22 @@
                         <span x-show="de">
                           <ul class="course-detail-content-list">
                             <li>
-                              ___
+                              Bedeutung von Produktivität im Fabrikalltag
                             </li>
                             <li>
-                              ___
+                              5S (5A) Methode und deren Anwendung in der
+                              Arbeitsumgebung
                             </li>
                             <li>
-                              ___
+                              Added Value/Non Added Value und Value Stream
+                              Mapping in der Anwendung
                             </li>
                             <li>
-                              ___
+                              Vermeidung von Verschwendung
                             </li>
                             <li>
-                              ___
-                            </li>
-                            <li>
-                              ___
-                            </li>
-                            <li>
-                              ___
-                            </li>
-                            <li>
-                              ___
+                              Total Productive Maintenance (TPM) in der
+                              Umsetzung
                             </li>
                           </ul>
                         </span>
@@ -1469,275 +1413,21 @@
                   </div>
                 </div>
 
-                <!-- <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="course-item-title-container-mob collapse" data-toggle="collapse"
-                                        data-parent="#accordion" href="#sustifyAccordionCourse7">
-                                        <h3><span x-show="!de"></span>
-                  <span x-show="de">___</span>Productivity &#38; lean management</h3>
-                                        <img class="reduced-size-image reduced-width-image"
-                                            src="img/sustify-course_productivity-lean-management.png"
-                                            alt="Sustify offers course Productivity &#38; lean management"
-                                            style="float: right; height: 30px !important; margin-bottom:6px; margin-left: 9px" />
-                                    </div>
-                                </div>
-                                <div id="sustifyAccordionCourse7" class="panel-collapse collapse">
-                                    <div class="course-detail-item-mob">
-                                        <div class="course-title">
-                                            <h3><span x-show="!de"></span>
-                  <span x-show="de">___</span>Productivity &#38; lean management</h3>
-                                        </div>
-                                        <div class="course-detail-contents">
 
-                                            <span x-show="!de">                                            <ul class="course-detail-content-list">
-<li>
-                                                    Understanding the meaning of productivity for a factory and
-                                                    on a
-                                                    personal
-                                                    level
-                                                </li>
-                                                <li>
-                                                    Learn about purposes and benefits of using the 5S tools and
-                                                    get
-                                                    familiar
-                                                    with it
-                                                </li>
-                                                <li>
-                                                    Understand how to apply 5S in the working environment
-                                                </li>
-                                                <li>
-                                                    Get familiar with Added Value and Non Added Value
-                                                    definitions
-                                                </li>
-                                                <li>
-                                                    Learn the basics of Value Stream Mapping and how Value
-                                                    stream
-                                                    mapping can
-                                                    improve productivity
-                                                </li>
-                                                <li>
-                                                    Learn how to identify, avoid, and remove waste and how this
-                                                    affects
-                                                    profits
-                                                    and customer satisfaction
-                                                </li>
-                                                <li>
-                                                    Learn about the Total productive maintenance (TPM) concepts
-                                                    and
-                                                    their
-                                                    implementation
-                                                </li>
-                                                <li>
-                                                    Understand the practical implementation of TPM tools and
-                                                    their
-                                                    effects
-                                                </li></ul></span>
-                  <span x-show="de">                                            <ul class="course-detail-content-list">
-<li>
-                                                   ___
-                                                </li>
-                                                <li>
-                                                    ___
-                                                </li>
-                                                <li>
-___                                                </li>
-                                                <li>
-                                                    ___
-                                                </li>
-                                                <li>
-                                                   ___
-                                                </li>
-                                                <li>
-                                                   ___
-                                                </li>
-                                                <li>
-                                                    ___
-                                                </li>
-                                                <li>
-                                                    ___
-                                                </li>
-                                            </ul></span>
-                                                
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        -->
-                <!--
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading">
-                                                                <div class="course-item-title-container-mob collapse" data-toggle="collapse"
-                                                                    data-parent="#accordion" href="#sustifyAccordionCourse2">
-                                                                    <h3><span x-show="!de"></span>
-                  <span x-show="de">___</span>
-                  Rights &#38; responsibilities</h3>
-                                                                </div>
-                                                            </div>
-                                                            <div id="sustifyAccordionCourse2" class="panel-collapse collapse">
-                                                                <div class="course-detail-item-mob">
-                                                                    <div class="course-icon">
-                                                                        <img class="reduced-size-image"
-                                                                            src="img/sustify-course_rights-responsibilities.png"
-                                                                            alt="Sustify offers course Rights and respnsibilities" />
-                                                                    </div>
-                                                                    <div class="course-title">
-                                                                        <h3><span x-show="!de"></span>
-                  <span x-show="de">___</span>
-                  Rights &#38; responsibilities</h3>
-                                                                    </div>
-                                                                    <div class="course-detail-contents">
-                            
-                                                                        <ul class="course-detail-content-list">
-                                                                        <span x-show="!de"></span>
-                  <span x-show="de">___</span>
-                                                                            <li>
-                                                                                Understanding basic rights and responsibilities of employers and
-                                                                                employees
-                                                                            </li>
-                                                                            <li>
-                                                                                Understanding, why those standards help both the employer and the
-                                                                                employee
-                                                                            </li>
-                                                                            <li>
-                                                                                Understanding the meaning, forms and different approaches to
-                                                                                preventing and
-                                                                                dealing with discrimination
-                                                                            </li>
-                                                                            <li>
-                                                                                Understanding the concept of collective bargaining and freedom of
-                                                                                association
-                                                                            </li>
-                                                                            <li>
-                                                                                Apply approaches and methods of peaceful, inclusive and democratic
-                                                                                participation
-                                                                            </li>
-                                                                            <li>
-                                                                                Grievance mechanisms
-                                                                            </li>
-                                                                        </ul>
-                            
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                            
-                                                       <div class="panel panel-default">
-                                                            <div class="panel-heading">
-                                                                <div class="course-item-title-container-mob collapse" data-toggle="collapse"
-                                                                    data-parent="#accordion" href="#sustifyAccordionCourse3">
-                                                                    <h3>
-                                                                    <span x-show="!de"></span>
-                  <span x-show="de">___</span>
-                  Overtime &#38; compensation</h3>
-                                                                </div>
-                                                            </div>
-                                                            <div id="sustifyAccordionCourse3" class="panel-collapse collapse">
-                                                                <div class="course-detail-item-mob">
-                                                                    <div class="course-icon">
-                                                                        <img class="reduced-size-image"
-                                                                            src="img/sustify-course_overtime-compensation.png"
-                                                                            alt="Sustify offers course Overtime and compensation" />
-                                                                    </div>
-                                                                    <div class="course-title">
-                                                                        <h3><span x-show="!de"></span>
-                  <span x-show="de">___</span>
-                  Overtime &#38; compensation</h3>
-                                                                    </div>
-                                                                    <div class="course-detail-contents">
-                            
-                                                                        <ul class="course-detail-content-list">
-                                                                        <span x-show="!de"> <li>
-                                                                                Recruitment, retrenchment, working hours and compensation mechanisms
-                                                                            </li>
-                                                                            <li>
-                                                                                Understanding living wages, paychecks and underlying laws
-                                                                            </li>
-                                                                            <li>
-                                                                                Understanding the concept of basic finance management, calculating
-                                                                                basic
-                                                                                household incomes and expenses
-                                                                            </li>
-                                                                            <li>
-                                                                                Time management and planning
-                                                                            </li></span>
-                  <span x-show="de"> <li>
-                                                                                ___
-                                                                            </li>
-                                                                            <li>
-                                                                                ___
-                                                                            </li>
-                                                                            <li>
-                                                                                ___
-                                                                            </li>
-                                                                            <li>
-                                                                                ___
-                                                                            </li></span>
-                                                                           
-                                                                        </ul>
-                            
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    -->
-                <!-- <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="course-item-title-container-mob collapse" data-toggle="collapse"
-                                        data-parent="#accordion" href="#sustifyAccordionCourse5">
-                                        <h3><span x-show="!de">Environmental fundamentals &#38; awareness</span>
-                  <span x-show="de">___</span></h3>
-                                    </div>
-                                </div>
-                                <div id="sustifyAccordionCourse5" class="panel-collapse collapse">
-                                    <div class="course-detail-item-mob">
-                                        <div class="course-icon">
-                                            <img class="reduced-size-image"
-                                                src="img/sustify-course_environmental-fundamentals-awareness.png"
-                                                alt="Sustify offers course Environmental fundamentals and awareness" />
-                                        </div>
-                                        <div class="course-title">
-                                            <h3><span x-show="!de">Environmental fundamentals &#38; awareness</span>
-                  <span x-show="de">___</span></h3>
-                                        </div>
-                                        <div class="course-detail-contents">
-
-                                            <ul class="course-detail-content-list">
-                                            <span x-show="!de"><li>
-                                                    Understanding the basic concept of an ecosystem and climate change
-                                                </li>
-                                                <li>
-                                                    Understanding interactions between own behavior and the environment
-                                                </li>
-                                                <li>
-                                                    Applying the knowledge to daily factory routine
-                                                </li>
-                                                <li>
-                                                    Learning Problem solving capabilities for varying work related
-                                                    ecological
-                                                    issues
-                                                </li></span>
-                  <span x-show="de">___</span>
-                                                
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        -->
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <div class="course-item-title-container-mob collapse" data-toggle="collapse" data-parent="#accordion" href="#sustifyAccordionCourse6">
                       <h3>
                         <span x-show="!de">Chemical, water &#38; energy</span>
-                        <span x-show="de">___</span>
+                        <span x-show="de">Energieeffizienz &#38; Umweltpraktiken
+                        </span>
                       </h3>
-                      <img class="reduced-size-image" src="img/sustify-course_chemical-water-energy.png" alt="Sustify offers course chemical water and energy" style="
+                      <img class="reduced-size-image" src="img/energy-efficiency.svg" alt="Sustify offers course chemical water and energy" style="
                           float: right;
-                          height: 33px !important;
+                          height: 34px !important;
                           margin-bottom: 2px;
                           margin-left: 9px;
+                          border-radius: 50%;
                         " />
                     </div>
                   </div>
@@ -1765,104 +1455,26 @@ ___                                                </li>
                         <span x-show="de">
                           <ul class="course-detail-content-list">
                             <li>
-                              ___
+                              Chemikalienmanagement, Wasser- und
+                              Energieverbrauch und deren Umweltwirkung
                             </li>
                             <li>
-                              ___
+                              Auswirkungen auf Produktivität und Arbeitsschutz
                             </li>
-                            <li>___</li>
                             <li>
-                              ___
+                              Bewährte Verfahren in Bezug auf Abfall, Wasser und
+                              Energie
                             </li>
-                            <li>___</li>
+                            <li>
+                              Ökologische Grundlagen und Klimaschutz
+                            </li>
                           </ul>
                         </span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!---
-                                                    <div class="panel panel-default">
-                                                        <div class="panel-heading">
-                                                            <div class="course-item-title-container-mob collapse" data-toggle="collapse"
-                                                                data-parent="#accordion" href="#sustifyAccordionCourse8">
-                                                                <h3><span x-show="!de">Communication &#38; problem solving</span>
-                  <span x-show="de">___</span>
-                  </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div id="sustifyAccordionCourse8" class="panel-collapse collapse">
-                                                            <div class="course-detail-item-mob">
-                                                                <div class="course-icon">
-                                                                    <img class="reduced-size-image"
-                                                                        src="img/sustify-course_commmunication_problem-solving.png"
-                                                                        alt="Sustify offers course Communication and problem solving" />
-                                                                </div>
-                                                                <div class="course-title">
-                                                                    <h3><span x-show="!de"></span>
-                  <span x-show="de">___</span>
-                  Communication &#38; problem solving</h3>
-                                                                </div>
-                                                                <div class="course-detail-contents">
-                        
-                                                                    <ul class="course-detail-content-list">
-                                                                    <span x-show="!de">
-                                                                    <li>
-                                                                            Understanding basic communication principles
-                                                                        </li>
-                                                                        <li>
-                                                                            Understanding the importance of listening
-                                                                        </li>
-                                                                        <li>
-                                                                            Understanding and applying constructive feedback
-                                                                        </li>
-                                                                        <li>
-                                                                            Understanding the need for and value of grievance mechanisms and
-                                                                            using them
-                                                                            effectively
-                                                                        </li>
-                                                                        <li>
-                                                                            Learn how to defuse emotionally charged situations and prevent
-                                                                            conflicts
-                                                                        </li>
-                                                                        <li>
-                                                                            Understanding concept and different forms of negotiation
-                                                                        </li>
-                                                                        <li>
-                                                                            Apply tools for effective negotiation
-                                                                        </li></span>
-                  <span x-show="de">
-                  <li>
-                                                                            ___
-                                                                        </li>
-                                                                        <li>
-                                                                            ___
-                                                                        </li>
-                                                                        <li>
-                                                                            ___
-                                                                        </li>
-                                                                        <li>
-                                                                            ___
-                                                                        </li>
-                                                                        <li>
-                                                                            ___
-                                                                        </li>
-                                                                        <li>
-                                                                            ___
-                                                                        </li>
-                                                                        <li>
-                                                                            ___
-                                                                        </li>
-                  
-                  </span>
-                                                                        
-                                                                    </ul>
-                        
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                -->
+
               </div>
             </div>
           </div>
@@ -1871,31 +1483,24 @@ ___                                                </li>
             <div class="col-sm-12 col-md-12">
               <h2>
                 <span x-show="!de">Product Demo</span>
-                <span x-show="de">___</span>
+                <span x-show="de">Produkt-Demo</span>
               </h2>
               <p class="lead">
-                <span x-show="!de">Get an impression of how our course "Fire safety &#38; hazards" looks like!</span>
-                <span x-show="de">___</span>
+                <span x-show="!de">Get an impression of how our course "Fire safety &#38;
+                  hazards" looks like!</span>
+                <span x-show="de">Hier bekommen Sie einen Eindruck von dem Kurs "Gebäude- und Brandschutz" (Textilindustrie Asien)!</span>
               </p>
               <br />
             </div>
-            <!-- <div class="demo-video-button-div col-xs-12">
-                            <a class="btn btn--primary type--uppercase inner-link demo-video-button" href="#" data-reveal-id="myModal">
-                                <span class="btn__text"><span x-show="!de">Watch demo video</span>
-                  <span x-show="de">___</span></span>
-                            </a>
-                        </div> -->
-            <!--  <iframe width="400" height="320"
-                        style="max-width: 540px!important; margin-top: 20px; margin-bottom: 20px;"
-                        src="https://www.youtube.com/embed/tFvDjriPDlQ" frameborder="0"
-                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
             <video controls src="img/SUSTIFY%20DEMO%20-%20480%20P.mp4" poster="img/video_poster2.png" style="outline: none; width: 100%;"></video>
             <div class="col-sm-12 col-md-12">
               <p class="lead">
                 <span x-show="!de">If you want more detailed informati on, please contact us
                   at</span>
-                <span x-show="de">___</span>
-                <a class="sustify-link" href="mailto:sonja.westphal@sustify.de">Sonja.Westphal@sustify.de</a>
+                <span x-show="de">Für mehr Informationen kontaktieren Sie uns gerne unter
+                </span>
+                <a href="mailto:sonja.westphal@sustify.de">Sonja.Westphal@sustify.de</a>
                 .
               </p>
             </div>
@@ -1919,12 +1524,16 @@ ___                                                </li>
               <div class="col-sm-10 col-md-8">
                 <h2>
                   <span x-show="!de">Team Sustify</span>
-                  <span x-show="de">___</span>
+                  <span x-show="de">Unser Team</span>
                 </h2>
                 <p class="lead">
                   <span x-show="!de">Trust and reliability form the basis of how we work
                     together.</span>
-                  <span x-show="de">___</span>
+                  <span x-show="de">Wir verstehen Sozialunternehmertum nicht nur indem wir
+                    Nachhaltigkeit in der Lieferkette fördern wollen, sondern
+                    auch, dass wir in unserer eigenen Unternehmenskultur die
+                    Werte eines ethischen Wirtschaftsmodells leben.
+                  </span>
                 </p>
               </div>
             </div>
@@ -1940,13 +1549,12 @@ ___                                                </li>
                   <li>
                     <div class="container text-center">
                       <div class="row">
-                        <div class="col-sm-4" style="height: 512px;">
-                          <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height: 512px;">
+                        <div class="col-sm-4" style="height: 557px;">
+                          <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height: 557px;">
                             <img alt="Image" src="img/sonja.jpg" style="max-width: 60%;" />
                             <h4>Sonja Westphal</h4>
                             <span style="color: #33cc99;">
-                              <span x-show="!de">Founder & CEO</span>
-                              <span x-show="de">___</span>
+                              Founder & CEO
                             </span>
                             <p style="margin-top: 1vh;">
                               <span x-show="!de">Consultant for sustainable supply-chain
@@ -1955,37 +1563,46 @@ ___                                                </li>
                                 and environmental sciences, has worked and lived
                                 in six countries and is a passionate social
                                 entrepreneur.</span>
-                              <span x-show="de">___</span>
+                              <span x-show="de">Eine passionierte Sozialunternehmerin mit einem
+                                MsC in Marketing und Produktmanagement und einem
+                                M.A. in Umwelt- und Nachhaltigkeitsmanagement,
+                                hat in sechs Ländern gelebt und gearbeitet und
+                                glaubt, dass Capacity Building in der
+                                Lieferkette weit mehr Impact hat als
+                                Auditierungen.
+                              </span>
                             </p>
                           </div>
                         </div>
                         <div class="col-sm-8">
                           <div class="row">
                             <div class="col-sm-6">
-                              <div class="feature feature-1 boxed boxed--md boxed--border sonja-2">
+                              <div class="feature feature-1 boxed boxed--md boxed--border sonja-2" style="height:310px;">
                                 <i class="icon icon--md icon-Suitcase"></i>
                                 <h4>
                                   <span x-show="!de">Experience</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Erfahrung </span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">environmental and sustainability
                                     management, international business,
                                     marketing and communications</span>
-                                  <span x-show="de">___</span>
-
-                                  <!--, intercultural trainings -->
+                                  <span x-show="de">IRCA geprüfte Auditorin for
+                                    Qualitätsmanagementsysteme, SA8000
+                                    Auditorin, Training und Consulting in
+                                    Fabriken in vielen Ländern und Branchen
+                                  </span>
                                 </p>
                               </div>
                             </div>
                             <div class="col-sm-6">
-                              <div class="feature feature-1 boxed boxed--md boxed--border sonja-2">
+                              <div class="feature feature-1 boxed boxed--md boxed--border sonja-2" style="height:310px;">
                                 <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                 <h4>
                                   <span x-show="!de">Connect</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Kontakt</span>
                                 </h4>
-                                sonja.westphal At sustify.de
+                                Sonja.Westphal@sustify.de
                                 <br />
                                 <br />
                                 <ul class="social-list list-inline list--hover text-center">
@@ -2010,12 +1627,13 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Like"></i>
                                 <h4>
                                   <span x-show="!de">Likes</span>
-                                  <span x-show="de">___</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">rivers and forests, Asian culture, tango,
                                     value oriented people</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Flüsse und Wälder. Kulturen und Sprachen.
+                                    Argentinischer Tango. Wertebasiertes
+                                    Wirtschaften.</span>
                                 </p>
                               </div>
                             </div>
@@ -2024,12 +1642,12 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Unlike"></i>
                                 <h4>
                                   <span x-show="!de">Dislikes</span>
-                                  <span x-show="de">___</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">dubbed movies, skyscrapers,
                                     dishonesty</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Synchronisierte Filme, Hochhäuser,
+                                    Unehrlichkeit</span>
                                   <br />
                                   <br />
                                 </p>
@@ -2040,128 +1658,23 @@ ___                                                </li>
                       </div>
                     </div>
                   </li>
-                  <!--
-                  <li>
-                    <div class="container text-center">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height: 516px;">
-                            <img alt="Image" src="img/sreejith.jpg" style="max-width: 60%;" />
-                            <h4>Sreejith V S</h4>
-                            <span style="color: #33cc99;"><span x-show="!de">CTO</span>
-                              <span x-show="de">___</span></span>
-                            <p style="margin-top: 1vh;">
-                              <span x-show="!de">A tech-savvy entrepreneur and engineer who has
-                                experience in leading, managing and developing
-                                in software agencies.</span>
-                              <span x-show="de">___</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-sm-8">
-                          <div class="row exp-container">
-                            <div class="col-sm-6">
-                              <div class="feature feature-1 boxed boxed--md boxed--border">
-                                <i class="icon icon--md icon-Suitcase"></i>
-                                <h4>
-                                  <span x-show="!de">Experience</span>
-                                  <span x-show="de">___</span>
-                                </h4>
-                                <p>
-                                  <span x-show="!de">A visionary with experience in managing
-                                    people and projects. Managed several
-                                    high-tech projects for organisations and
-                                    entrepreneurs across the globe.</span>
-                                  <span x-show="de">___</span>
-                                </p>
-                              </div>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="feature feature-1 boxed boxed--md boxed--border">
-                                <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
-                                <h4>
-                                  <span x-show="!de">Connect</span>
-                                  <span x-show="de">___</span>
-                                </h4>
-                                Sreejith.VS At sustify.de
-                                <br />
-                                <br />
-                                <ul class="social-list list-inline list--hover text-center">
-                                  <li>
-                                    <br />
-                                    <a href="skype:sreejithvs333?call" target="_blank">
-                                      <i class="socicon socicon-skype icon icon--xs"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="https://goo.gl/kcBH6B" target="_blank">
-                                      <i class="socicon socicon-linkedin icon icon--xs"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="https://twitter.com/sreejithvs333" target="_blank">
-                                      <i class="socicon socicon-twitter icon icon--xs"></i>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="likes-container">
-                            <div class="row">
-                              <div class="col-sm-6">
-                                <div class="feature feature-1 boxed boxed--md boxed--border">
-                                  <i class="icon icon--md icon-Like"></i>
-                                  <h4>
-                                    <span x-show="!de">Likes</span>
-                                    <span x-show="de">___</span>
-                                  </h4>
-                                  <p>
-                                    <span x-show="!de">Linux, new organisational models (e.g.
-                                      Frederic Laloux, spiral dynamics),
-                                      singing, fitness</span>
-                                    <span x-show="de">___</span>
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-sm-6">
-                                <div class="feature feature-1 boxed boxed--md boxed--border">
-                                  <i class="icon icon--md icon-Unlike"></i>
-                                  <h4>
-                                    <span x-show="!de">Dislikes</span>
-                                    <span x-show="de">___</span>
-                                  </h4>
-                                  <p>
-                                    <span x-show="!de">hierarchies by default, unstable Wi-Fi,
-                                      waste in nature</span>
-                                    <span x-show="de">___</span>
-                                  </p>
-                                  <br />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                -->
 
                   <li>
                     <div class="container text-center">
                       <div class="row">
                         <div class="col-sm-4">
-                          <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height: 480px;">
+                          <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height: 487px;">
                             <img alt="Image" src="img/Cannelle_round.png" style="max-width: 60%;" />
                             <!--desktop-->
                             <h4>Cannelle Rambaud-Measson</h4>
                             <span style="color: #33cc99;"><span x-show="!de">Instructional Design</span>
-                              <span x-show="de">___</span></span>
+                              <span x-show="de">Learning Experience Designer
+                              </span></span>
                             <p style="margin-top: 1vh;">
                               <span x-show="!de">An enthusiastic designer that likes to use her
                                 creative voice to have a social and
                                 environmental impact.</span>
-                              <span x-show="de">___</span>
+                              <span x-show="de">Eine begeisterte Designerin, die mit ihrer Kreativität beitragen möchte, sozialen und ökologischen Impact zu erzielen.</span>
                             </p>
                           </div>
                         </div>
@@ -2172,13 +1685,15 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Suitcase"></i>
                                 <h4>
                                   <span x-show="!de">Experience</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Erfahrung </span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">Designing and developing informative and
                                     ludic visuals for environmental and social
                                     purposes.</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Grafik, Filme und Illustrationen für
+                                    nachhaltige Projekte, von der
+                                    Konzepterstellung bis zur Umsetzung.</span>
                                 </p>
                               </div>
                             </div>
@@ -2187,9 +1702,9 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                 <h4>
                                   <span x-show="!de">Connect</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Kontakt</span>
                                 </h4>
-                                Cannelle.rm At sustify.de
+                                Cannelle.Rm@sustify.de
                                 <br />
                                 <br />
                                 <ul class="social-list list-inline list--hover text-center">
@@ -2214,12 +1729,12 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Like"></i>
                                 <h4>
                                   <span x-show="!de">Likes</span>
-                                  <span x-show="de">___</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">interactive art, discovering new locations,
                                     pilates</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Interaktive Kunst, Erkunden von urbanen
+                                    Plätzen, Pilates</span>
                                 </p>
                               </div>
                             </div>
@@ -2228,12 +1743,12 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Unlike"></i>
                                 <h4>
                                   <span x-show="!de">Dislikes</span>
-                                  <span x-show="de">___</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">waste of food, disrespect, plastic
                                     pollution</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Verschwendung, Respektlosigkeit,
+                                    Plastikverschmutzung</span>
                                 </p>
                               </div>
                             </div>
@@ -2252,12 +1767,16 @@ ___                                                </li>
                             <!--desktop-->
                             <h4>Husam Al Dakak</h4>
                             <span style="color: #33cc99;"><span x-show="!de">Partnerships and strategy</span>
-                              <span x-show="de">___</span></span>
+                              <span x-show="de">Strategie und Kooperationen
+                              </span></span>
                             <p style="margin-top: 1vh;">
                               <span x-show="!de">An economist passionate about social
                                 entrepreneurship with a background in business
                                 and tech.</span>
-                              <span x-show="de">___</span>
+                              <span x-show="de">Ein begeisterter Sozialunternehmer, der schon
+                                einige Start-ups erfolgreich begleitet hat, und
+                                eine Brücke schlagen will zwischen
+                                Nachhaltigkeit und Technik.</span>
                             </p>
                           </div>
                         </div>
@@ -2267,14 +1786,15 @@ ___                                                </li>
                               <div class="feature feature-1 boxed boxed--md boxed--border sonja-2">
                                 <i class="icon icon--md icon-Suitcase"></i>
                                 <h4>
-                                  <span x-show="!de"><span x-show="!de">Experience</span>
-                                    <span x-show="de">___</span></span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="!de">Experience</span>
+                                  <span x-show="de">Erfahrung</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">International Development and Cooperation,
                                     Project Management, Tech and Startups.</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Internationale Entwicklungszusammenarbeit,
+                                    App-Entwicklung, Scrum/Agiles
+                                    Projektmanagement</span>
                                 </p>
                               </div>
                             </div>
@@ -2283,9 +1803,9 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                 <h4>
                                   <span x-show="!de">Connect</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Kontakt</span>
                                 </h4>
-                                husam.aldakak At sustify.de
+                                Husam.Aldakak At sustify.de
                                 <br />
                                 <br />
                                 <ul class="social-list list-inline list--hover text-center">
@@ -2306,29 +1826,29 @@ ___                                                </li>
                           </div>
                           <div class="row">
                             <div class="col-sm-6">
-                              <div id="brt" class="feature feature-1 boxed boxed--md boxed--border" style="min-height: 16em;">
+                              <div id="brt" class="feature feature-1 boxed boxed--md boxed--border" style="height: 15.55em;">
                                 <i class="icon icon--md icon-Like"></i>
                                 <h4>
                                   <span x-show="!de">Likes</span>
-                                  <span x-show="de">___</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">Big and impactful visions, languages and
                                     cultures, bouldering and hiking</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Visionen mit Impact, Sprachen und Kulturen,
+                                    Bouldering und Wandern</span>
                                 </p>
                               </div>
                             </div>
                             <div class="col-sm-6">
-                              <div class="feature feature-1 boxed boxed--md boxed--border" style="min-height: 16em;">
+                              <div class="feature feature-1 boxed boxed--md boxed--border" style="height: 15.55em;">
                                 <i class="icon icon--md icon-Unlike"></i>
                                 <h4>
                                   <span x-show="!de">Dislikes</span>
-                                  <span x-show="de">___</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">Big cars, meat and bureaucracy</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Große Autos, Fleisch- und Fischkonsum,
+                                    Bürokratie</span>
                                 </p>
                               </div>
                             </div>
@@ -2342,17 +1862,21 @@ ___                                                </li>
                     <div class="container text-center">
                       <div class="row">
                         <div class="col-sm-4">
-                          <div id="ldp" class="feature feature-3 boxed boxed--xlg boxed--border">
+                          <div id="ldp" class="feature feature-3 boxed boxed--xlg boxed--border" style="height:510px">
                             <img alt="Image" src="img/lucia-circle.jpg" style="max-width: 60%;" />
                             <h4>Lucia Della Putta-Dallara</h4>
-                            <span style="color: #33cc99;"><span x-show="!de">Subject Matter Expert</span>
-                              <span x-show="de">___</span></span>
+                            <span style="color: #33cc99;">Subject Matter Expert
+                            </span>
                             <p style="margin-top: 1vh;">
                               <span x-show="!de">An accomplished industrial technologies and
                                 textile engineer with an entrepreneurial heart.
                                 Has international experience across textile,
                                 automotive and aeronautical industries.</span>
-                              <span x-show="de">___</span>
+                              <span x-show="de">Eine Industrieingenieurin, die technisches
+                                Wissen über Produktionsprozesse verbindet mit
+                                neuen Ansätzen über nachhaltige Entwicklung. Sie
+                                vereinfacht komplexe Zusammenhänge so, dass sie
+                                am Ende jeder verstehen kann!</span>
                             </p>
                           </div>
                         </div>
@@ -2363,14 +1887,16 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Suitcase"></i>
                                 <h4>
                                   <span x-show="!de">Experience</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Erfahrung</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">product and process design, quality systems
                                     and audits, lean management, sustainable
                                     development, textile engineering,
                                     consulting</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Produkt- und Prozessdesign,
+                                    Qualitätssysteme und Auditierungen, Lean
+                                    Management, Consulting</span>
                                 </p>
                               </div>
                             </div>
@@ -2379,9 +1905,9 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                 <h4>
                                   <span x-show="!de">Connect</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Kontakt</span>
                                 </h4>
-                                lucia.dellaputta At sustify.de
+                                Lucia.Dellaputta@sustify.de
                                 <br />
                                 <br />
                                 <br />
@@ -2407,30 +1933,30 @@ ___                                                </li>
                           </div>
                           <div class="row">
                             <div class="col-sm-6">
-                              <div class="feature feature-1 boxed boxed--md boxed--border">
+                              <div class="feature feature-1 boxed boxed--md boxed--border" style="height:216px;">
                                 <i class="icon icon--md icon-Like"></i>
                                 <h4>
                                   <span x-show="!de">Likes</span>
-                                  <span x-show="de">___</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">creativity, technology, design,
                                     details</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Kreativität, Technik, Präzision,
+                                    Zen-Yoga</span>
                                 </p>
                               </div>
                             </div>
                             <div class="col-sm-6">
-                              <div class="feature feature-1 boxed boxed--md boxed--border">
+                              <div class="feature feature-1 boxed boxed--md boxed--border" style="height:216px;">
                                 <i class="icon icon--md icon-Unlike"></i>
                                 <h4>
                                   <span x-show="!de">Dislikes</span>
-                                  <span x-show="de">___</span>
                                 </h4>
                                 <p>
                                   <span x-show="!de">hypocrisy, selfishness,
                                     procrastination</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Scheinheiligkeit, Egoismus,
+                                    Aufschieberitis</span>
                                 </p>
                               </div>
                             </div>
@@ -2443,18 +1969,14 @@ ___                                                </li>
                     <div class="container text-center">
                       <div class="row">
                         <div class="col-sm-4">
-                          <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height: 516px;">
-                            <img alt="Image" src="img/padmaja.jpg" style="max-width: 60%;" />
-                            <h4>Padmaja Pai</h4>
-                            <span style="color: #33cc99;"><span x-show="!de">Advisory Board Member</span>
-                              <span x-show="de">___</span></span>
+                          <div class="feature feature-3 boxed boxed--xlg boxed--border" style="height: 522px;">
+                            <img alt="Image" src="img/bergson-wang-circle.png" style="max-width: 60%;" />
+                            <h4>Bergson Wang</h4>
+                            <span style="color: #33cc99;">Program Manager China
+                            </span>
                             <p style="margin-top: 1vh;">
-                              <span x-show="!de">A chemical engineer by training; a trainer by
-                                profession. Always travelling to visit factories
-                                around the Indian subcontinent to train workers.
-                                She’s a go-getter and sees life full of
-                                opportunities.</span>
-                              <span x-show="de">___</span>
+                              <span x-show="!de">A consultant and facilitator for sustainability and compliance, registered safety engineer in China and a lead auditor of OSHAS18001, majored in occupational hygiene, who likes to combine classroom training with digitalization.</span>
+                              <span x-show="de">Consultant und Facilitator für Nachhaltigkeit und Compliance, eingetragener Ingenieur für Arbeitssicherheit in China und Lead Auditor von OSHAS18001 mit dem Schwerpunkt Arbeitssicherheit und - hygiene, der gerne konventionelle Trainings mit Digitalität verbindet.</span></span>
                             </p>
                           </div>
                         </div>
@@ -2465,13 +1987,11 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Suitcase"></i>
                                 <h4>
                                   <span x-show="!de">Experience</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Erfahrung</span>
                                 </h4>
                                 <p>
-                                  <span x-show="!de">social compliance management systems, CSR,
-                                    trainings in labour intensive industries,
-                                    sustainable project management</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="!de">Occupational health and safety, corporate social responsibility, dialogue training with workers and chemical management</span>
+                                  <span x-show="de">Betrieblicher Arbeits- und Gesundheitsschutz, CSR, Dialogtrainings, Chemikalienmanagement.</span>
                                 </p>
                               </div>
                             </div>
@@ -2480,20 +2000,20 @@ ___                                                </li>
                                 <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
                                 <h4>
                                   <span x-show="!de">Connect</span>
-                                  <span x-show="de">___</span>
+                                  <span x-show="de">Kontakt</span>
                                 </h4>
-                                paipadmaja@yahoo.com
+                                bergson.wang@hotmail.com
                                 <br />
                                 <br />
                                 <ul class="social-list list-inline list--hover text-center">
                                   <li>
                                     <br />
-                                    <a href="skype:Padmaja19?call" target="_blank">
+                                    <a href="skype:bergson.wang1?call" target="_blank">
                                       <i class="socicon socicon-skype icon icon--xs"></i>
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="https://goo.gl/gKPNKC" target="_blank">
+                                    <a href="https://www.linkedin.com/in/bergson-wang-19a85712/" target="_blank">
                                       <i class="socicon socicon-linkedin icon icon--xs"></i>
                                     </a>
                                   </li>
@@ -2513,13 +2033,13 @@ ___                                                </li>
                                   <i class="icon icon--md icon-Like"></i>
                                   <h4>
                                     <span x-show="!de">Likes</span>
-                                    <span x-show="de">___</span>
+                                    <!--<span x-show="de">___</span>-->
                                   </h4>
                                   <p>
-                                    <span x-show="!de">cooking and eating spicy food, Indian
-                                      hospitality, unconventional
-                                      approaches</span>
-                                    <span x-show="de">___</span>
+                                    <span x-show="!de">Break dance and modern dancing, meeting people of different cultures, problem solving approach</span>
+                                    <span x-show="de">Breakdance und moderner Tanz, Begegnungen mit Menschen verschiedener Kulturen, lösungsorientierte Einstellung
+
+                                    </span>
                                   </p>
                                 </div>
                               </div>
@@ -2528,11 +2048,10 @@ ___                                                </li>
                                   <i class="icon icon--md icon-Unlike"></i>
                                   <h4>
                                     <span x-show="!de">Dislikes</span>
-                                    <span x-show="de">___</span>
                                   </h4>
                                   <p>
-                                    <span x-show="!de">hypocrisy</span>
-                                    <span x-show="de">___</span>
+                                    <span x-show="!de">Cockroaches, faking of documents and records in social compliance assessment</span>
+                                    <span x-show="de">Kakerlaken, Fälschen von Dokumenten in Sozial- und Umweltaudits</span>
                                   </p>
                                   <br />
                                 </div>
@@ -2553,8 +2072,7 @@ ___                                                </li>
                           <div class="feature feature-3 boxed boxed--xlg boxed--border team-member">
                             <img alt="Image" src="img/sonja-fill.jpg" />
                             <h4>Sonja Westphal</h4>
-                            <span style="color: #33cc99;"><span x-show="!de">Founder & CEO</span>
-                              <span x-show="de">___</span></span>
+                            <span style="color: #33cc99;">Founder & CEO</span>
                             <div class="team-member">
                               <div class="tabs-container text-center" data-content-align="left">
                                 <ul class="tabs">
@@ -2562,7 +2080,7 @@ ___                                                </li>
                                     <div class="tab__title">
                                       <span class="h5">
                                         <span x-show="!de">About</span>
-                                        <span x-show="de">___</span>
+                                        <span x-show="de">Über sie</span>
                                       </span>
                                     </div>
                                     <div class="tab__content text-center">
@@ -2574,14 +2092,22 @@ ___                                                </li>
                                           environmental sciences, has experience
                                           in the Indian subcontinent and 6 EU
                                           countries.</span>
-                                        <span x-show="de">___</span>
+                                        <span x-show="de">Eine passionierte Sozialunternehmerin
+                                          mit einem MsC in Marketing und
+                                          Produktmanagement und einem M.A. in
+                                          Umwelt- und Nachhaltigkeitsmanagement,
+                                          hat in sechs Ländern gelebt und
+                                          gearbeitet und glaubt, dass Capacity
+                                          Building in der Lieferkette weit mehr
+                                          Impact hat als Auditierungen.
+                                        </span>
                                       </p>
                                     </div>
                                   </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Exp</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Erfahrung</span></span>
                                     </div>
                                     <div class="tab__content">
                                       <section class=" ">
@@ -2593,7 +2119,12 @@ ___                                                </li>
                                                 international business,
                                                 marketing and
                                                 communications</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">IRCA geprüfte Auditorin for
+                                                Qualitätsmanagementsysteme,
+                                                SA8000 Auditorin, Training und
+                                                Consulting in Fabriken in vielen
+                                                Ländern und Branchen
+                                              </span>
                                             </p>
                                           </div>
                                         </div>
@@ -2603,7 +2134,8 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Likes</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Mag</span>
+                                      </span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <section class=" ">
@@ -2629,14 +2161,14 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Connect</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Kontakt</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <div class="col-sm-4">
                                         <div class="feature feature-3 boxed">
                                           <a href="mailto:sonja.westphal@sustify.de">
                                             <i class="icon color--primary icon-Mail"></i>
-                                            <p>sonja.westphal At sustify.de</p>
+                                            <p>Sonja.Westphal@sustify.de</p>
                                           </a>
                                         </div>
                                       </div>
@@ -2666,127 +2198,7 @@ ___                                                </li>
                       </div>
                     </div>
                   </li>
-                  <!--
-                  <li>
-                    <div class="container text-center">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="feature feature-3 boxed boxed--xlg boxed--border team-member">
-                            <img alt="Image" src="img/sreejith-fill.jpg" />
-                            <h4>Sreejith V S</h4>
-                            <span style="color: #33cc99;"><span x-show="!de">CTO</span>
-                              <span x-show="de">___</span></span>
-                            <div class="team-member">
-                              <div class="tabs-container text-center" data-content-align="left">
-                                <ul class="tabs">
-                                  <li class="active tab-button">
-                                    <div class="tab__title">
-                                      <span class="h5"><span x-show="!de">About</span>
-                                        <span x-show="de">___</span></span>
-                                    </div>
-                                    <div class="tab__content text-center">
-                                      <p>
-                                        <span x-show="!de">A tech-savvy entrepreneur and
-                                          engineer who has experience in
-                                          leading, managing and developing in
-                                          software agencies.</span>
-                                        <span x-show="de">___</span>
-                                      </p>
-                                    </div>
-                                  </li>
-                                  <li class="tab-button">
-                                    <div class="tab__title">
-                                      <span class="h5"><span x-show="!de">Exp</span>
-                                        <span x-show="de">___</span></span>
-                                    </div>
-                                    <div class="tab__content">
-                                      <section class=" ">
-                                        <div class="container text-center">
-                                          <div class="row">
-                                            <p style="margin-top: 1vh;">
-                                              <span x-show="!de">A visionary with experience in
-                                                managing people and projects.
-                                                Managed several high-tech
-                                                projects for organisations and
-                                                entrepreneurs across the
-                                                globe.</span>
-                                              <span x-show="de">___</span>
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </section>
-                                    </div>
-                                  </li>
-                                  <li class="tab-button">
-                                    <div class="tab__title">
-                                      <span class="h5"><span x-show="!de">Likes</span>
-                                        <span x-show="de">___</span></span>
-                                    </div>
-                                    <div class="tab__content text-center">
-                                      <section class=" ">
-                                        <div class="container">
-                                          <div class="row">
-                                            <i class="icon icon--md icon-Like"></i>
-                                            <p style="margin-top: 1vh;">
-                                              <span x-show="!de">Linux, new organisational
-                                                models (e.g. Frederic Laloux,
-                                                spiral dynamics), singing,
-                                                fitness</span>
-                                              <span x-show="de">___</span>
-                                            </p>
-                                            <i class="icon icon--md icon-Unlike"></i>
-                                            <p>
-                                              <span x-show="!de">hierarchies by default,
-                                                unstable Wi-Fi, waste in
-                                                nature</span>
-                                              <span x-show="de">___</span>
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </section>
-                                    </div>
-                                  </li>
-                                  <li class="tab-button">
-                                    <div class="tab__title">
-                                      <span class="h5"><span x-show="!de">Connect</span>
-                                        <span x-show="de">___</span></span>
-                                    </div>
-                                    <div class="tab__content text-center">
-                                      <div class="col-sm-4">
-                                        <div class="feature feature-3 boxed">
-                                          <a href="mailto:sreejithvs333@outlook.com">
-                                            <i class="icon color--primary icon-Mail"></i>
-                                            <p>sreejithvs333@gmail.com</p>
-                                          </a>
-                                        </div>
-                                      </div>
-                                      <div class="col-sm-4">
-                                        <a href="skype:sreejithvs333?call" target="_blank">
-                                          <div class="feature feature-3 boxed">
-                                            <i class="icon color--primary icon-Skype"></i>
-                                            <p>Sreejith V S</p>
-                                          </div>
-                                        </a>
-                                      </div>
-                                      <div class="col-sm-4">
-                                        <a href="https://goo.gl/kcBH6B">
-                                          <div class="feature feature-3 boxed">
-                                            <i class="icon color--primary icon-Linkedin"></i>
-                                            <p>https://goo.gl/kcBH6B</p>
-                                          </div>
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                -->
+
                   <li>
                     <div class="container text-center">
                       <div class="row">
@@ -2795,28 +2207,33 @@ ___                                                </li>
                             <img alt="Image" src="img/cannelle_square.png" />
                             <h4>Cannelle Rambaud-Measson</h4>
                             <span style="color: #33cc99;"><span x-show="!de">Instructional Designer</span>
-                              <span x-show="de">___</span></span>
+                              <span x-show="de">Learning Experience Designer
+                              </span></span>
                             <div class="team-member">
                               <div class="tabs-container text-center" data-content-align="left">
                                 <ul class="tabs">
                                   <li class="active tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">About</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Über sie</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <p>
                                         <span x-show="!de">An enthusiastic designer that likes
                                           to use her creative voice to have a
                                           social and environmental impact.</span>
-                                        <span x-show="de">___</span>
+                                        <span x-show="de">Eine begeisterte Designerin, die mit
+                                          ihrer Kreativität beitragen möchte,
+                                          sozialen und ökologischen Impact zu
+                                          erzielen.
+                                        </span>
                                       </p>
                                     </div>
                                   </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Exp</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Erfahrung</span></span>
                                     </div>
                                     <div class="tab__content">
                                       <section class=" ">
@@ -2827,7 +2244,7 @@ ___                                                </li>
                                                 informative and ludic visuals
                                                 for environmental and social
                                                 purposes.</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Grafik, Filme und Illustrationen für nachhaltige Projekte, von der Konzepterstellung bis zur Umsetzung.</span>
                                             </p>
                                           </div>
                                         </div>
@@ -2837,7 +2254,8 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Likes</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Mag</span>
+                                      </span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <section class=" ">
@@ -2847,13 +2265,16 @@ ___                                                </li>
                                             <p style="margin-top: 1vh;">
                                               <span x-show="!de">interactive art, discovering
                                                 new locations, pilates</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Interaktive Kunst, Erkunden von
+                                                urbanen Plätzen, Pilates</span>
                                             </p>
                                             <i class="icon icon--md icon-Unlike"></i>
                                             <p>
                                               <span x-show="!de">waste of food, disrespect,
                                                 plastic pollution</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Verschwendung,
+                                                Respektlosigkeit,
+                                                Plastikverschmutzung</span>
                                             </p>
                                           </div>
                                         </div>
@@ -2863,14 +2284,14 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Connect</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Kontakt</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <div class="col-sm-4">
                                         <div class="feature feature-3 boxed">
                                           <a href="mailto:Cannelle.rm@sustify.de">
                                             <i class="icon color--primary icon-Mail"></i>
-                                            <p>Cannelle.rm At sustify.de</p>
+                                            <p>Cannelle.Rm@sustify.de</p>
                                           </a>
                                         </div>
                                       </div>
@@ -2909,28 +2330,33 @@ ___                                                </li>
                             <img alt="Image" src="img/husam-fill.jpg" />
                             <h4>Husam Al Dakak</h4>
                             <span style="color: #33cc99;"><span x-show="!de">Social Economist</span>
-                              <span x-show="de">___</span></span>
+                              <span x-show="de">Strategie und Kooperationen
+                              </span></span>
                             <div class="team-member">
                               <div class="tabs-container text-center" data-content-align="left">
                                 <ul class="tabs">
                                   <li class="active tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">About</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Über ihn</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <p>
                                         <span x-show="!de">An economist passionate aboout social
                                           entrepreneurship with a background in
                                           business and tech.</span>
-                                        <span x-show="de">___</span>
+                                        <span x-show="de">Ein begeisterter Sozialunternehmer,
+                                          der schon einige Start-ups erfolgreich
+                                          begleitet hat, und eine Brücke
+                                          schlagen will zwischen Nachhaltigkeit
+                                          und Technik.</span>
                                       </p>
                                     </div>
                                   </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Exp</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Erfahrung</span></span>
                                     </div>
                                     <div class="tab__content">
                                       <section class=" ">
@@ -2940,7 +2366,10 @@ ___                                                </li>
                                               <span x-show="!de">International Development and
                                                 Cooperation, Project Management,
                                                 Tech and Startups.</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Internationale
+                                                Entwicklungszusammenarbeit,
+                                                App-Entwicklung, Scrum/Agiles
+                                                Projektmanagement</span>
                                             </p>
                                           </div>
                                         </div>
@@ -2950,7 +2379,8 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Likes</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Mag</span>
+                                      </span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <section class=" ">
@@ -2961,13 +2391,16 @@ ___                                                </li>
                                               <span x-show="!de">Big and impactful visions,
                                                 languages and cultures,
                                                 bouldering and hiking</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Visionen mit Impact, Sprachen
+                                                und Kulturen, Bouldering und
+                                                Wandern</span>
                                             </p>
                                             <i class="icon icon--md icon-Unlike"></i>
                                             <p>
                                               <span x-show="!de">Big cars, meat and
                                                 bureaucracy</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Große Autos, Fleisch- und
+                                                Fischkonsum, Bürokratie</span>
                                             </p>
                                           </div>
                                         </div>
@@ -2977,14 +2410,14 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Connect</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Kontakt</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <div class="col-sm-4">
                                         <div class="feature feature-3 boxed">
                                           <a href="mailto:husam.aldakak@sustify.de">
                                             <i class="icon color--primary icon-Mail"></i>
-                                            <p>husam.aldakak At sustify.de</p>
+                                            <p>Husam.Aldakak@sustify.de</p>
                                           </a>
                                         </div>
                                       </div>
@@ -3014,114 +2447,7 @@ ___                                                </li>
                       </div>
                     </div>
                   </li>
-                  <!-- mobile -->
-                  <!--
-                                <li>
-                                    <div class="container text-center">
-                                        <div class="row">
-                                             <div class="col-sm-4">
-                                                <div class="feature feature-3 boxed boxed--xlg boxed--border"
-                                                    style="height:480px">
-                                                    <img alt="Image" src="img/Lavanya.jpeg"> == $0
-                                                    <h4>Lavanya Pai</h4>
-                                                    <span style="color: #33cc99;"><span x-show="!de">Instructional Designer</span>
-                  <span x-show="de">___</span></span>
-                                                    <p style="margin-top:1vh"><span x-show="!de">Instructional designer with an academic background in the social sciences. Passionate and curious about issues of labour rights and climate resilience.</span>
-                  <span x-show="de">___</span></p>
-                                                </div>
-                                            </div>
 
-                                            <div class="col-sm-8">
-
-
-
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div
-                                                            class="feature feature-1 boxed boxed--md boxed--border  sonja-2">
-                                                            <i class="icon icon--md icon-Suitcase"></i>
-                                                            <h4><span x-show="!de">Experience</span>
-                  <span x-show="de">___</span></h4>
-                                                            <p><span x-show="!de">fieldwork relating to  women’s emancipation and social compliance in textile industries.</span>
-                  <span x-show="de">___</span> 
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-
-
-
-                                                        <div
-                                                            class="feature feature-1 boxed boxed--md boxed--border  sonja-2">
-                                                            <i class="icon icon--md icon-Bird-DeliveringLetter"></i>
-                                                             <h4>
-<span x-show="!de">Connect</span>
-<span x-show="de">___</span></h4>
-                                                          lavanya.pai At sustify.de
-                                                            <br><br>
-
-                                                            <ul class="social-list list-inline list--hover text-center">
-                                                                <li><br>
-                                                                    <a href="skype:nilesh.j.sakpal238?call"
-                                                                        target="_blank">
-                                                                        <i
-                                                                            class="socicon socicon-skype icon icon--xs"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://goo.gl/BqdZY1" target="_blank">
-                                                                        <i
-                                                                            class="socicon socicon-linkedin icon icon--xs"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="https://twitter.com/NileshJSakpal"
-                                                                        target="_blank">
-                                                                        <i
-                                                                            class="socicon socicon-twitter icon icon--xs"></i>
-                                                                    </a>
-                                                                </li>
-
-
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-
-                                                    <div class="col-sm-6">
-
-                                                        <div id="brt"
-                                                            class="feature feature-1 boxed boxed--md boxed--border">
-                                                            <i class="icon icon--md icon-Like"></i>
-                                                            <h4><span x-show="!de">Likes</span>
-                  <span x-show="de">___</span></h4>
-                                                            <p> <span x-show="!de">Activism for human rights, playing samba drums</span>
-                  <span x-show="de">___</span>
-                                                            </p>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="feature feature-1 boxed boxed--md boxed--border">
-                                                            <i class="icon icon--md icon-Unlike"></i>
-                                                            <h4>
-<span x-show="!de">Dislikes</span>
-<span x-show="de">___</span></h4>
-                                                            <p> Political apathy, country music
-                                                            </p>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                -->
                   <li>
                     <div class="container text-center">
                       <div class="row">
@@ -3129,15 +2455,14 @@ ___                                                </li>
                           <div class="feature feature-3 boxed boxed--xlg boxed--border team-member">
                             <img alt="Image" src="img/lucia-fill.jpg" />
                             <h4>Lucia Della Putta-Dallara</h4>
-                            <span style="color: #33cc99;"><span x-show="!de">Subject Matter Expert</span>
-                              <span x-show="de">___</span></span>
+                            <span style="color: #33cc99;">Subject Matter Expert</span>
                             <div class="team-member">
                               <div class="tabs-container text-center" data-content-align="left">
                                 <ul class="tabs">
                                   <li class="active tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">About</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Über sie</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <p>
@@ -3147,14 +2472,20 @@ ___                                                </li>
                                           international experience across
                                           textile, automotive and aeronautical
                                           industries.</span>
-                                        <span x-show="de">___</span>
+                                        <span x-show="de">Eine Industrieingenieurin, die
+                                          technisches Wissen über
+                                          Produktionsprozesse verbindet mit
+                                          neuen Ansätzen über nachhaltige
+                                          Entwicklung. Sie vereinfacht komplexe
+                                          Zusammenhänge so, dass sie am Ende
+                                          jeder verstehen kann!</span>
                                       </p>
                                     </div>
                                   </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Exp</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Erfahrung</span></span>
                                     </div>
                                     <div class="tab__content">
                                       <section class=" ">
@@ -3166,7 +2497,10 @@ ___                                                </li>
                                                 management, sustainable
                                                 development, textile
                                                 engineering, consulting</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Produkt- und Prozessdesign,
+                                                Qualitätssysteme und
+                                                Auditierungen, Lean Management,
+                                                Consulting</span>
                                             </p>
                                           </div>
                                         </div>
@@ -3176,7 +2510,8 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Likes</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Mag</span>
+                                      </span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <section class=" ">
@@ -3186,13 +2521,15 @@ ___                                                </li>
                                             <p style="margin-top: 1vh;">
                                               <span x-show="!de">creativity, technology, design,
                                                 detail</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Kreativität, Technik,
+                                                Präzision, Zen-Yoga</span>
                                             </p>
                                             <i class="icon icon--md icon-Unlike"></i>
                                             <p>
                                               <span x-show="!de">hypocrisy, selfishness,
                                                 procrastination</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="de">Scheinheiligkeit, Egoismus,
+                                                Aufschieberitis</span>
                                             </p>
                                           </div>
                                         </div>
@@ -3202,7 +2539,7 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Connect</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Kontakt</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <div class="col-sm-4">
@@ -3210,7 +2547,7 @@ ___                                                </li>
                                           <a href="mailto:lucia.dellaputta@sustify.de">
                                             <i class="icon color--primary icon-Mail"></i>
                                             <p>
-                                              lucia.dellaputta At sustify.de
+                                              Lucia.Dellaputta@sustify.de
                                             </p>
                                           </a>
                                         </div>
@@ -3246,46 +2583,37 @@ ___                                                </li>
                       <div class="row">
                         <div class="col-sm-4">
                           <div class="feature feature-3 boxed boxed--xlg boxed--border team-member">
-                            <img alt="Image" src="img/padmaja-fill.jpg" />
-                            <h4>Padmaja Pai</h4>
-                            <span style="color: #33cc99;"><span x-show="!de">Advisory Board Member</span>
-                              <span x-show="de">___</span></span>
+                            <img alt="Image" src="img/bergson-wang-square.jpg" />
+                            <h4>Bergson Wang</h4>
+                            <span style="color: #33cc99;"><span x-show="!de">Program Manager China</span>
+                              <span x-show="de">Program Manager China</span></span>
                             <div class="team-member">
                               <div class="tabs-container text-center" data-content-align="left">
                                 <ul class="tabs">
                                   <li class="active tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">About</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Über ihn</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <p>
-                                        <span x-show="!de">A chemical engineer by training ;a
-                                          trainer by profession. Always
-                                          travelling to visit factories around
-                                          the Indian subcontinent to train
-                                          workers. She’s a go-getter and sees
-                                          life full of opportunities.</span>
-                                        <span x-show="de">___</span>
+                                        <span x-show="!de">A consultant and facilitator for sustainability and compliance, registered safety engineer in China and a lead auditor of OSHAS18001, majored in occupational hygiene, who likes to combine classroom training with digitalization.</span>
+                                        <span x-show="de">Consultant und Facilitator für Nachhaltigkeit und Compliance, eingetragener Ingenieur für Arbeitssicherheit in China und Lead Auditor von OSHAS18001 mit dem Schwerpunkt Arbeitssicherheit und - hygiene, der gerne konventionelle Trainings mit Digitalität verbindet.</span>
                                       </p>
                                     </div>
                                   </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Exp</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Erfahrung</span></span>
                                     </div>
                                     <div class="tab__content">
                                       <section class=" ">
                                         <div class="container text-center">
                                           <div class="row">
                                             <p style="margin-top: 1vh;">
-                                              <span x-show="!de">social compliance management
-                                                systems, CSR, trainings in
-                                                labour intensive industries,
-                                                sustainable project
-                                                management</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="!de">Occupational health and safety, corporate social responsibility, dialogue training with workers and chemical management</span>
+                                              <span x-show="de">Betrieblicher Arbeits- und Gesundheitsschutz, CSR, Dialogtrainings, Chemikalienmanagement.</span>
                                             </p>
                                           </div>
                                         </div>
@@ -3295,7 +2623,8 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Likes</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Mag</span>
+                                      </span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <section class=" ">
@@ -3303,15 +2632,13 @@ ___                                                </li>
                                           <div class="row">
                                             <i class="icon icon--md icon-Like"></i>
                                             <p style="margin-top: 1vh;">
-                                              <span x-show="!de">cooking and eating spicy food,
-                                                Indian hospitality,
-                                                unconventional approaches</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="!de">Break dance and modern dancing, meeting people of different cultures, problem solving approach</span>
+                                              <span x-show="de">Breakdance und moderner Tanz, Begegnungen mit Menschen verschiedener Kulturen, lösungsorientierte Einstellung</span>
                                             </p>
                                             <i class="icon icon--md icon-Unlike"></i>
                                             <p>
-                                              <span x-show="!de">hypocrisy</span>
-                                              <span x-show="de">___</span>
+                                              <span x-show="!de">Cockroaches, faking of documents and records in social compliance assessment</span>
+                                              <span x-show="de">Kakerlaken, Fälschen von Dokumenten in Sozial- und Umweltaudits</span>
                                             </p>
                                           </div>
                                         </div>
@@ -3321,30 +2648,31 @@ ___                                                </li>
                                   <li class="tab-button">
                                     <div class="tab__title">
                                       <span class="h5"><span x-show="!de">Connect</span>
-                                        <span x-show="de">___</span></span>
+                                        <span x-show="de">Kontakt</span></span>
                                     </div>
                                     <div class="tab__content text-center">
                                       <div class="col-sm-4">
                                         <div class="feature feature-3 boxed">
-                                          <a href="mailto:padmaja.pai@sustify.de">
+                                          <a href="mailto:bergson.wang@hotmail.com">
                                             <i class="icon color--primary icon-Mail"></i>
-                                            <p>padmaja.pai At sustify.de</p>
+                                            <p>bergson.wang@hotmail.com
+                                            </p>
                                           </a>
                                         </div>
                                       </div>
                                       <div class="col-sm-4">
-                                        <a href="skype:Padmaja19?call" target="_blank">
+                                        <a href="skype:bergson.wang1?call" target="_blank">
                                           <div class="feature feature-3 boxed">
                                             <i class="icon color--primary icon-Skype"></i>
-                                            <p>Padmaja19</p>
+                                            <p>bergson.wang1</p>
                                           </div>
                                         </a>
                                       </div>
                                       <div class="col-sm-4">
-                                        <a href="https://goo.gl/gKPNKC">
+                                        <a href="https://www.linkedin.com/in/bergson-wang-19a85712/">
                                           <div class="feature feature-3 boxed">
                                             <i class="icon color--primary icon-Linkedin"></i>
-                                            <p>https://goo.gl/gKPNKC</p>
+                                            <p>shorturl.at/bdjGT</p>
                                           </div>
                                         </a>
                                       </div>
@@ -3380,13 +2708,14 @@ ___                                                </li>
             <div class="row switchable__text touch" style="margin-top: 0 !important;">
               <h2 style="padding-top: 1.85714286em;">
                 <span x-show="!de">Get in touch</span>
-                <span x-show="de">___</span>
+                <span x-show="de">Kontaktieren Sie uns! </span>
               </h2>
               <p class="lead">
                 <span x-show="!de">We have a great program ready to integrate into your
                   factories. <br />Let's connect and find the right solution for
                   you.</span>
-                <span x-show="de">___</span>
+                <span x-show="de">Wir möchten Ihnen dabei helfen, Trainingskonzepte für Ihre
+                  Lieferkette digitaler und wirkungsvoller zu gestalten!</span>
               </p>
               <div class="col-sm-4">
                 <div class="feature feature-2 boxed boxed--border">
@@ -3397,7 +2726,7 @@ ___                                                </li>
               <div class="col-sm-4">
                 <div class="feature feature-2 boxed boxed--border">
                   <i class="icon color--primary icon-Mail"></i>
-                  <p>sonja.westphal At sustify.de</p>
+                  <p>Sonja.Westphal@sustify.de</p>
                 </div>
               </div>
               <div class="col-sm-4" style="float: left;">
@@ -3416,14 +2745,14 @@ ___                                                </li>
             <div class="col-sm-4">
               <p class="lead">
                 <span x-show="!de">We have partnered with</span>
-                <span x-show="de">___</span>
+                <span x-show="de">Partner und Kooperationen</span>
               </p>
               <div class="row">
                 <div class="col-sm-12" style="margin-top: -21px;">
                   <a href="http://www.stepsol.com/">
                     <img class="footer-image" alt="Step Logo: STEP is our local partner for consulting and implementation of the program" src=" img/step footer.png" />
                   </a>
-                  <br>
+                  <br />
                   <a href="https://www.loening-berlin.de">
                     <img class="footer-image loning" src="img/löning footer.png" alt="Löning Logo: Löning Human Rights and Responsible Business is a
                                         consultancy and think-tank specialised in human-rights work." />
@@ -3435,37 +2764,41 @@ ___                                                </li>
             <div class="col-sm-4">
               <p class="lead">
                 <span x-show="!de">Proud to be a part of</span>
-                <span x-show="de">___</span>
+                <span x-show="de">Darüber freuen wir uns</span>
               </p>
               <div class="row">
                 <div class="col-sm-12" style="margin-top: 2px;">
                   <a href="https://www.volkswagenag.com/en/news/2020/06/incubator_programme.html#">
-                    <div class="circle-border" style="background: white;
-                    border-radius: 50%;
-                    width: 70px;
-                    height: 70px;
-                    padding-top: 4px;
-                    margin: 0 auto;">
+                    <div class="circle-border" style="
+                        background: white;
+                        border-radius: 50%;
+                        width: 70px;
+                        height: 70px;
+                        padding-top: 4px;
+                        margin: 0 auto;
+                      ">
                       <img class="footer-image" src="img/volkswagen_logo.png" alt="volkswagen logo" style="width: 60px;" />
                     </div>
-                    <p style="margin-top:7px">Incubator Program</p>
+                    <p style="margin-top: 7px;">
+                      <span x-show="!de">Incubator Program</span>
+                      <span x-show="de">Incubator Programm</span>
+                    </p>
                   </a>
                 </div>
               </div>
             </div>
 
-
             <div class="col-sm-4">
               <p class="lead">
                 <span x-show="!de">We are a member of</span>
-                <span x-show="de">___</span>
+                <span x-show="de">Mitgliedschaften</span>
               </p>
               <div class="row">
                 <div class="col-sm-12" style="margin-top: 5px;">
                   <a href="https://www.maxtex.eu">
                     <img class="footer-image" src="img/MaxTex.png" alt="Image MaxTex-logo" style="margin-top: -4px;" />
                   </a>
-                  <br>
+                  <br />
                   <a href="https://www.send-ev.de/">
                     <img class="send footer-image" alt="Image" src="img/180406_Mitglied_Weiss.png" style="margin-top: 20px;" />
                   </a>
@@ -3480,15 +2813,18 @@ ___                                                </li>
                   Sustify GmbH
                 </span>
                 <a class="type--fine-print" href="privacy.html" target="_self"><span x-show="!de">Privacy</span>
-                  <span x-show="de">___</span></a>
-                <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span> <span x-show="de">___</span></a>
+                  <span x-show="de">Datenschutzerklärung</span></a>
+                <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span>
+                  <span x-show="de">Impressum</span></a>
                 <a class="type--fine-print" href="terms-and-conditions.html" target="_self"><span x-show="!de">Terms & conditions</span>
-                  <span x-show="de">___</span></a>
+                  <span x-show="de">AGB</span></a>
               </div>
             </div>
           </div>
         </div>
       </footer>
+
+
       <a class="back-to-top inner-link hidden-xs hidden-xxs" href="#top" data-scroll-class="100vh:active">
         <i class="stack-interface stack-up-open-big hidden-xs hidden-xxs"></i>
       </a>
@@ -3528,9 +2864,7 @@ ___                                                </li>
         window.matchMedia("(max-width: 991px)").matches
       ) {
         $(document).ready(function() {
-          $(".sustify-beneficiary.beneficiary-retail-brand").addClass(
-            "active"
-          );
+          $(".sustify-beneficiary.beneficiary-retail-brand").addClass("active");
 
           $(".beneficiary-retail-brand").on("click", function() {
             $(".sustify-beneficiary").removeClass("active");
@@ -3614,9 +2948,12 @@ ___                                                </li>
         });
       }
 
-      // });
+      document.querySelectorAll(".course-item-title-container").forEach(course =>
+        course.addEventListener("mouseover", () => course.click())
+      );
 
     </script>
+
   </body>
 
 </html>

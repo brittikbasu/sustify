@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Instructional Design Internship</title>
+    <title>Internship</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/sustify-icon.png">
     <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
@@ -69,8 +69,9 @@
 
   </head>
 
-  <body data-smooth-scroll-offset="77" id="top" x-data="setLang()">
 
+
+    <body data-smooth-scroll-offset="77" id="top" x-data="setLang()">
     <div class="nav-container border">
       <div class="header-hide">
         <nav class="bar bar-toggle bar--sm" data-scroll-class="90vh:pos-fixed">
@@ -87,50 +88,46 @@
               <div class="col-md-10 col-sm-9 col-xs-8">
                 <div class="bar__module pull-right">
                   <div class="modal-instance">
-                    <span class="lang" style="display:none;">
-                      <button @click="toggleDE()" style="padding:10px; border:none">
+                    <span class="lang">
+                      <button @click="toggleDE()" style="padding: 10px; border: none;">
                         <strong class="de">DEUTSCH</strong>
                       </button>
-                      <button @click="toggleEN()" style="padding:10px; border:none">
+                      <button @click="toggleEN()" style="padding: 10px; border: none;">
                         <strong class="en">ENGLISH</strong>
                       </button>
                     </span>
                     <a class="modal-trigger menu-toggle" href="#">
-                      <img src="img/hamburger.svg" alt="menu button" style="margin-top:15px;" />
+                      <img src="img/hamburger.svg" alt="menu button" style="margin-top: 15px;" />
                     </a>
                     <div class="modal-container menu-fullscreen">
                       <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em; background: none;">
                         <div class="pos-vertical-center pos-asbolute text-center">
                           <ul class="menu-vertical">
                             <li class="h2">
-                              <a href="./index.html#"><span x-show="!de">Home</span>
-                                <span x-show="de">___</span></a>
+                              <a href="index.html">Home </a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#whySustify" target="_self" class="inner-link"><span x-show="!de">Why
-                                  Sustify</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#whySustify" target="_self" class="inner-link"><span x-show="!de">Why Sustify</span>
+                                <span x-show="de">Warum Sustify </span></a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#sustifyProduct" target="_self" class="inner-link"><span x-show="!de">Product</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#sustifyProduct" target="_self" class="inner-link"><span x-show="!de">Product</span>
+                                <span x-show="de">Produkt</span></a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#sustifyCourseLibrary" target="_self" class="inner-link">
+                              <a href="#sustifyCourseLibrary" target="_self" class="inner-link">
                                 <span x-show="!de">Course library</span>
-                                <span x-show="de">___</span></a>
+                                <span x-show="de">Kurse</span></a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#team" target="_self" class="inner-link"><span x-show="!de">Team</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#team" target="_self" class="inner-link">Team</a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#contact" target="_self" class="inner-link"><span x-show="!de">Contact</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#contact" target="_self" class="inner-link"><span x-show="!de">Contact</span>
+                                <span x-show="de">Kontakt</span></a>
                             </li>
                             <li class="h2">
-                              <a href="jobs.html" target="_self"><span x-show="!de">Jobs</span>
-                                <span x-show="de">___</span></a>
+                              <a href="jobs.html" target="_self">Jobs</a>
                             </li>
                           </ul>
                         </div>
@@ -151,13 +148,14 @@
             <div class="row">
                 <div class="col-sm-10 col-md-8">
                     <h1>
-                    <span x-show="!de">Internship: Instructional design</span>
-                    <span x-show="de">___</span>
+                    <span x-show="!de">Internship</span>
+                    <span x-show="de">Praktikum
+                    </span>
                     </h1>
-                    <h3 style="margin-top:-33px">(Berlin)</h3>
+                    <h3 style="margin-top:-33px">(Berlin/remote)</h3>
                     <p class="lead" style="margin-top:-17px">
                     <span x-show="!de">You like to craft content and help to develop creative storyboard content. You are familiar with multimedia, are creative and have strong verbal communication skills. You think sustainability is a value and not a hobby and live it yourself. You think out of the box and like experimenting. You take on tasks and carry them through, being reliable and keeping deadlines. You infuse your passion to get the job done and love working in an international team.</span>
-                    <span x-show="de">___</span>
+                    <span x-show="de">Dir macht es Spass, Inhalte kreativ digital zu vermitteln. Du studierst Design/interactive Design oder Multimedia. Du möchtest in einem internationalen Team selbstverantwortlich arbeiten und einen gesellschaftlichen Nutzen schaffen.</span>
                     
                     </p>
                 </div>

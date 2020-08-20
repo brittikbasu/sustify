@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Legal Disclosure</title>
     <meta name="description" content="&quot;PAGE DESCRIPTION FOR SEO&quot;" />
@@ -15,130 +15,127 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
     <style>
-        h4,
-        .h4,
-        h3,
-        .h3 {
-            margin-bottom: 0em;
-        }
+      h4,
+      .h4,
+      h3,
+      .h3 {
+        margin-bottom: 0em;
+      }
 
-        p {
-            margin-bottom: 0.5em;
+      p {
+        margin-bottom: 0.5em;
 
-        }
+      }
+
     </style>
 
 
-    
-  <script>
-    let de = false;
-    function setLang() {
-      if (localStorage.getItem('deutsch') === "true") {
-        de = true;
-              document.querySelector('.de').style.color = "#69ce9b";
-      }
-      else {
-        de = false;
-                      document.querySelector('.en').style.color = "#69ce9b";
 
-      }
-      return {
-        de: de,
-        toggleDE() {
-          this.de = true;
+    <script>
+      let de = false;
+
+      function setLang() {
+        if (localStorage.getItem('deutsch') === "true") {
+          de = true;
           document.querySelector('.de').style.color = "#69ce9b";
-          document.querySelector('.en').style.color = "#638686";
-          localStorage.clear();
-          localStorage.setItem('deutsch', 'true');
-
-
-
-        },
-        toggleEN() {
-          this.de = false;
+        } else {
+          de = false;
           document.querySelector('.en').style.color = "#69ce9b";
-          document.querySelector('.de').style.color = "#638686";
-          localStorage.clear();
-          localStorage.setItem('deutsch', 'false');
-
-
 
         }
+        return {
+          de: de,
+          toggleDE() {
+            this.de = true;
+            document.querySelector('.de').style.color = "#69ce9b";
+            document.querySelector('.en').style.color = "#638686";
+            localStorage.clear();
+            localStorage.setItem('deutsch', 'true');
+
+
+
+          },
+          toggleEN() {
+            this.de = false;
+            document.querySelector('.en').style.color = "#69ce9b";
+            document.querySelector('.de').style.color = "#638686";
+            localStorage.clear();
+            localStorage.setItem('deutsch', 'false');
+
+
+
+          }
+        }
+
+        console.log('fn setlang executed');
       }
 
-      console.log('fn setlang executed');
-    }
-
-  </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-    </head>
-    <body data-smooth-scroll-offset="77" id="top" x-data="setLang()">
-    
-            <div class="nav-container border">
-    <div class="header-hide">
-      <nav class="bar bar-toggle bar--sm" data-scroll-class="90vh:pos-fixed">
-        <div class="container">
-          <div class="row logo-container">
-            <div class="col-md-2 col-sm-3 col-xs-4 logo-top">
-              <div class="bar__module">
-                <a href="index.html">
-                  <img class="logo logo-dark" alt="logo" src="img/sustify_logo_with%20slogan_rgb.png" />
-                  <img class="logo logo-light" alt="logo" src="img/sustify_logo_with%20slogan_rgb.png" />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-10 col-sm-9 col-xs-8">
-              <div class="bar__module pull-right">
-                <div class="modal-instance">
-                  <span class="lang" style="display:none;">
-                    <button @click="toggleDE()" style="padding:10px; border:none">
-                      <strong class="de">DEUTSCH</strong>
-                    </button>
-                    <button @click="toggleEN()" style="padding:10px; border:none">
-                      <strong class="en">ENGLISH</strong>
-                    </button>
-                  </span>
-                  <a class="modal-trigger menu-toggle" href="#">
-                    <img src="img/hamburger.svg" alt="menu button" style="margin-top:15px;" />
+  </head>
+
+
+  <body data-smooth-scroll-offset="77" id="top" x-data="setLang()">
+    <div class="nav-container border">
+      <div class="header-hide">
+        <nav class="bar bar-toggle bar--sm" data-scroll-class="90vh:pos-fixed">
+          <div class="container">
+            <div class="row logo-container">
+              <div class="col-md-2 col-sm-3 col-xs-4 logo-top">
+                <div class="bar__module">
+                  <a href="index.html">
+                    <img class="logo logo-dark" alt="logo" src="img/sustify_logo_with%20slogan_rgb.png" />
+                    <img class="logo logo-light" alt="logo" src="img/sustify_logo_with%20slogan_rgb.png" />
                   </a>
-                  <div class="modal-container menu-fullscreen">
-                    <div class="modal-content" data-width="100%" data-height="100%"
-                      style="padding-bottom: 6em; background: none;">
-                      <div class="pos-vertical-center pos-asbolute text-center">
-                        <ul class="menu-vertical">
-                          <li class="h2">
-                            <a href="./index.html#"><span x-show="!de">Home</span>
-                              <span x-show="de">___</span></a>
-                          </li>
-                          <li class="h2">
-                            <a href="./index.html#whySustify" target="_self" class="inner-link"><span x-show="!de">Why
-                                Sustify</span>
-                              <span x-show="de">___</span></a>
-                          </li>
-                          <li class="h2">
-                            <a href="./index.html#sustifyProduct" target="_self" class="inner-link"><span
-                                x-show="!de">Product</span>
-                              <span x-show="de">___</span></a>
-                          </li>
-                          <li class="h2">
-                            <a href="./index.html#sustifyCourseLibrary" target="_self" class="inner-link">
-                              <span x-show="!de">Course library</span>
-                              <span x-show="de">___</span></a>
-                          </li>
-                          <li class="h2">
-                            <a href="./index.html#team" target="_self" class="inner-link"><span x-show="!de">Team</span>
-                              <span x-show="de">___</span></a>
-                          </li>
-                          <li class="h2">
-                            <a href="./index.html#contact" target="_self" class="inner-link"><span x-show="!de">Contact</span>
-                              <span x-show="de">___</span></a>
-                          </li>
-                          <li class="h2">
-                            <a href="jobs.html" target="_self"><span x-show="!de">Jobs</span>
-                              <span x-show="de">___</span></a>
-                          </li>
-                        </ul>
+                </div>
+              </div>
+              <div class="col-md-10 col-sm-9 col-xs-8">
+                <div class="bar__module pull-right">
+                  <div class="modal-instance">
+                    <span class="lang">
+                      <button @click="toggleDE()" style="padding: 10px; border: none;">
+                        <strong class="de">DEUTSCH</strong>
+                      </button>
+                      <button @click="toggleEN()" style="padding: 10px; border: none;">
+                        <strong class="en">ENGLISH</strong>
+                      </button>
+                    </span>
+                    <a class="modal-trigger menu-toggle" href="#">
+                      <img src="img/hamburger.svg" alt="menu button" style="margin-top: 15px;" />
+                    </a>
+                    <div class="modal-container menu-fullscreen">
+                      <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em; background: none;">
+                        <div class="pos-vertical-center pos-asbolute text-center">
+                          <ul class="menu-vertical">
+                            <li class="h2">
+                              <a href="index.html">Home </a>
+                            </li>
+                            <li class="h2">
+                              <a href="#whySustify" target="_self" class="inner-link"><span x-show="!de">Why Sustify</span>
+                                <span x-show="de">Warum Sustify </span></a>
+                            </li>
+                            <li class="h2">
+                              <a href="#sustifyProduct" target="_self" class="inner-link"><span x-show="!de">Product</span>
+                                <span x-show="de">Produkt</span></a>
+                            </li>
+                            <li class="h2">
+                              <a href="#sustifyCourseLibrary" target="_self" class="inner-link">
+                                <span x-show="!de">Course library</span>
+                                <span x-show="de">Kurse</span></a>
+                            </li>
+                            <li class="h2">
+                              <a href="#team" target="_self" class="inner-link">Team</a>
+                            </li>
+                            <li class="h2">
+                              <a href="#contact" target="_self" class="inner-link"><span x-show="!de">Contact</span>
+                                <span x-show="de">Kontakt</span></a>
+                            </li>
+                            <li class="h2">
+                              <a href="jobs.html" target="_self">Jobs</a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -146,10 +143,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
-  </div>
 
 
 
@@ -158,274 +154,279 @@
 
 
 
-                    <span x-show="!de"> 
+    <span x-show="!de">
 
-    <section class="space--xs bg--secondary" style="padding-bottom:1em; padding-top:1em;">
+      <section class="space--xs bg--secondary" style="padding-bottom:1em; padding-top:1em;">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-10 col-md-8">
-                    <h3 style="margin-left:0; margin-top:20px;"><strong>Legal disclosure</strong></h3>
-                    <p>Information in accordance with section 5 TMG
-                        <br>
-                    </p>
-                </div>
+          <div class="row">
+            <div class="col-sm-10 col-md-8">
+              <h3 style="margin-left:0; margin-top:20px;"><strong>Legal disclosure</strong></h3>
+              <p>Information in accordance with section 5 TMG
+                <br>
+              </p>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="switchable bg--secondary">
+      <section class="switchable bg--secondary">
         <div class="container">
-            <div class="row">
+          <div class="row">
 
-                <div class="col-sm-12 col-md-12">
-                    <h4 style="margin-bottom:8px; margin-top:20px;">Accountability for content</h4>
-                    <p style="line-height:1.6">Sustify GmbH
-                        <br>Zellestr. 14
-                        <br>10247 Berlin <br>
-                         Sonja.Westphal@sustify.de <br>
-                        Phone: +49 170 3601180</p>
-                     
-                     <p style="line-height:1.6">Amtsgericht Charlottenburg
-                     HRB 194689 B <br>
-                     USt.IdNr.: DE317740081<br>
-                     Authorized managing director: Sonja Westphal
-                     </p>
-                 
+            <div class="col-sm-12 col-md-12">
+              <h4 style="margin-bottom:8px; margin-top:20px;">Accountability for content</h4>
+              <p style="line-height:1.6">Sustify GmbH
+                <br>Zellestr. 14
+                <br>10247 Berlin <br>
+                Sonja.Westphal@sustify.de <br>
+                Phone: +49 170 3601180</p>
 
-                        
- <p class="">The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents'
-                        accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible
-                        for our own content on these web pages. In this context, please note that we are accordingly not
-                        obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances
-                        pointing to illegal activity. Our obligations to remove or block the use of information under generally
-                        applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).</p>
-       
+              <p style="line-height:1.6">Amtsgericht Charlottenburg
+                HRB 194689 B <br>
+                USt.IdNr.: DE317740081<br>
+                Authorized managing director: Sonja Westphal
+              </p>
 
 
-                   <!-- <h4>VAT number</h4>
+
+              <p class="">The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents'
+                accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible
+                for our own content on these web pages. In this context, please note that we are accordingly not
+                obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances
+                pointing to illegal activity. Our obligations to remove or block the use of information under generally
+                applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).</p>
+
+
+
+              <!-- <h4>VAT number</h4>
                     <p class="">DE303738366</p>
                     <p class="">(VAT identification number in accordance with section 27A of the German VAT act)&nbsp;</p>                   
 -->
 
-                    <h4 style="margin-bottom:8px; margin-top:20px;">Accountability for links</h4>
-                    <p class="">Responsibility for the content of external links (to web pages of third parties) lies solely with the
-                        operators of the linked pages. No violations were evident to us at the time of linking. Should any
-                        legal infringement become known to us, we will remove the respective link immediately.</p>
+              <h4 style="margin-bottom:8px; margin-top:20px;">Accountability for links</h4>
+              <p class="">Responsibility for the content of external links (to web pages of third parties) lies solely with the
+                operators of the linked pages. No violations were evident to us at the time of linking. Should any
+                legal infringement become known to us, we will remove the respective link immediately.</p>
 
 
-                    <h4 style="margin-bottom:8px; margin-top:20px;">Copyright</h4>
-                    
-                    <p>Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law
-                        (§ 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject
-                        to copyright protection on our web pages requires the prior consent of the respective owner of the
-                        rights. Individual reproductions of a work are allowed only for private use, so must not serve either
-                        directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable
-                        (§ 106 of the copyright law).</p>
+              <h4 style="margin-bottom:8px; margin-top:20px;">Copyright</h4>
 
-                    <h4 style="margin-bottom:8px; margin-top:20px;">Photographs used</h4>
-                    
-                    <p class="">Unsplash : photo-1490677739661-d3395897c0a7
-                        <br> Shutterstock : 128049752
-                        <br> Deposit Photos : 69698565</p>
+              <p>Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law
+                (§ 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject
+                to copyright protection on our web pages requires the prior consent of the respective owner of the
+                rights. Individual reproductions of a work are allowed only for private use, so must not serve either
+                directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable
+                (§ 106 of the copyright law).</p>
+
+              <h4 style="margin-bottom:8px; margin-top:20px;">Photographs used</h4>
+
+              <p class="">Unsplash : photo-1490677739661-d3395897c0a7
+                <br> Shutterstock : 128049752
+                <br> Deposit Photos : 69698565</p>
 
 
 
-                <!--    <br>
+              <!--    <br>
                     <i>Quelle: </i>
                     <a href="https://www.twigg.de/"> twiggs translations </a>&nbsp;
 
 -->
-                </div>
-
             </div>
+
+          </div>
         </div>
-    </section>
+      </section>
 
-</span>
-
-
+    </span>
 
 
 
 
 
 
-<!--======================== Please translate the content below to Deutsch ===============================--> 
-
-                    <span x-show="de"> 
 
 
-    <section class="space--xs bg--secondary" style="padding-bottom:1em; padding-top:1em;">
+    <!--======================== Please translate the content below to Deutsch ===============================-->
+
+    <span x-show="de">
+
+
+      <section class="space--xs bg--secondary" style="padding-bottom:1em; padding-top:1em;">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-10 col-md-8">
-                    <h3 style="margin-left:0; margin-top:20px;"><strong>Deutsch: Legal disclosure</strong></h3>
-                    <p>Information in accordance with section 5 TMG
-                        <br>
-                    </p>
-                </div>
+          <div class="row">
+            <div class="col-sm-10 col-md-8">
+              <h3 style="margin-left:0; margin-top:20px;"><strong>Impressum
+                </strong></h3>
+              <p>Angaben gemäß § 5 TMG
+                <br>
+              </p>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="switchable bg--secondary">
+      <section class="switchable bg--secondary">
         <div class="container">
-            <div class="row">
+          <div class="row">
 
-                <div class="col-sm-12 col-md-12">
-                    <h4 style="margin-bottom:8px; margin-top:20px;">Accountability for content</h4>
-                    <p style="line-height:1.6">Sustify GmbH
-                        <br>Zellestr. 14
-                        <br>10247 Berlin <br>
-                         Sonja.Westphal@sustify.de<br>
-                        Phone: +49 170 3601180</p>
-                     
-                     <p style="line-height:1.6">Amtsgericht Charlottenburg
-                     HRB 194689 B <br>
-                     USt.IdNr.: DE317740081<br>
-                     Authorized managing director: Sonja Westphal
-                     </p>
-                 
+            <div class="col-sm-12 col-md-12">
+              <p style="line-height:1.6">Sustify GmbH
+                <br>Zellestr. 14
+                <br>10247 Berlin <br>
+                Sonja.Westphal@sustify.de<br>
+                Phone: +49 170 3601180</p>
 
-                        
- <p class="">The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents'
-                        accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible
-                        for our own content on these web pages. In this context, please note that we are accordingly not
-                        obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances
-                        pointing to illegal activity. Our obligations to remove or block the use of information under generally
-                        applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).</p>
-       
+              <p style="line-height:1.6">Amtsgericht Charlottenburg
+                HRB 194689 B <br>
+                USt.IdNr.: DE317740081<br><br>
+                Geschäftsführerin: Sonja Westphal
+              </p>
+
+              <h4 style="margin-bottom:8px; margin-top:20px;">Haftung für Inhalte
+              </h4>
+              <p class="">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
 
 
-                   <!-- <h4>VAT number</h4>
-                    <p class="">DE303738366</p>
-                    <p class="">(VAT identification number in accordance with section 27A of the German VAT act)&nbsp;</p>                   
--->
+              <h4 style="margin-bottom:8px; margin-top:20px;">Haftung für Links
+              </h4>
 
-                    <h4 style="margin-bottom:8px; margin-top:20px;">Accountability for links</h4>
-                    <p class="">Responsibility for the content of external links (to web pages of third parties) lies solely with the
-                        operators of the linked pages. No violations were evident to us at the time of linking. Should any
-                        legal infringement become known to us, we will remove the respective link immediately.</p>
+              <p>
+                Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links zu Webseiten Dritter, da wir auf diese keinen Einfluss haben. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Anbieter oder Betreiber verantwortlich.  Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft, rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Wir übernehmen weder die Gewähr für die Aktualität, Richtigkeit und Vollständigkeit der auf diesen Webseiten bereitgestellten Informationen noch die Haftung für unmittelbare oder mittelbare Schäden, die durch die Nutzung der oder das Vertrauen auf die in diesen Websiten enthaltenen Informationen oder Daten entstehen. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+              </p>
 
 
-                    <h4 style="margin-bottom:8px; margin-top:20px;">Copyright</h4>
-                    
-                    <p>Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law
-                        (§ 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject
-                        to copyright protection on our web pages requires the prior consent of the respective owner of the
-                        rights. Individual reproductions of a work are allowed only for private use, so must not serve either
-                        directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable
-                        (§ 106 of the copyright law).</p>
+              <h4 style="margin-bottom:8px; margin-top:20px;">Urheberrecht
 
-                    <h4 style="margin-bottom:8px; margin-top:20px;">Photographs used</h4>
-                    
-                    <p class="">Unsplash : photo-1490677739661-d3395897c0a7
-                        <br> Shutterstock : 128049752
-                        <br> Deposit Photos : 69698565</p>
+              </h4>
+
+              <p>
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                <br><br>
+                Verantwortlich für den Inhalt: Sonja Westphal
+
+              </p>
 
 
 
-                <!--    <br>
+
+              <h4 style="margin-bottom:8px; margin-top:20px;">Quellenangaben Fotomaterial
+              </h4>
+
+              <p class="">Unsplash : photo-1490677739661-d3395897c0a7
+                <br> Shutterstock : 128049752
+                <br> Deposit Photos : 69698565
+
+                <br>
+                <br>
+                Alle weiteren genutzten Fotos unterliegen der CC0 License.
+              </p>
+              <!--    <br>
                     <i>Quelle: </i>
                     <a href="https://www.twigg.de/"> twiggs translations </a>&nbsp;
 
 -->
-                </div>
-
             </div>
+
+          </div>
         </div>
-    </section>
+      </section>
 
 
-</span>
-
-
-
+    </span>
 
 
 
 
-<footer class="text-center space--xs footer-5 bg--dark">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <p class="lead">
-          <span x-show="!de">We have partnered with</span>
-          <span x-show="de">___</span>
-        </p>
+
+
+
+    <footer class="text-center space--xs footer-5 bg--dark">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-12" style="margin-top: -21px;">
-            <a href="http://www.stepsol.com/">
-              <img class="footer-image" alt="Step Logo: STEP is our local partner for consulting and implementation of the program" src=" img/step footer.png" />
-            </a>
-            <br>
-            <a href="https://www.loening-berlin.de">
-              <img class="footer-image loning" src="img/löning footer.png" alt="Löning Logo: Löning Human Rights and Responsible Business is a
+          <div class="col-sm-4">
+            <p class="lead">
+              <span x-show="!de">We have partnered with</span>
+              <span x-show="de">Partner und Kooperationen</span>
+            </p>
+            <div class="row">
+              <div class="col-sm-12" style="margin-top: -21px;">
+                <a href="http://www.stepsol.com/">
+                  <img class="footer-image" alt="Step Logo: STEP is our local partner for consulting and implementation of the program" src=" img/step footer.png" />
+                </a>
+                <br />
+                <a href="https://www.loening-berlin.de">
+                  <img class="footer-image loning" src="img/löning footer.png" alt="Löning Logo: Löning Human Rights and Responsible Business is a
                                   consultancy and think-tank specialised in human-rights work." />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <p class="lead">
-          <span x-show="!de">Proud to be a part of</span>
-          <span x-show="de">___</span>
-        </p>
-        <div class="row">
-          <div class="col-sm-12" style="margin-top: 2px;">
-            <a href="https://www.volkswagenag.com/en/news/2020/06/incubator_programme.html#">
-              <div class="circle-border" style="background: white;
-              border-radius: 50%;
-              width: 70px;
-              height: 70px;
-              padding-top: 4px;
-              margin: 0 auto;">
-              <img class="footer-image" src="img/volkswagen_logo.png" alt="volkswagen logo" style="width: 60px;" />
+                </a>
+              </div>
             </div>
-            <p style="margin-top:7px">Incubator Program</p>
-            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <p class="lead">
+              <span x-show="!de">Proud to be a part of</span>
+              <span x-show="de">Darüber freuen wir uns</span>
+            </p>
+            <div class="row">
+              <div class="col-sm-12" style="margin-top: 2px;">
+                <a href="https://www.volkswagenag.com/en/news/2020/06/incubator_programme.html#">
+                  <div class="circle-border" style="
+                  background: white;
+                  border-radius: 50%;
+                  width: 70px;
+                  height: 70px;
+                  padding-top: 4px;
+                  margin: 0 auto;
+                ">
+                    <img class="footer-image" src="img/volkswagen_logo.png" alt="volkswagen logo" style="width: 60px;" />
+                  </div>
+                  <p style="margin-top: 7px;">
+                    <span x-show="!de">Incubator Program</span>
+                    <span x-show="de">Incubator Programm</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <p class="lead">
+              <span x-show="!de">We are a member of</span>
+              <span x-show="de">Mitgliedschaften</span>
+            </p>
+            <div class="row">
+              <div class="col-sm-12" style="margin-top: 5px;">
+                <a href="https://www.maxtex.eu">
+                  <img class="footer-image" src="img/MaxTex.png" alt="Image MaxTex-logo" style="margin-top: -4px;" />
+                </a>
+                <br />
+                <a href="https://www.send-ev.de/">
+                  <img class="send footer-image" alt="Image" src="img/180406_Mitglied_Weiss.png" style="margin-top: 20px;" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12" style="margin-top: 15px; margin-bottom: -20px;">
+              <span class="type--fine-print">
+                ©
+                <span class="update-year">2018</span>
+                Sustify GmbH
+              </span>
+              <a class="type--fine-print" href="privacy.html" target="_self"><span x-show="!de">Privacy</span>
+                <span x-show="de">Datenschutzerklärung</span></a>
+              <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span>
+                <span x-show="de">Impressum</span></a>
+              <a class="type--fine-print" href="terms-and-conditions.html" target="_self"><span x-show="!de">Terms & conditions</span>
+                <span x-show="de">AGB</span></a>
+            </div>
           </div>
         </div>
       </div>
-
-
-      <div class="col-sm-4">
-        <p class="lead">
-          <span x-show="!de">We are a member of</span>
-          <span x-show="de">___</span>
-        </p>
-        <div class="row">
-          <div class="col-sm-12" style="margin-top: 5px;">
-            <a href="https://www.maxtex.eu">
-              <img class="footer-image" src="img/MaxTex.png" alt="Image MaxTex-logo" style="margin-top: -4px;"/>
-            </a>
-            <br>
-            <a href="https://www.send-ev.de/">
-              <img class="send footer-image" alt="Image" src="img/180406_Mitglied_Weiss.png" style="margin-top: 20px;"/>
-            </a>
-          </div>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-sm-12" style="margin-top: 15px; margin-bottom: -20px;">
-        <span class="type--fine-print">
-          ©
-          <span class="update-year">2018</span>
-          Sustify GmbH
-        </span>
-        <a class="type--fine-print" href="privacy.html" target="_self"><span x-show="!de">Privacy</span>
-          <span x-show="de">___</span></a>
-        <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span> <span x-show="de">___</span></a>
-        <a class="type--fine-print" href="terms-and-conditions.html" target="_self"><span x-show="!de">Terms & conditions</span>
-          <span x-show="de">___</span></a>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
     <a class="back-to-top inner-link" href="#top" data-scroll-class="100vh:active">
-        <i class="stack-interface stack-up-open-big"></i>
+      <i class="stack-interface stack-up-open-big"></i>
     </a>
 
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -434,6 +435,6 @@
     <script src="js/scripts.js"></script>
 
 
-</body>
+  </body>
 
 </html>
