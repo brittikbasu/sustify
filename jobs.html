@@ -70,7 +70,6 @@
   </head>
 
   <body data-smooth-scroll-offset="77" id="top" x-data="setLang()">
-
     <div class="nav-container border">
       <div class="header-hide">
         <nav class="bar bar-toggle bar--sm" data-scroll-class="90vh:pos-fixed">
@@ -88,49 +87,45 @@
                 <div class="bar__module pull-right">
                   <div class="modal-instance">
                     <span class="lang">
-                      <button @click="toggleDE()" style="padding:10px; border:none">
+                      <button @click="toggleDE()" style="padding: 10px; border: none;">
                         <strong class="de">DEUTSCH</strong>
                       </button>
-                      <button @click="toggleEN()" style="padding:10px; border:none">
+                      <button @click="toggleEN()" style="padding: 10px; border: none;">
                         <strong class="en">ENGLISH</strong>
                       </button>
                     </span>
                     <a class="modal-trigger menu-toggle" href="#">
-                      <img src="img/hamburger.svg" alt="menu button" style="margin-top:15px;" />
+                      <img src="img/hamburger.svg" alt="menu button" style="margin-top: 15px;" />
                     </a>
                     <div class="modal-container menu-fullscreen">
                       <div class="modal-content" data-width="100%" data-height="100%" style="padding-bottom: 6em; background: none;">
                         <div class="pos-vertical-center pos-asbolute text-center">
                           <ul class="menu-vertical">
                             <li class="h2">
-                              <a href="./index.html#"><span x-show="!de">Home</span>
-                                <span x-show="de">___</span></a>
+                              <a href="index.html">Home </a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#whySustify" target="_self" class="inner-link"><span x-show="!de">Why
-                                  Sustify</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#whySustify" target="_self" class="inner-link"><span x-show="!de">Why Sustify</span>
+                                <span x-show="de">Warum Sustify </span></a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#sustifyProduct" target="_self" class="inner-link"><span x-show="!de">Product</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#sustifyProduct" target="_self" class="inner-link"><span x-show="!de">Product</span>
+                                <span x-show="de">Produkt</span></a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#sustifyCourseLibrary" target="_self" class="inner-link">
+                              <a href="#sustifyCourseLibrary" target="_self" class="inner-link">
                                 <span x-show="!de">Course library</span>
-                                <span x-show="de">___</span></a>
+                                <span x-show="de">Kurse</span></a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#team" target="_self" class="inner-link"><span x-show="!de">Team</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#team" target="_self" class="inner-link">Team</a>
                             </li>
                             <li class="h2">
-                              <a href="./index.html#contact" target="_self" class="inner-link"><span x-show="!de">Contact</span>
-                                <span x-show="de">___</span></a>
+                              <a href="#contact" target="_self" class="inner-link"><span x-show="!de">Contact</span>
+                                <span x-show="de">Kontakt</span></a>
                             </li>
                             <li class="h2">
-                              <a href="jobs.html" target="_self"><span x-show="!de">Jobs</span>
-                                <span x-show="de">___</span></a>
+                              <a href="jobs.html" target="_self">Jobs</a>
                             </li>
                           </ul>
                         </div>
@@ -144,6 +139,9 @@
         </nav>
       </div>
     </div>
+
+
+
 
     <section class="text-center imagebg space--sm career" data-overlay="9">
       <div class="background-image-holder"> <img alt="background" src="img/team.jpeg"> </div>
@@ -223,17 +221,17 @@
           <div class="col-sm-4">
             <p class="lead">
               <span x-show="!de">We have partnered with</span>
-              <span x-show="de">___</span>
+              <span x-show="de">Partner und Kooperationen</span>
             </p>
             <div class="row">
               <div class="col-sm-12" style="margin-top: -21px;">
                 <a href="http://www.stepsol.com/">
                   <img class="footer-image" alt="Step Logo: STEP is our local partner for consulting and implementation of the program" src=" img/step footer.png" />
                 </a>
-                <br>
+                <br />
                 <a href="https://www.loening-berlin.de">
                   <img class="footer-image loning" src="img/löning footer.png" alt="Löning Logo: Löning Human Rights and Responsible Business is a
-                                      consultancy and think-tank specialised in human-rights work." />
+                                        consultancy and think-tank specialised in human-rights work." />
                 </a>
               </div>
             </div>
@@ -242,55 +240,61 @@
           <div class="col-sm-4">
             <p class="lead">
               <span x-show="!de">Proud to be a part of</span>
-              <span x-show="de">___</span>
+              <span x-show="de">Darüber freuen wir uns</span>
             </p>
             <div class="row">
               <div class="col-sm-12" style="margin-top: 2px;">
                 <a href="https://www.volkswagenag.com/en/news/2020/06/incubator_programme.html#">
-                  <div class="circle-border" style="background: white;
-                  border-radius: 50%;
-                  width: 70px;
-                  height: 70px;
-                  padding-top: 4px;
-                  margin: 0 auto;">
-                  <img class="footer-image" src="img/volkswagen_logo.png" alt="volkswagen logo" style="width: 60px;" />
-                </div>
-                <p style="margin-top:7px">Incubator Program</p>
+                  <div class="circle-border" style="
+                        background: white;
+                        border-radius: 50%;
+                        width: 70px;
+                        height: 70px;
+                        padding-top: 4px;
+                        margin: 0 auto;
+                      ">
+                    <img class="footer-image" src="img/volkswagen_logo.png" alt="volkswagen logo" style="width: 60px;" />
+                  </div>
+                  <p style="margin-top: 7px;">
+                    <span x-show="!de">Incubator Program</span>
+                    <span x-show="de">Incubator Programm</span>
+                  </p>
                 </a>
               </div>
             </div>
           </div>
-
 
           <div class="col-sm-4">
             <p class="lead">
               <span x-show="!de">We are a member of</span>
-              <span x-show="de">___</span>
+              <span x-show="de">Mitgliedschaften</span>
             </p>
             <div class="row">
               <div class="col-sm-12" style="margin-top: 5px;">
                 <a href="https://www.maxtex.eu">
-                  <img class="footer-image" src="img/MaxTex.png" alt="Image MaxTex-logo" style="margin-top: -4px;"/>
+                  <img class="footer-image" src="img/MaxTex.png" alt="Image MaxTex-logo" style="margin-top: -4px;" />
                 </a>
-                <br>
+                <br />
                 <a href="https://www.send-ev.de/">
-                  <img class="send footer-image" alt="Image" src="img/180406_Mitglied_Weiss.png" style="margin-top: 20px;"/>
+                  <img class="send footer-image" alt="Image" src="img/180406_Mitglied_Weiss.png" style="margin-top: 20px;" />
                 </a>
               </div>
             </div>
           </div>
-        <div class="row">
-          <div class="col-sm-12" style="margin-top: 15px; margin-bottom: -20px;">
-            <span class="type--fine-print">
-              ©
-              <span class="update-year">2018</span>
-              Sustify GmbH
-            </span>
-            <a class="type--fine-print" href="privacy.html" target="_self"><span x-show="!de">Privacy</span>
-              <span x-show="de">___</span></a>
-            <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span> <span x-show="de">___</span></a>
-            <a class="type--fine-print" href="terms-and-conditions.html" target="_self"><span x-show="!de">Terms & conditions</span>
-              <span x-show="de">___</span></a>
+          <div class="row">
+            <div class="col-sm-12" style="margin-top: 15px; margin-bottom: -20px;">
+              <span class="type--fine-print">
+                ©
+                <span class="update-year">2018</span>
+                Sustify GmbH
+              </span>
+              <a class="type--fine-print" href="privacy.html" target="_self"><span x-show="!de">Privacy</span>
+                <span x-show="de">Datenschutzerklärung</span></a>
+              <a class="type--fine-print" href="legal-disclosure.html" target="_self"><span x-show="!de">Legal</span>
+                <span x-show="de">Impressum</span></a>
+              <a class="type--fine-print" href="terms-and-conditions.html" target="_self"><span x-show="!de">Terms & conditions</span>
+                <span x-show="de">AGB</span></a>
+            </div>
           </div>
         </div>
       </div>
