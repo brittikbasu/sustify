@@ -6,41 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-
-    <script>
-      let de = true;
-
-      function setLang() {
-        if (localStorage.getItem("deutsch") === "true") {
-          de = true;
-          document.querySelector(".de").style.color = "#69ce9b";
-        } else {
-          de = false;
-          document.querySelector(".en").style.color = "#69ce9b";
-        }
-        return {
-          de: de,
-          toggleDE() {
-            this.de = true;
-            document.querySelector(".de").style.color = "#69ce9b";
-            document.querySelector(".en").style.color = "#638686";
-            localStorage.clear();
-            localStorage.setItem("deutsch", "true");
-          },
-          toggleEN() {
-            this.de = false;
-            document.querySelector(".en").style.color = "#69ce9b";
-            document.querySelector(".de").style.color = "#638686";
-            localStorage.clear();
-            localStorage.setItem("deutsch", "false");
-          },
-        };
-      }
-      setLang();
-
-    </script>
-
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="js/setLang.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133926968-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

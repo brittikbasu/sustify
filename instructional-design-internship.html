@@ -25,47 +25,8 @@
       }
 
     </style>
-    <script>
-      let de = false;
-
-      function setLang() {
-        if (localStorage.getItem('deutsch') === "true") {
-          de = true;
-          document.querySelector('.de').style.color = "#69ce9b";
-        } else {
-          de = false;
-          document.querySelector('.en').style.color = "#69ce9b";
-
-        }
-        return {
-          de: de,
-          toggleDE() {
-            this.de = true;
-            document.querySelector('.de').style.color = "#69ce9b";
-            document.querySelector('.en').style.color = "#638686";
-            localStorage.clear();
-            localStorage.setItem('deutsch', 'true');
-
-
-
-          },
-          toggleEN() {
-            this.de = false;
-            document.querySelector('.en').style.color = "#69ce9b";
-            document.querySelector('.de').style.color = "#638686";
-            localStorage.clear();
-            localStorage.setItem('deutsch', 'false');
-
-
-
-          }
-        }
-
-        console.log('fn setlang executed');
-      }
-
-    </script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="js/setLang.js"></script>
 
   </head>
 
