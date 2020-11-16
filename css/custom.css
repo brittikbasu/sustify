@@ -881,18 +881,48 @@ footer.space--xs {
   margin-bottom: -10px;
   width: 100.76vw;
 }
+
+
 .delina-mobile .text{
-  height: 90px;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 33px;
   text-align: center;
   color: #000000;
   bottom: 0;
   position: absolute;
-  right: 0;
-  margin-right: 20px;
+  margin-left: 30vw;
+  height: 11vw;
+
+
 }
+
+@media screen and (max-width: 375px) {
+.delina-mobile .text{
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+}
+}
+@media screen and (min-width:620px) and (max-width: 750px) {
+  .delina-mobile .text{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+  }
+  }
+
+  @media screen and (min-width:500px) and (max-width: 619px) {
+    .delina-mobile .text{
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+    }
+    }
+    @media screen and (min-width:376px) and (max-width: 499px) {
+      .delina-mobile .text{
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 17px;
+      }
+      }
 
 @media screen and (min-width: 450px) {
 .beneficiary-details{
