@@ -875,6 +875,23 @@ footer.space--xs {
   margin-left: -1px;
   min-width: 101vw;
   margin-bottom: 0 !important;
+  overflow:hidden;
+}
+.delina-mobile img{
+  margin-bottom: -10px;
+  width: 100.76vw;
+}
+.delina-mobile .text{
+  height: 90px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 450px) {
