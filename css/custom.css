@@ -495,7 +495,21 @@ Mobile team styles
     background: #6e9ba3;
     border: none;
   }
+  .toggleDE{
+    padding-right: 2px !important;
+  }
+  .toggleEN{
+    padding-left: 2px !important;
+  }
+  .lang{
+    margin-left: 11px !important;
+
+  }
+  .langMenuContainer{
+    padding-right: 0px;
+  }
 }
+
 
 @media (max-width: 991px) {
   #ipad {
