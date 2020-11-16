@@ -33,6 +33,9 @@ a .highlight {
   .logo-top {
     margin-top: 1.15vh;
   }
+  .lang{
+    margin-right: -10px;
+  }
 }
 
 section.space--sm,
