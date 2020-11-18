@@ -33,6 +33,9 @@ a .highlight {
   .logo-top {
     margin-top: 1.15vh;
   }
+  .lang{
+    margin-right: -10px;
+  }
 }
 
 section.space--sm,
@@ -492,7 +495,21 @@ Mobile team styles
     background: #6e9ba3;
     border: none;
   }
+  .toggleDE{
+    padding-right: 2px !important;
+  }
+  .toggleEN{
+    padding-left: 2px !important;
+  }
+  .lang{
+    margin-left: 11px !important;
+
+  }
+  .langMenuContainer{
+    padding-right: 0px;
+  }
 }
+
 
 @media (max-width: 991px) {
   #ipad {
@@ -858,7 +875,54 @@ footer.space--xs {
   margin-left: -1px;
   min-width: 101vw;
   margin-bottom: 0 !important;
+  overflow:hidden;
 }
+.delina-mobile img{
+  margin-bottom: -10px;
+  width: 100.76vw;
+}
+
+
+.delina-mobile .text{
+  text-align: center;
+  color: #000000;
+  bottom: 0;
+  position: absolute;
+  margin-left: 30vw;
+  height: 11vw;
+
+
+}
+
+@media screen and (max-width: 375px) {
+.delina-mobile .text{
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+}
+}
+@media screen and (min-width:620px) and (max-width: 750px) {
+  .delina-mobile .text{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+  }
+  }
+
+  @media screen and (min-width:500px) and (max-width: 619px) {
+    .delina-mobile .text{
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+    }
+    }
+    @media screen and (min-width:376px) and (max-width: 499px) {
+      .delina-mobile .text{
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 17px;
+      }
+      }
 
 @media screen and (min-width: 450px) {
 .beneficiary-details{
