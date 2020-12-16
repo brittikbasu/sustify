@@ -404,6 +404,7 @@ footer.space--xxs {
 
 body {
   color: #648787;
+  font-family: 'Rubik','Lato','Verdana','Helvetica', sans-serif;
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -729,8 +730,6 @@ footer.space--xs {
 .footer-5 .loning {
   margin-top: -19px;
 }
-
-/*# sourceMappingURL=custom.css.map */
 
 /* delina banner */
 .animated {
