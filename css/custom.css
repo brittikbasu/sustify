@@ -933,7 +933,7 @@ a{
   color: #66cc99;
 }
 a:hover{
-  color: #19623b !important;
+  color: #19623b;
 }
 
 
@@ -958,4 +958,11 @@ a:hover{
 
 .whySustifyEN{
   min-height: 185px;
+}
+
+[target="_self"]:hover, .menu-fullscreen a:hover{
+  color:#65cd99;
+}
+.type--fine-print span:hover, .type--fine-print:hover{
+  color:#65cd99 !important;
 }
