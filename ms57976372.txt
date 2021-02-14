@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Überprüfungsdatei für Domänen-Eigentümerschaft für Microsoft 365-Position im Website-Root",
+  "Domain": "sustify.de",
+  "Id": "e16bd2aa-3f49-4ba5-b815-c6d8af06aa55"
+}
